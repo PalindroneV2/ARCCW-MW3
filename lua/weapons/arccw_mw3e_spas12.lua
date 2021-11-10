@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "SPAS-12"
+SWEP.PrintName = "SPAS-12 (MW3)"
 SWEP.Trivia_Class = "Combat Shotgun"
 SWEP.Trivia_Desc = "12 gauge dual mode combat shotgun designed to function primarily in semi-automatic mode, with the pump-action mode used for low-pressure ammunition such as bean bags."
 SWEP.Trivia_Manufacturer = "Franchi"

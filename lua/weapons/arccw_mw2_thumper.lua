@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "M79 Thumper"
+SWEP.PrintName = "M79 Thumper (MW2)"
 SWEP.Trivia_Class = "Grenade Launcher"
 SWEP.Trivia_Desc = "American break-action, single shot grenade launcher using 40mm High Explosive rounds. Famously used in the Vietnam War and still used in small numbers."
 SWEP.Trivia_Manufacturer = "Ithaca"
@@ -129,10 +129,6 @@ SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.AttachmentElements = {
-    ["papname1"] = {
-        NamePriority = 10,
-        NameChange = "Thump-Thump",
-    },
 }
 
 SWEP.ExtraSightDist = 5
@@ -178,6 +174,18 @@ SWEP.Attachments = {
         },
     }, --5
 }
+
+SWEP.Hook_NameChange = function(wep, name)
+    local pap = wep:GetBuff_Override("PackAPunch")
+
+    local gunname = "M79 Thumper"
+
+    if pap then
+        gunname = "Thump-Thump"
+    end
+
+    return gunname
+end
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm

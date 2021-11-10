@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Striker-12"
+SWEP.PrintName = "Striker-12 (MW3)"
 SWEP.Trivia_Class = "Combat Shotgun"
 SWEP.Trivia_Desc = "12 gauge semi automatic combat shotgun using a spring-loaded cylinder to load shells."
 SWEP.Trivia_Manufacturer = "Penn Arms"

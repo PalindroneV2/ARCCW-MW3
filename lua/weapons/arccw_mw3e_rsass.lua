@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "RSASS"
+SWEP.PrintName = "RSASS (MW3)"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "Remington-made AR-10 specialized for marksman roles."
 SWEP.Trivia_Manufacturer = "Remington"
@@ -73,6 +73,7 @@ SWEP.HipDispersion = 650 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 200
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
+SWEP.MagID = "ar10" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound

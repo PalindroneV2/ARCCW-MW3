@@ -13,7 +13,7 @@ SWEP.Trivia_Desc = [[
 
     The pistol that forgot to become obsolete.
 
-    (COD 4 Model/MW3 USP animswq)
+    (COD 4 Model/MW3 USP anims)
 ]]
 SWEP.Trivia_Manufacturer = "Springfield Armory"
 SWEP.Trivia_Calibre = ".45 ACP"

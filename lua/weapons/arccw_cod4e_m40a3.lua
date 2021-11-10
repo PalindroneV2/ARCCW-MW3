@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "M40A3"
+SWEP.PrintName = "M40A3 (COD4)"
 SWEP.Trivia_Class = "Rifle"
 SWEP.Trivia_Desc = [[
     American bolt action rifle built from a Remington 700 with the wooden stock replaced by a fiberglass stock produced by McMillan.
@@ -246,9 +246,13 @@ SWEP.Attachments = {
 SWEP.Hook_NameChange = function(wep, name)
     local pap = wep:GetBuff_Override("PackAPunch")
 
+    local gunname = "M40A3"
+
     if pap then
-        return "Quickscoper"
+        gunname = "Quickscoper"
     end
+
+    return gunname
 end
 
 SWEP.Hook_SelectInsertAnimation = function(wep, data)

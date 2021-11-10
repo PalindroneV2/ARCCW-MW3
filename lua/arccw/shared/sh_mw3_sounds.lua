@@ -142,6 +142,27 @@ sound.Add( {
     }
 } )
 
+--MW3E ACR SOUNDS --
+
+sound.Add( {
+    name = "ArcCW_MW3E.ACR_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.5,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_ACR/fire.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.ACR_Sil",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_ACR/sil.wav",
+    }
+} )
+
 --MW3E RSASS--
 
 sound.Add( {
@@ -197,6 +218,55 @@ sound.Add( {
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_RSASS/lift.wav",
+    }
+} )
+
+--MW3E CM901--
+
+sound.Add( {
+    name = "ArcCW_MW3E.CM901_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.5,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_CM901/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.CM901_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_CM901/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.CM901_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_CM901/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.CM901_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_CM901/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.CM901_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_CM901/lift.wav",
     }
 } )
 

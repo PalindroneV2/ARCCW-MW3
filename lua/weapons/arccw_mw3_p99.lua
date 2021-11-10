@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Walther P99"
+SWEP.PrintName = "Walther P99 (MW3)"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "9mm german pistol. Pistol made for law enforcement, security forces and civilian shooting market. Successor of the P5 and P88."
 SWEP.Trivia_Manufacturer = "Walther GMBH"
@@ -157,8 +157,6 @@ SWEP.AttachmentElements = {
                 Mode = 0
             }
         },
-        NamePriority = 10,
-        NameChange = "Dark Emperor",
     },
 }
 
@@ -252,6 +250,18 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(6, 0, 0),
     }, --9
 }
+
+SWEP.Hook_NameChange = function(wep, name)
+    local pap = wep:GetBuff_Override("PackAPunch")
+
+    local gunname = "Walther P99"
+
+    if pap then
+        gunname = "Dark Emperor"
+    end
+
+    return gunname
+end
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm

@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "FN M249 SAW"
+SWEP.PrintName = "M249 SAW (COD4)"
 SWEP.Trivia_Class = "Light Machine Gun"
 SWEP.Trivia_Desc = "Belgian light machine gun. Standard squad automatic weapon for the United States armed forces."
 SWEP.Trivia_Manufacturer = "FN Herstal"
@@ -155,10 +155,6 @@ SWEP.BarrelLength = 30
 SWEP.ExtraSightDist = 5
 
 SWEP.AttachmentElements = {
-    ["papname1"] = {
-        NamePriority = 10,
-        NameChange = "Mako",
-    },
     ["iron"] = {
         VMBodygroups = {
             {ind = 1, bg = 1}
@@ -296,6 +292,18 @@ SWEP.Attachments = {
         },
     }, --10
 }
+
+SWEP.Hook_NameChange = function(wep, name)
+    local pap = wep:GetBuff_Override("PackAPunch")
+
+    local gunname = "FN M249 SAW"
+
+    if pap then
+        gunname = "Mako"
+    end
+
+    return gunname
+end
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm

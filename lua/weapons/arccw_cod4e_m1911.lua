@@ -147,6 +147,21 @@ SWEP.AttachmentElements = {
 SWEP.ExtraSightDist = 2
 
 SWEP.Attachments = {
+    { --1
+        PrintName = "Sights",
+        DefaultAttName = "Iron Sights",
+        Slot = {"optic_lp"},
+        Bone = "tag_weapon",
+        VMScale = Vector(1, 1, 1),
+        Offset = {
+            vpos = Vector(0.5, 0.275, 1.9),
+            vang = Angle(0, 0, 0),
+        },
+        CorrectivePos = Vector(0, 0, 0.0125),
+        CorrectiveAng = Angle(2.5, 0, 0),
+        GivesFlags = {"pistolrail"},
+        RequireFlags = {"mw3_glocktac"}
+    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
@@ -168,6 +183,7 @@ SWEP.Attachments = {
             vpos = Vector(2.5, 0.3, 0.5),
             vang = Angle(0, 0, 0),
         },
+        MergeSlots = {7},
     },
     {
         PrintName = "Ammo Type",
@@ -190,6 +206,16 @@ SWEP.Attachments = {
             wang = Angle(-5, -2, 177.5)
         },
     },
+    {
+        Hidden = true,
+        Slot = "mw3_pistolrail",
+        Bone = "j_gun",
+        VMScale = Vector(0.75, 0.75, 0.75),
+        Offset = {
+            vpos = Vector(0, 0.275, 0.2),
+            vang = Angle(0, 0, 0),
+        },
+    }, --9
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -203,8 +229,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.Hook_NameChange = function(wep, name)
-    local pap = wep.Attachments[3].Installed == "ammo_papunch"
-    local sally = wep.Attachments[3].Installed == "ammo_1911_pap"
+    local pap = wep.Attachments[4].Installed == "ammo_papunch"
+    local sally = wep.Attachments[4].Installed == "ammo_1911_pap"
 
     gunname = "Custom 1911-A1"
 

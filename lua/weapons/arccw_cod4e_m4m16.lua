@@ -417,24 +417,17 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
-        Time = 1,
+        Time = 0.5,
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 1,
     },
     ["holster"] = {
         Source = "holster",
-        Time = 0.75,
+        Time = 0.5,
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 1,
-    },
-    ["ready"] = {
-        Source = "draw",
-        Time = 1,
-        LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
     },
     ["fire"] = {
         Source = {"fire"},
@@ -496,23 +489,16 @@ SWEP.Animations = {
     },
     ["draw_m203"] = {
         Source = "draw_gl",
-        Time = 1,
+        Time = 0.5,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.25,
     },
     ["holster_m203"] = {
         Source = "holster_gl",
-        Time = 0.75,
+        Time = 0.5,
         LHIK = true,
         LHIKIn = 0.2,
-        LHIKOut = 0.25,
-    },
-    ["ready_m203"] = {
-        Source = "draw_gl",
-        Time = 1,
-        LHIK = true,
-        LHIKIn = 0,
         LHIKOut = 0.25,
     },
     ["fire_m203"] = {

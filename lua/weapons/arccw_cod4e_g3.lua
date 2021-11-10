@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "HK G3A4"
+SWEP.PrintName = "HK G3A4 (COD4)"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "German Army standard issue rifle chambered in 7.62mm NATO. The power of the cardtridge makes it difficult to control in full-auto."
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
@@ -422,24 +422,17 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
-        Time = 1,
+        Time = 0.5,
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 1,
     },
     ["holster"] = {
         Source = "holster",
-        Time = 0.75,
+        Time = 0.5,
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 1,
-    },
-    ["ready"] = {
-        Source = "draw",
-        Time = 1,
-        LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
     },
     ["fire"] = {
         Source = {"fire"},
@@ -502,23 +495,16 @@ SWEP.Animations = {
     },
     ["draw_m203"] = {
         Source = "draw_gl",
-        Time = 1,
+        Time = 0.5,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.25,
     },
     ["holster_m203"] = {
         Source = "holster_gl",
-        Time = 0.75,
+        Time = 0.5,
         LHIK = true,
         LHIKIn = 0.2,
-        LHIKOut = 0.25,
-    },
-    ["ready_m203"] = {
-        Source = "draw_gl",
-        Time = 1,
-        LHIK = true,
-        LHIKIn = 0,
         LHIKOut = 0.25,
     },
     ["fire_m203"] = {

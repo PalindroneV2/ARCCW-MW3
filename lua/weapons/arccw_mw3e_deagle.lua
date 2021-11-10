@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Desert Eagle Mk XIX"
+SWEP.PrintName = "Desert Eagle (MW3)"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "Magnum caliber semi-automatic pistol designed in the United States and produced by IMI. Though hard to control and unreliable at times it offers great stopping power due to its massive round."
 SWEP.Trivia_Manufacturer = "Magnum Research"
@@ -141,9 +141,6 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.DefaultBodygroups = "00000000"
 
 SWEP.AttachmentElements = {
-    ["ammo_papunch"] = {
-        NameChange = "Goldfinger",
-    },
     ["bocw_deagle"] = {
         VMBodygroups = {
             {ind = 0, bg = 1}
@@ -253,6 +250,22 @@ SWEP.Attachments = {
 SWEP.RejectAttachments = {
     ["cde_cosmetic_black"] = true,
 }
+
+SWEP.Hook_NameChange = function(wep, name)
+    local pap = wep:GetBuff_Override("PackAPunch")
+
+    local gunname = "Desert Eagle Mk XIX"
+
+    if pap then
+        gunname = "Thunderbird Mk CXV"
+    end
+
+    if wep.Attachments[8].Installed == "cde_cosmetic_handcannon" then
+        gunname = "Handcannon"
+    end
+
+    return gunname
+end
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm

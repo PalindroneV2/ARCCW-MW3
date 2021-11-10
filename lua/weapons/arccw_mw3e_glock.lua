@@ -3,9 +3,9 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Glock 18"
-SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "9mm austrian pistol with a a double stack magazine. It's large magazine along with being relatively cheap and reliable has made it ubiquitous. Very popular all over the world with civilians, police and is even the standard sidearm for some militaries."
+SWEP.PrintName = "Glock 18 (MW3)"
+SWEP.Trivia_Class = "Machine Pistol"
+SWEP.Trivia_Desc = "9mm austrian pistol with a large double stack magazine. It's large magazine along with being relatively cheap and reliable has made it ubiquitous. Very popular all over the world with civilians, police and is even the standard sidearm for some militaries."
 SWEP.Trivia_Manufacturer = "Glock"
 SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Short Recoil"
@@ -47,8 +47,8 @@ SWEP.TracerCol = Color(255, 25, 25)
 SWEP.TracerWidth = 3
 
 SWEP.ChamberSize = 0  -- how many rounds can be chambered.
-SWEP.Primary.ClipSize = 17 -- DefaultClip is automatically set.
-SWEP.ExtendedClipSize = 42
+SWEP.Primary.ClipSize = 33 -- DefaultClip is automatically set.
+SWEP.ExtendedClipSize = 69
 
 SWEP.Recoil = 0.65
 SWEP.RecoilSide = 0.5
@@ -84,7 +84,7 @@ SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "ArcCW_MW3E.Glock_Fire"
-SWEP.ShootSoundSilenced = "ArcCW_BO2.Pistol_Sil"
+SWEP.ShootSoundSilenced = "ArcCW_COD4E.1911_Sil"
 --SWEP.DistantShootSound = "ArcCW_BO2.PistolBurst_RingOff"
 
 SWEP.MuzzleEffect = "muzzleflash_pistol"
@@ -114,8 +114,8 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.05, 3, 1.65),
-    Ang = Angle(-1.75, -0.125, 0),
+    Pos = Vector(-3, 3, 0.8),
+    Ang = Angle(0-0.45, 0.075, 0),
     Magnification = 1.1,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -127,13 +127,13 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.ActivePos = Vector(1, 3, 0.5)
+SWEP.ActivePos = Vector(0, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CustomizePos = Vector(14, 0, -2)
 SWEP.CustomizeAng = Angle(15, 40, 20)
 
-SWEP.SprintPos = Vector(0, 3, 0)
+SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(0, -4, -5)
@@ -143,7 +143,7 @@ SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.AttachmentElements = {
-    ["pistolrail"] = {
+    ["mw3_pistolrail"] = {
         VMBodygroups = {
             {ind = 1, bg = 1},
         },
@@ -158,23 +158,24 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Slot = {"optic_lp", "bo1_lp_optic"},
         Bone = "tag_weapon",
-        VMScale = Vector(1, 1, 1),
+        VMScale = Vector(1.25, 1.25, 1.25),
         Offset = {
-            vpos = Vector(0.5, 0.1, 1.75),
+            vpos = Vector(0.5, 0.025, 2.2),
             vang = Angle(0, 0, 0),
         },
         CorrectivePos = Vector(0, 0, 0.0125),
         CorrectiveAng = Angle(2.5, 0, 0),
         GivesFlags = {"pistolrail"},
+        RequireFlags = {"mw3_glocktac"}
     },
     { --2
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        VMScale = Vector(1, 0.75, 0.75),
+        VMScale = Vector(1.1, 0.8, 0.8),
         Bone = "tag_Weapon",
         Offset = {
-            vpos = Vector(4.75, 0.1, 0.9),
+            vpos = Vector(5.5, 0.1, 1.2),
             vang = Angle(0, 0, 0),
         },
     },
@@ -183,20 +184,21 @@ SWEP.Attachments = {
         Slot = {"foregrip"},
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(2.5, 0.1, -0.3),
+            vpos = Vector(2.5, 0.025, -0.3),
             vang = Angle(0, 0, 0),
         },
     },
     { --4
         PrintName = "Tactical",
         Slot = {"bo1_tacpistol", "tac_pistol"},
-        VMScale = Vector(0.75, 0.75, 0.75),
-        WMScale = Vector(0.75, 0.75, 0.75),
+        VMScale = Vector(0.85, 0.85, 0.85),
+        WMScale = Vector(0.85, 0.85, 0.85),
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(3.5, 0.1, 0.25),
+            vpos = Vector(3.5, 0.025, 0.25),
             vang = Angle(0, 0, 0),
         },
+        MergeSlots = {9},
     },
     { --5
         PrintName = "Ammo Type",
@@ -224,6 +226,16 @@ SWEP.Attachments = {
             wang = Angle(-5, -2, 177.5)
         },
     },
+    {
+        Hidden = true,
+        Slot = "mw3_pistolrail",
+        Bone = "j_gun",
+        Offset = {
+            vpos = Vector(0, 0, 0),
+            vang = Angle(0, 0, 0),
+        },
+        GivesFlags = {"glockrail"}
+    }, --9
 }
 
 SWEP.RejectAttachments = {
@@ -357,27 +369,27 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-        Time = 1.299 * 1.15,
+        Time = 69 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.2,
         SoundTable = {
-            {s = "ArcCW_MW3E.Glock_MagOut", t = 0.25 * 1.15},
-            {s = "ArcCW_MW3E.Glock_MagIn", t = 1 * 1.15}
+            {s = "ArcCW_MW3E.Glock_MagOut", t = 0.25},
+            {s = "ArcCW_MW3E.Glock_MagIn", t = 1.6},
         },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        Time = 1.533 * 1.15,
+        Time = 88 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.2,
         SoundTable = {
-            {s = "ArcCW_MW3E.Glock_MagOut", t = 0.25 * 1.15},
-            {s = "ArcCW_MW3E.Glock_MagIn", t = 1 * 1.15},
-            {s = "ArcCW_MW3E.Glock_SlideFwd", t = 1.3 * 1.15}
+            {s = "ArcCW_MW3E.Glock_MagOut", t = 0.25},
+            {s = "ArcCW_MW3E.Glock_MagIn", t = 1.6},
+            {s = "ArcCW_MW3E.Glock_SlideFwd", t = 2}
         },
     },
     ["enter_sprint"] = {

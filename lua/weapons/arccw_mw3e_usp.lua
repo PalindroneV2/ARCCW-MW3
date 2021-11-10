@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
 SWEP.AdminOnly = false
 
 
-SWEP.PrintName = "HK USP Tactical"
+SWEP.PrintName = "HK USP Tactical (MW3)"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = [[
     This handgun is a staple of firearm design. It would come to influence many future semi-automatic handguns.
@@ -158,6 +158,21 @@ SWEP.AttachmentElements = {
 SWEP.ExtraSightDist = 2
 
 SWEP.Attachments = {
+    { --1
+        PrintName = "Sights",
+        DefaultAttName = "Iron Sights",
+        Slot = {"optic_lp"},
+        Bone = "tag_weapon",
+        VMScale = Vector(1, 1, 1),
+        Offset = {
+            vpos = Vector(0.5, 0.275, 1.8),
+            vang = Angle(0, 0, 0),
+        },
+        CorrectivePos = Vector(0, 0, 0.0125),
+        CorrectiveAng = Angle(2.5, 0, 0),
+        GivesFlags = {"pistolrail"},
+        RequireFlags = {"mw3_glocktac"}
+    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
@@ -179,7 +194,7 @@ SWEP.Attachments = {
             vpos = Vector(2.5, 0.3, 0.25),
             vang = Angle(0, 0, 0),
         },
-        MergeSlots = {7},
+        MergeSlots = {8,9},
     }, --2
     {
         PrintName = "Underbarrel",
@@ -213,12 +228,22 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
     }, --7
+    {
+        Hidden = true,
+        Slot = "mw3_pistolrail",
+        Bone = "j_gun",
+        VMScale = Vector(0.75, 0.75, 0.75),
+        Offset = {
+            vpos = Vector(0, 0.275, 0.1),
+            vang = Angle(0, 0, 0),
+        },
+    }, --9
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local pap = wep:GetBuff_Override("PackAPunch")
-    local sally = wep.Attachments[4].Installed == "ammo_1911_pap"
+    local sally = wep.Attachments[5].Installed == "ammo_1911_pap"
 
     if pap or sally then
         vm:SetSkin(2)
@@ -226,8 +251,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.Hook_NameChange = function(wep, name)
-    local pap = wep.Attachments[4].Installed == "ammo_papunch"
-    local sally = wep.Attachments[4].Installed == "ammo_1911_pap"
+    local pap = wep.Attachments[5].Installed == "ammo_papunch"
+    local sally = wep.Attachments[5].Installed == "ammo_1911_pap"
 
     local gunname = "HK USP Tactical"
 
