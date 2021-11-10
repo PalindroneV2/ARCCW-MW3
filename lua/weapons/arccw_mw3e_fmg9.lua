@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
+SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "FMG-9 (MW3)"
@@ -227,7 +227,7 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(-2.5, -0.75, 1.5),
+            vpos = Vector(4, -0.6, 2.4),
             vang = Angle(0, 0, 0),
         },
     },
@@ -280,7 +280,8 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKOut = 0.25,
         SoundTable = {
-            {s = "ArcCW_BO2.AR_Charge", t = 10 / 30},
+            {s = "ArcCW_MW3E.FMG9_FirstLift", t = 1 / 30},
+            {s = "ArcCW_MW3E.FMG9_Flip", t = 10 / 30},
         },
     },
     ["fire"] = {
@@ -303,8 +304,8 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_BO1.Kiparis_MagOut", t = 16 / 30},
-            {s = "ArcCW_BO1.Kiparis_MagIn", t = 47 / 30},
+            {s = "ArcCW_MW3E.FMG9_MagOut", t = 16 / 30},
+            {s = "ArcCW_MW3E.FMG9_MagIn", t = 47 / 30},
         },
         MinProgress = 2,
     },
@@ -318,40 +319,11 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_BO1.Kiparis_MagOut", t = 16 / 30},
-            {s = "ArcCW_BO1.Kiparis_MagIn", t = 47 / 30},
-            {s = "ArcCW_BO1.Kiparis_Bolt", t = 65 / 30},
+            {s = "ArcCW_MW3E.FMG9_MagOut", t = 16 / 30},
+            {s = "ArcCW_MW3E.FMG9_MagIn", t = 47 / 30},
+            {s = "ArcCW_MW3E.FMG9_Chamber", t = 65 / 30},
         },
         MinProgress = 2.5,
-    },
-    ["reload_fast"] = {
-        Source = "fast",
-        Time = 2.2,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SMG1,
-        Framerate = 30,
-        LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
-        SoundTable = {
-            {s = "ArcCW_BO1.Kiparis_MagOut", t = 10 / 30},
-            {s = "ArcCW_BO1.Kiparis_MagIn", t = 30 / 30},
-        },
-        MinProgress = 1.5,
-    },
-    ["reload_empty_fast"] = {
-        Source = "fast_empty",
-        Time = 2.63,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SMG1,
-        Framerate = 30,
-        LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
-        SoundTable = {
-            {s = "ArcCW_BO1.Kiparis_MagOut", t = 10 / 30},
-            {s = "ArcCW_BO1.Kiparis_MagIn", t = 30 / 30},
-            {s = "ArcCW_BO1.Kiparis_Bolt", t = 45 / 30},
-        },
-        MinProgress = 2,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

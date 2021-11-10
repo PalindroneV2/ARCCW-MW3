@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
+SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "SPAS-12 (MW3)"
@@ -141,9 +141,6 @@ SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.AttachmentElements = {
-    ["spas12_pap"] = {
-        NameChange = "SPAZ-24",
-    },
     ["stock_l"] = {
         VMBodygroups = {
             {ind = 2, bg = 1},
@@ -245,6 +242,16 @@ SWEP.Attachments = {
         },
     }, --9
 }
+
+SWEP.Hook_NameChange = function(wep, name)
+    local pap = wep:GetBuff_Override("PackAPunch")
+
+    local gunname = "SPAS-12"
+
+    if pap then gunname = "SPAZ-24" end
+
+    return gunname
+end
 
 SWEP.Hook_SelectInsertAnimation = function(wep, data)
     local pap = wep:GetBuff_Override("PackAPunch")

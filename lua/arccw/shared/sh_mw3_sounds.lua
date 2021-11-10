@@ -329,6 +329,164 @@ sound.Add( {
     }
 } )
 
+--MW3E P90--
+
+sound.Add( {
+    name = "ArcCW_MW3E.P90_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_P90/fire.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.P90_Sil",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_P90/sil.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.P90_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_P90/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.P90_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_P90/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.P90_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_P90/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.P90_Hit",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_P90/hit.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.P90_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_P90/lift.wav",
+    }
+} )
+
+-- MW3 FMG9 --
+
+sound.Add( {
+    name = "ArcCW_MW3E.FMG9_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_FMG9/fire_m16.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.FMG9_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_FMG9/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.FMG9_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_FMG9/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.FMG9_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_FMG9/out.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.FMG9_Flip",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_FMG9/flip.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.FMG9_FirstLift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_FMG9/first_lift.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.FMG9_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_FMG9/lift.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.FMG9_AkimboFlip",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_FMG9/akimbo_flip.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.FMG9_AkimboCatch",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_FMG9/akimbo_catch.wav",
+    }
+} )
+
 --MW3E M4M16--
 
 sound.Add( {
@@ -532,6 +690,86 @@ sound.Add( {
     }
 } )
 
+-- MW3 USAS12 --
+
+sound.Add( {
+    name = "ArcCW_MW3E.USAS12_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_USAS12/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.USAS12_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_USAS12/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.USAS12_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_USAS12/out.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.USAS12_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_USAS12/lift.wav",
+    }
+} )
+
+-- MW3 AA12 --
+
+sound.Add( {
+    name = "ArcCW_MW3E.AA12_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AA12/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.AA12_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AA12/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.AA12_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AA12/out.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.AA12_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AA12/lift.wav",
+    }
+} )
+
 -- MW3E Striker --
 
 sound.Add({
@@ -584,6 +822,45 @@ sound.Add( {
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_Striker/lift.wav",
+    }
+} )
+
+-- MW3E M1887 --
+
+sound.Add( {
+    name = "ArcCW_MW3E.M1887_Open",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_M1887/Open.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.M1887_Shell",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_M1887/shell.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.M1887_Close",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_M1887/Close.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.M1887_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_M1887/lift.wav",
     }
 } )
 

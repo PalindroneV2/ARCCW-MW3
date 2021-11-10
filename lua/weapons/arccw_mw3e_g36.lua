@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
+SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "HK G36 (MW3)"
@@ -18,9 +18,9 @@ SWEP.Slot = 2
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/arccw/c_mw3_g36.mdl"
-SWEP.WorldModel = "models/weapons/arccw/w_mw3_g36.mdl"
-SWEP.MirrorWorldModel = "models/weapons/arccw/w_mw3_g36.mdl"
+SWEP.ViewModel = "models/weapons/arccw/c_mw3e_g36.mdl"
+SWEP.WorldModel = "models/weapons/arccw/w_mw3e_g36.mdl"
+SWEP.MirrorWorldModel = "models/weapons/arccw/w_mw3e_g36.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     pos        =    Vector(-6.5, 3.5, -6),

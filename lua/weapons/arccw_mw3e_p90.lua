@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Extras" -- edit this if you like
+SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "FN P90 (MW3)"
@@ -77,13 +77,8 @@ SWEP.MagID = "pdw57" -- the magazine pool this gun draws from
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "ArcCW_BO2.PDW57_Fire"
-SWEP.ShootSoundSilenced = "ArcCW_BO2.MSMC_Sil"
-SWEP.DistantShootSound = {
-    "^weapons/arccw/bo2_generic_smg/dist1.wav",
-    "^weapons/arccw/bo2_generic_smg/dist2.wav",
-    "^weapons/arccw/bo2_generic_smg/dist3.wav"
-}
+SWEP.ShootSound = "ArcCW_MW3E.P90_Fire"
+SWEP.ShootSoundSilenced = "ArcCW_MW3E.P90_Sil"
 
 SWEP.MuzzleEffect = "muzzleflash_smg"
 SWEP.ShellModel = "models/shells/shell_556.mdl"
@@ -181,7 +176,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
     },
-    { --4
+    { --3
         PrintName = "Tactical",
         Slot = {"bo1_tacprimary"},
         VMScale = Vector(1, 1, 1),
@@ -192,20 +187,21 @@ SWEP.Attachments = {
             wpos = Vector(16, 0.4, -6),
             wang = Angle(-7.5, 0, 85)
         },
+        MergeSlots = {8},
     },
-    { --7
+    { --4
         PrintName = "Fire Group",
         Slot = {"bo1_fcg"}
     },
-    { --8
+    { --5
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"}
     },
-    { --9
+    { --6
         PrintName = "Perk",
         Slot = "bo1_perk"
     },
-    { --10
+    { --7
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
@@ -217,6 +213,16 @@ SWEP.Attachments = {
             wang = Angle(-175, -175, 0)
         },
     },
+    {
+        Hidden = true,
+        Slot = {"mw3e_p90_laser"},
+        Bone = "tag_weapon",
+        Offset = {
+            vpos = Vector(0, 0, 0),
+            vang = Angle(0, 0, 0),
+        },
+        Installed = "tac_mw3_p90_laser",
+    }, --8
 }
 
 SWEP.Hook_NameChange = function(wep, name)
@@ -266,19 +272,24 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKOut = 0.25,
         SoundTable = {
-            {s = "ArcCW_BO2.AR_Charge", t = 10 / 30},
-            --{s = "ArcCW_BO2.AR_Fwd", t = 15 / 30},
+            {s = "ArcCW_MW3E.P90_Chamber", t = 10 / 30},
         },
     },
     ["fire"] = {
         Source = {"fire"},
         Time = 7 / 30,
         ShellEjectAt = 0,
+        SoundTable = {
+            {s = "ArcCW_MW3E.Mech_D", t = 1 / 60},
+        },
     },
     ["fire_iron"] = {
         Source = {"fire_ads"},
         Time = 7 / 30,
         ShellEjectAt = 0,
+        SoundTable = {
+            {s = "ArcCW_MW3E.Mech_D", t = 1 / 60},
+        },
     },
     ["reload"] = {
         Source = "reload",
@@ -290,9 +301,9 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_BO1.M16_MagOut", t = 10 / 30},
-            {s = "ArcCW_BO1.M16_MagIn", t = 50 / 30},
-            {s = "ArcCW_BO1.M16_Futz", t = 60 / 30},
+            {s = "ArcCW_MW3E.P90_MagOut", t = 10 / 30},
+            {s = "ArcCW_MW3E.P90_MagIn", t = 50 / 30},
+            {s = "ArcCW_MW3E.P90_Hit", t = 60 / 30},
         },
         MinProgress = 70 / 30,
     },
@@ -306,10 +317,10 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_BO1.M16_MagOut", t = 10 / 30},
-            {s = "ArcCW_BO1.M16_MagIn", t = 50 / 30},
-            {s = "ArcCW_BO1.M16_Futz", t = 60 / 30},
-            {s = "ArcCW_BO2.AR_Charge", t = 80 / 30},
+            {s = "ArcCW_MW3E.P90_MagOut", t = 10 / 30},
+            {s = "ArcCW_MW3E.P90_MagIn", t = 50 / 30},
+            {s = "ArcCW_MW3E.P90_Hit", t = 60 / 30},
+            {s = "ArcCW_MW3E.P90_Chamber", t = 80 / 30},
         },
         MinProgress = 85 / 30,
     },
