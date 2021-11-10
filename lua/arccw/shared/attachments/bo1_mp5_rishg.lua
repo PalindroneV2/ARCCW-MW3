@@ -4,6 +4,7 @@ att.Description = "Modern MP5 RIS handguard."
 
 att.SortOrder = 100
 att.Free = true
+att.IgnorePickX = true
 
 att.Desc_Pros = {
     "+ Looks cooler if you like it",

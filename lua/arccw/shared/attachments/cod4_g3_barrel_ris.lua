@@ -4,6 +4,7 @@ att.Description = "RIS Barrel."
 
 att.SortOrder = 107
 att.Free = true
+att.IgnorePickX = true
 att.AutoStats = true
 
 att.Desc_Pros = {
