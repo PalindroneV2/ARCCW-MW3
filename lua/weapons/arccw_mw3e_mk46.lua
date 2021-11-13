@@ -18,10 +18,10 @@ SWEP.ViewModel = "models/weapons/arccw/c_mw3e_mk46.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_mw3e_mk46.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-4.75, 4, -7.75),
+    pos        =    Vector(-9.25, 4.25, -7.75),
     ang        =    Angle(-5, 0, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
-    scale   =   1.25
+    scale   =   1
 }
 SWEP.ViewModelFOV = 60
 
@@ -75,16 +75,16 @@ SWEP.MagID = "m249" -- the magazine pool this gun draws from
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "ArcCW_COD4E.M249_Fire"
-SWEP.ShootSoundSilenced = "ArcCW_COD4E.M4M16_Sil"
+SWEP.ShootSound = "ArcCW_MW3E.MK46_Fire"
+SWEP.ShootSoundSilenced = "ArcCW_MW3E.M4M16_Sil"
 SWEP.DistantShootSound = {
     "^weapons/arccw/bo2_generic_lmg/dist/l.wav",
     "^weapons/arccw/bo2_generic_lmg/dist/r.wav"
 }
 
 SWEP.MuzzleEffect = "muzzleflash_1"
-SWEP.ShellModel = "models/shells/shell_762nato.mdl"
-SWEP.ShellScale = 0.75
+SWEP.ShellModel = "models/shells/shell_556.mdl"
+SWEP.ShellScale = 1
 SWEP.ShellMaterial = "models/weapons/arcticcw/shell_556"
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
@@ -139,12 +139,10 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.ActivePos = Vector(0, 1, 0.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.InBipodPos = Vector(0, 0, -0.5)
-
 SWEP.SprintPos = Vector(0, 1, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
-SWEP.CustomizePos = Vector(15, 5, 0)
+SWEP.CustomizePos = Vector(15, 3, 0)
 SWEP.CustomizeAng = Angle(15, 40, 30)
 
 SWEP.HolsterPos = Vector(3, 0, 0)
@@ -181,13 +179,13 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Slot = {"optic"}, -- what kind of attachments can fit here, can be string or table
         VMScale = Vector(1, 1, 1),
-        Bone = "j_ammocover", -- relevant bone any attachments will be mostly referring to
+        Bone = "j_ammo_cover", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0, -5, 0.375), -- 4.6 offset that the attachment will be relative to the bone
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-6, 0-0.02, 0.75), -- 4.6 offset that the attachment will be relative to the bone
+            vang = Angle(0, 0, 0),
         },
         CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(0.1, 180, 0),
+        CorrectiveAng = Angle(0.1, 0, 0),
         InstalledEles = {"iron"}
     }, --1
     {
@@ -197,7 +195,7 @@ SWEP.Attachments = {
         VMScale = Vector(1.5, 1.25, 1.25),
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(23, 0, 2.25), -- offset that the attachment will be relative to the bone
+            vpos = Vector(26, 0, 2.55), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
     }, --2
@@ -243,7 +241,7 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(2, -0.65, 1),
+            vpos = Vector(2, -0.85, 2.5),
             vang = Angle(0, 0, 0),
         },
     }, --10
@@ -286,70 +284,64 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
-        Time = 0.75,
+        Time = 1.36,
     },
     ["holster"] = {
         Source = "holster",
-        Time = 24 / 30,
+        Time = 0.6,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.2,
-    },
-    ["ready"] = {
-        Source = "draw",
-        Time = 1,
     },
     ["fire"] = {
         Source = {"fire"},
         Time = 7 / 30,
         ShellEjectAt = 0,
         SoundTable = {
-            { s = "ArcCW_BO1.Mk48_Mech", t = 0 },
-            { s = "ArcCW_BO1.Mk48_LFE", t = 0.1 },
-        }
+            {s = "ArcCW_MW3E.Mech_C", t = 1 / 60},
+        },
     },
     ["fire_iron"] = {
         Source = {"fire_ads"},
         Time = 7 / 30,
         ShellEjectAt = 0,
         SoundTable = {
-            { s = "ArcCW_BO1.Mk48_Mech", t = 0 },
-            { s = "ArcCW_BO1.Mk48_LFE", t = 0.1 },
-        }
+            {s = "ArcCW_MW3E.Mech_C", t = 1 / 60},
+        },
     },
     ["reload"] = {
         Source = "reload",
-        Time = 5.16,
+        Time = 8.666,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Framerate = 37,
-        Checkpoints = {28, 38, 69},
         LHIK = true,
         LHIKIn = nil,
         LHIKOut = 1,
         SoundTable = {
-            {s = "ArcCW_COD4E.M249_Chamber", t = 0.25},
-            {s = "ArcCW_COD4E.M249_Open", t = 1},
-            {s = "ArcCW_COD4E.M249_Out", t = 2},
-            {s = "ArcCW_COD4E.M249_In", t = 3.25},
-            {s = "ArcCW_COD4E.M249_Close", t = 4.25},
+            {s = "ArcCW_MW3E.MK46_Open", t = 1},
+            {s = "ArcCW_MW3E.MK46_Out", t = 1.9},
+            {s = "ArcCW_MW3E.MK46_In", t = 4.25},
+            {s = "ArcCW_MW3E.MK46_Bullets", t = 5},
+            {s = "ArcCW_MW3E.MK46_Close", t = 6},
+            {s = "ArcCW_MW3E.MK46_Chamber", t = 6.75},
         },
+        MinProgress = 7,
     },
     ["reload_optic"] = {
         Source = "reload_optic",
-        Time = 5.16,
+        Time = 8.666,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Framerate = 37,
-        Checkpoints = {28, 38, 69},
         LHIK = true,
         LHIKIn = nil,
         LHIKOut = 1,
         SoundTable = {
-            {s = "ArcCW_COD4E.M249_Chamber", t = 0.25},
-            {s = "ArcCW_COD4E.M249_Open", t = 1},
-            {s = "ArcCW_COD4E.M249_Out", t = 2},
-            {s = "ArcCW_COD4E.M249_In", t = 3.25},
-            {s = "ArcCW_COD4E.M249_Close", t = 4.25},
+            {s = "ArcCW_MW3E.MK46_Open", t = 1},
+            {s = "ArcCW_MW3E.MK46_Out", t = 1.9},
+            {s = "ArcCW_MW3E.MK46_In", t = 4.25},
+            {s = "ArcCW_MW3E.MK46_Bullets", t = 5},
+            {s = "ArcCW_MW3E.MK46_Close", t = 6},
+            {s = "ArcCW_MW3E.MK46_Chamber", t = 6.75},
         },
+        MinProgress = 7,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

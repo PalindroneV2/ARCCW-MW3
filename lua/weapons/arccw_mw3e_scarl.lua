@@ -26,10 +26,10 @@ SWEP.ViewModel = "models/weapons/arccw/c_mw3e_scarl.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_mw3e_scarl.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-4.25, 3.5, -7.15),
-    ang        =    Angle(0, 1, 180),
+    pos        =    Vector(-4.5, 3.5, -7.8),
+    ang        =    Angle(0, 0, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
-    scale = 1.1,
+    scale = 1.15,
 }
 SWEP.ViewModelFOV = 60
 
@@ -91,7 +91,7 @@ SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellPitch = 90
 SWEP.ShellScale = 1.25
 
-SWEP.MuzzleEffectAttachment = 3 -- which attachment to put the muzzle on
+SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.ProceduralViewBobAttachment = 3
 SWEP.CamAttachment = 4

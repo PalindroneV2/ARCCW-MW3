@@ -193,7 +193,6 @@ SWEP.Attachments = {
             vpos = Vector(10.5, -0.925, 2.65), -- 4.6 offset that the attachment will be relative to the bone
             vang = Angle(0, 0, -40),
         },
-        InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
     },

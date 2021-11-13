@@ -20,8 +20,8 @@ SWEP.ViewModel = "models/weapons/arccw/c_mw3e_acr.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_mw3e_acr.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-4.25, 3.5, -5.35),
-    ang        =    Angle(-9, -1, 180),
+    pos        =    Vector(-7, 3.75, -6.25),
+    ang        =    Angle(-8, -1, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
     scale = 1.125,
 }

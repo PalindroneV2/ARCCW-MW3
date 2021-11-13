@@ -268,7 +268,7 @@ SWEP.Hook_NameChange = function(wep, name)
 end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
-    local knife = wep.Attachments[3].Installed == "tac_mw3_knife"
+    local knife = wep.Attachments[4].Installed == "tac_mw3_knife"
 
     if knife then
         return anim .. "_k"

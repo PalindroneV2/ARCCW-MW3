@@ -136,7 +136,6 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.ActivePos = Vector(0, 1, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.InBipodPos = Vector(0, 0, -0.5)
 
 SWEP.SprintPos = Vector(0, 1, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
@@ -169,16 +168,6 @@ SWEP.AttachmentElements = {
                     ang = Angle(0, -90, 0),
                 }
             }
-        },
-    },
-    ["stock_l"] = {
-        VMBodygroups = {
-            {ind = 3, bg = 1}
-        },
-    },
-    ["stock_m"] = {
-        VMBodygroups = {
-            {ind = 3, bg = 2}
         },
     },
     ["stock_h"] = {
@@ -270,7 +259,7 @@ SWEP.Attachments = {
     }, --6
     {
         PrintName = "Stock",
-        Slot = "bo1_stocks_all",
+        Slot = "bo1_stock_h",
         Installed = "bo1_stock_heavy"
     }, --7
     {

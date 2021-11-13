@@ -249,7 +249,10 @@ SWEP.Hook_NameChange = function(wep, name)
     local gunname = "M40A3"
 
     if pap then
-        gunname = "Quickscoper"
+        if wep.Attachments[8].Installed == "optic_cod4_m40scope" then
+            gunname = "QuickScoper"
+        end
+        gunname = "NoScoper"
     end
 
     return gunname

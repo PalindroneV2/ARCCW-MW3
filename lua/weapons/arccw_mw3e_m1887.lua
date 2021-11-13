@@ -19,7 +19,7 @@ SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/arccw/c_mw3e_m1887.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-2, 5, -6.5),
+    pos        =    Vector(-3.6, 5, -8),
     ang        =    Angle(-5, 0, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
     scale   =   1
@@ -117,7 +117,7 @@ SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "shotgun"
 SWEP.HoldtypeSights = "ar2"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 
 SWEP.ActivePos = Vector(0, 1, 0.25)
 SWEP.ActiveAng = Angle(0, 0, 0)
@@ -136,6 +136,20 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 1, bg = 1},
         },
+        ExcludeFlags = {"mw3_1887_classic"}
+    },
+    ["mw3_1887_classic"] = {
+        VMBodygroups = {
+            {ind = 0, bg = 1},
+            {ind = 1, bg = 2},
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-3.35, 0, 1.9),
+            Ang = Angle(0.1, 0.0125, 0),
+            Magnification = 1.1,
+            SwitchToSound = "",
+            CrosshairInSights = false,
+        }
     },
 }
 
@@ -153,8 +167,7 @@ SWEP.Attachments = {
         },
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0, 0, 0),
-        InstalledEles = {"mount"},
-        ExcludeFlags = {"stock_l"}
+        GivesFlags = {"mount"},
     }, --1
     {
         PrintName = "Muzzle",
@@ -204,6 +217,13 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
     }, --9
+    {
+        PrintName = "Cosmetic",
+        Slot = "mw3_1887_classic",
+        FreeSlot = true,
+        DefaultAttName = "Modernized",
+        DefaultAttIcon = Material("entities/acwatt_mw3_generic.png", "mips smooth")
+    }, --8
 }
 
 SWEP.Hook_NameChange = function(wep, name)
@@ -227,6 +247,11 @@ end
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local papcamo = wep:GetBuff_Override("PackAPunch")
+    local classic = wep.Attachments[8].Installed == "mw3e_cosmetic_1887_classic"
+
+    if classic and wep.Attachments[1].Installed then
+        vm:SetBodygroup(1, 3)
+    end
 
     if papcamo then
         vm:SetSkin(2)
@@ -302,6 +327,7 @@ SWEP.Animations = {
             {s = "ArcCW_MW3E.M1887_Open", t = 8 / 30},
             {s = "ArcCW_MW3E.M1887_Shell", t = 20 / 30},
         },
+        MinProgress = 30 / 30,
     },
     ["sgreload_insert"] = {
         Source = "reload_loop",
@@ -314,6 +340,7 @@ SWEP.Animations = {
         SoundTable = {
             {s = "ArcCW_MW3E.M1887_Shell", t = 10 / 30},
         },
+        MinProgress = 10 / 30,
     },
     ["sgreload_insert_pap"] = {
         Source = "reload_loop",

@@ -21,7 +21,7 @@ SWEP.WorldModel = "models/weapons/arccw/c_mw3e_fmg9.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     scale = 1.15,
-    pos        =    Vector(-5.9, 4.5, -6),
+    pos        =    Vector(-5.25, 4.5, -5.1),
     ang        =    Angle(-7, 1.5, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
@@ -29,7 +29,7 @@ SWEP.ViewModelFOV = 60
 
 SWEP.Damage = 25
 SWEP.DamageMin = 20 -- damage done at maximum range
-SWEP.Range = 90 -- in METRES
+SWEP.Range = 75 -- in METRES
 SWEP.Penetration = 5
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -77,13 +77,8 @@ SWEP.MagID = "glock" -- the magazine pool this gun draws from
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "ArcCW_BO2.Chicom_Fire"
-SWEP.ShootSoundSilenced = "ArcCW_BO2.MSMC_Sil"
-SWEP.DistantShootSound = {
-    "^weapons/arccw/bo2_generic_smg/dist1.wav",
-    "^weapons/arccw/bo2_generic_smg/dist2.wav",
-    "^weapons/arccw/bo2_generic_smg/dist3.wav"
-}
+SWEP.ShootSound = "ArcCW_MW3E.FMG9_Fire"
+SWEP.ShootSoundSilenced = "ArcCW_BO1.MP5_Sil"
 
 SWEP.MuzzleEffect = "muzzleflash_pistol"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
