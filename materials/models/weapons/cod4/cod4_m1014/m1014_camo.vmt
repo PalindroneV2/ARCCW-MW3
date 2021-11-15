@@ -1,10 +1,11 @@
 VertexlitGeneric
 {
 	$basetexture	"models\weapons\cod4\cod4_m1014\m1014"
+	"$bumpmap" "models\weapons\cod4\cod4_m1014\m1014_n"
 
 	$detail "models\weapons\bo1\black_detail"
 	$detailblendmode 0
-	"$detailblendfactor" "0"
+	"$detailblendfactor" "0.75"
 
 	$phong                      		1
 	$phongexponent                      "20"
@@ -14,10 +15,9 @@ VertexlitGeneric
 	$normalmapalphaphongmask    	1
 
 	$phongexponenttexture "models\weapons\cod4\cod4_m1014\m1014_s"
-	$envmapmask "models\weapons\cod4\cod4_m1014\m1014_s"
 
 	"$envmap" "env_cubemap"					
-	"$envmaptint" "[ .05 .05 .05 ]"					
+	"$envmaptint" "[ .005 .005 .005 ]"					
 	"$envmapFresnel" "1"
 	"$nocull" "1"
 }

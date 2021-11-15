@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Beretta M9 (COD4)"
+SWEP.PrintName = "Beretta M9"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "9mm italian pistol. Currently the standard issue sidearm for US forces. Maligned due to its poor quality of parts for a military weapon and its lack of power compared to the venerable M1911. In the process of being replaced by a SIG-Sauer model."
 SWEP.Trivia_Manufacturer = "Beretta"
@@ -176,7 +176,7 @@ SWEP.Attachments = {
     },
     { --5
         PrintName = "Perk",
-        Slot = "bo1_perk"
+        Slot = {"bo1_perk", "bo1_perk_doompistol"}
     },
     { --6
         PrintName = "Charm",
@@ -201,6 +201,7 @@ SWEP.Attachments = {
 
 SWEP.Hook_NameChange = function(wep, name)
     local pap = wep:GetBuff_Override("PackAPunch")
+    local doompistol = wep:GetBuff_Override("DOOM_EE")
 
     local gunname = "Beretta M9"
     local desc = "9mm italian pistol. Currently the standard issue sidearm for US forces. Maligned due to its poor quality of parts for a military weapon and its lack of power compared to the venerable M1911. In the process of being replaced by a SIG-Sauer model."
@@ -208,6 +209,15 @@ SWEP.Hook_NameChange = function(wep, name)
     if wep.Attachments[6].Installed == "cod4e_cosmetic_m9_stars" then
         gunname = "Samurai Edge"
         desc = "A S.T.A.R.S. custom automatic. Fires 9mm Parabellum rounds."
+    end
+
+    if doompistol then
+        gunname = "Pistol"
+        wep.ActivePos = Vector(-2.15, 2, 0)
+        wep.ActiveAng = Angle(0, -0.1, 0)
+    else
+        wep.ActivePos = Vector(1, 3, 0.5)
+        wep.ActiveAng = Angle(0, 0, 0)
     end
 
     if pap then

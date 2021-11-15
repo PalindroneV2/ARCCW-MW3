@@ -3,20 +3,20 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Striker-12 (MW3)"
+SWEP.PrintName = "M1014 (COD4)"
 SWEP.Trivia_Class = "Combat Shotgun"
-SWEP.Trivia_Desc = "12 gauge semi automatic combat shotgun using a spring-loaded cylinder to load shells."
-SWEP.Trivia_Manufacturer = "Penn Arms"
+SWEP.Trivia_Desc = "12 gauge semi automatic combat shotgun. Originally named the 'Benelli M4' it was adopted by the US Military as the M1014 and has served since 1999."
+SWEP.Trivia_Manufacturer = "Benelli"
 SWEP.Trivia_Calibre = "12x70mm"
 SWEP.Trivia_Mechanism = "Semi-Automatic"
-SWEP.Trivia_Country = "South Africa"
-SWEP.Trivia_Year = 1981
+SWEP.Trivia_Country = "Italy"
+SWEP.Trivia_Year = 1999
 
 SWEP.Slot = 3
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/arccw/c_mw3e_striker.mdl"
+SWEP.ViewModel = "models/weapons/arccw/c_cod4_m1014.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     pos        =    Vector(-3.5, 4, -6),
@@ -24,10 +24,10 @@ SWEP.WorldModelOffset = {
     bone    =    "ValveBiped.Bip01_R_Hand",
     scale   =   1.05,
 }
-SWEP.WorldModel = "models/weapons/arccw/c_mw3e_striker.mdl"
+SWEP.WorldModel = "models/weapons/arccw/c_cod4_m1014.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.DefaultBodygroups = "000000000"
+SWEP.DefaultBodygroups = "000100000"
 
 SWEP.Damage = 15
 SWEP.DamageMin = 8 -- damage done at maximum range
@@ -43,9 +43,9 @@ SWEP.TracerCol = Color(255, 25, 25)
 SWEP.TracerWidth = 3
 
 SWEP.ChamberSize = 0 -- how many rounds can be chambered.
-SWEP.Primary.ClipSize = 12 -- DefaultClip is automatically set.
-SWEP.ExtendedClipSize = 24
-SWEP.ReducedClipSize = 6
+SWEP.Primary.ClipSize = 7 -- DefaultClip is automatically set.
+SWEP.ExtendedClipSize = 21
+SWEP.ReducedClipSize = 4
 
 SWEP.Recoil = 2
 SWEP.RecoilSide = 2
@@ -78,7 +78,7 @@ SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 SWEP.ShootVol = 120 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "ArcCW_MW3E.Striker_Fire"
+SWEP.ShootSound = "ArcCW_COD4E.M1014_Fire"
 SWEP.ShootSoundSilenced = "ArcCW_MW3E.Striker_Sil"
 
 SWEP.MuzzleEffect = "muzzleflash_shotgun"
@@ -90,7 +90,7 @@ SWEP.ShellScale = 1.5
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.ProceduralViewBobAttachment = 1
-SWEP.CamAttachment = 3
+SWEP.CamAttachment = 4
 
 SWEP.SpeedMult = 0.95
 SWEP.SightedSpeedMult = 0.75
@@ -104,8 +104,8 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.075, 0, 0.8),
-    Ang = Angle(0.15, 0.035, 0),
+    Pos = Vector(-3.0675, 0, 1.7),
+    Ang = Angle(0.15, 0, 0),
     Magnification = 1.1,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -118,13 +118,13 @@ SWEP.HoldtypeSights = "smg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(1, 3, 0.25)
+SWEP.ActivePos = Vector(0, 3, 0.25)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.SprintPos = Vector(0, 3, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
-SWEP.CustomizePos = Vector(17, 6.5, 1)
+SWEP.CustomizePos = Vector(17, 2, 1)
 SWEP.CustomizeAng = Angle(15, 40, 30)
 
 SWEP.HolsterPos = Vector(0.532, -6, 0)
@@ -134,9 +134,14 @@ SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.AttachmentElements = {
-    ["mount"] = {
+    ["stock_l"] = {
         VMBodygroups = {
-            {ind = 1, bg = 1},
+            {ind = 2, bg = 1},
+        },
+    },
+    ["stock_m"] = {
+        VMBodygroups = {
+            {ind = 2, bg = 2},
         },
     },
 }
@@ -150,14 +155,13 @@ SWEP.Attachments = {
         Slot = {"optic"}, -- what kind of attachments can fit here, can be string or table
         Bone = "tag_weapon", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(1, -0.025, 2.4), -- offset that the attachment will be relative to the bone
+            vpos = Vector(1, -0.025, 1.5), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
             wpos = Vector(12.5, 1.3, -7),
             wang = Angle(172.5, 180, 0)
         },
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0, 0, 0),
-        InstalledEles = {"mount"},
     }, --1
     {
         PrintName = "Muzzle",
@@ -175,13 +179,19 @@ SWEP.Attachments = {
         Slot = {"bo1_tacprimary"},
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(6, -0.025, 2.3), -- offset that the attachment will be relative to the bone
-            vang = Angle(0, 0, 180),
+            vpos = Vector(15, -0.025, -1), -- offset that the attachment will be relative to the bone
+            vang = Angle(0, 0, 0),
         },
     }, --4
+    {
+        PrintName = "Stock",
+        DefaultAttName = "No Stock",
+        Slot = "bo1_stock_lm",
+        Installed = "bo1_stock_medium",
+    },
     { --6
         PrintName = "Fire Group",
-        Slot = {"bo1_fcg","bo2_fcg_fullauto"}
+        Slot = {"bo1_fcg"}
     },
     {
         PrintName = "Ammo Type",
@@ -197,7 +207,7 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(4, -0.65, 0), -- offset that the attachment will be relative to the bone
+            vpos = Vector(-4, -0.65, 0), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
             wpos = Vector(7, 1.6, -4),
             wang = Angle(-10, 0, 180)
@@ -208,9 +218,9 @@ SWEP.Attachments = {
 SWEP.Hook_NameChange = function(wep, name)
     local pap = wep:GetBuff_Override("PackAPunch")
 
-    local gunname = "Striker-12"
+    local gunname = "M1014"
 
-    if pap then gunname = "Road-Rage" end
+    if pap then gunname = "Godkey" end
 
     return gunname
 end
@@ -272,8 +282,8 @@ SWEP.Animations = {
         RestoreAmmo = 1, -- loads a shell since the first reload has a shell in animation
         MinProgress = 1,
         SoundTable = {
-            {s = "ArcCW_MW3E.Striker_Lift", t = 1 / 30},
-            {s = "ArcCW_MW3E.Striker_Shell", t = 21 / 30},
+            {s = "ArcCW_COD4E.M1014_Lift", t = 1 / 30},
+            {s = "ArcCW_COD4E.M1014_Shell", t = 21 / 30},
         },
     },
     ["sgreload_insert"] = {
@@ -283,7 +293,7 @@ SWEP.Animations = {
         TPAnimStartTime = 0.3,
         MinProgress = 15 / 30,
         SoundTable = {
-            {s = "ArcCW_MW3E.Striker_Shell", t = 10 / 30},
+            {s = "ArcCW_COD4E.M1014_Shell", t = 10 / 30},
         },
     },
     ["sgreload_insert_pap"] = {
@@ -293,14 +303,14 @@ SWEP.Animations = {
         TPAnimStartTime = 0.3,
         MinProgress = 15 / 30,
         SoundTable = {
-            {s = "ArcCW_MW3E.Striker_Shell", t = 10 / 30},
+            {s = "ArcCW_COD4E.M1014_Shell", t = 10 / 30},
         },
     },
     ["sgreload_finish"] = {
         Source = "reload_out",
         Time = 0.54,
         SoundTable = {
-            {s = "ArcCW_MW3E.Striker_End", t = 1 / 30},
+            {s = "ArcCW_COD4E.M1014_End", t = 1 / 30},
         },
     },
     ["enter_sprint"] = {

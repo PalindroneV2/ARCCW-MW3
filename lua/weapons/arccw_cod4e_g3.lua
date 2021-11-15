@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "HK G3A4 (COD4)"
+SWEP.PrintName = "HK G3A4"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "German Army standard issue rifle chambered in 7.62mm NATO. The power of the cardtridge makes it difficult to control in full-auto."
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
