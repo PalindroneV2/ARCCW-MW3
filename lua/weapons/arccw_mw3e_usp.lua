@@ -6,14 +6,7 @@ SWEP.AdminOnly = false
 
 SWEP.PrintName = "HK USP Tactical (MW3)"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = [[
-    This handgun is a staple of firearm design. It would come to influence many future semi-automatic handguns.
-    The M1911 has been in service with military forces, law enforcement agencies and civilians for over 100 years.
-
-    The pistol that forgot to become obsolete.
-
-    (COD 4 Model)
-]]
+SWEP.Trivia_Desc = [[Grey German pistol commonly found in the hands of police forces and counterterrorism untis.]]
 SWEP.Trivia_Manufacturer = "H&K"
 SWEP.Trivia_Calibre = ".45 ACP"
 SWEP.Trivia_Mechanism = "Short Recoil"

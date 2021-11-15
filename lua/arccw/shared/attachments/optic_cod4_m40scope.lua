@@ -5,7 +5,6 @@ att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
 }
-att.Desc_Neutrals = {"bo.desc"}
 
 att.SortOrder = 1000
 
@@ -38,5 +37,3 @@ att.HolosightBlackbox = true
 att.HolosightMagnification = 6
 att.HolosightMagnificationMin = 2
 att.HolosightMagnificationMax = 12
-
-att.Mult_SightTime = 1.1

@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "M40A3 (COD4)"
 SWEP.Trivia_Class = "Rifle"
 SWEP.Trivia_Desc = [[
-    American bolt action rifle built from a Remington 700 with the wooden stock replaced by a fiberglass stock produced by McMillan.
+    American bolt action rifle built from a Remington 700, with the wooden stock replaced by a fiberglass stock produced by McMillan.
 ]]
 SWEP.Trivia_Manufacturer = "Remington"
 SWEP.Trivia_Calibre = "7.62x51mm NATO"
@@ -33,6 +33,7 @@ SWEP.DefaultBodygroups = "0000000000"
 
 SWEP.Damage = 110
 SWEP.DamageMin = 90 -- damage done at maximum range
+SWEP.RangeMin = 15
 SWEP.Range = 150 -- in METRES
 SWEP.Penetration = 7
 SWEP.DamageType = DMG_BULLET
@@ -49,7 +50,7 @@ SWEP.Primary.ClipSize = 5 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 15
 
 SWEP.Recoil = 1
-SWEP.RecoilSide = 0.75
+SWEP.RecoilSide = 0.6
 SWEP.RecoilRise = 0.75
 SWEP.VisualRecoilMult = 0
 
@@ -58,6 +59,7 @@ SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
         Mode = 1,
+        PrintName = "fcg.bolt",
     },
     {
         Mode = 0
@@ -240,6 +242,7 @@ SWEP.Attachments = {
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0, 0, 0),
         InstalledEles = {"optic_cod4_m40scope"},
+        Installed = "optic_cod4_m40scope"
     },--8
 }
 
