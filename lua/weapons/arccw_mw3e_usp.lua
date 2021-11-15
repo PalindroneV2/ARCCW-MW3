@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
 
-SWEP.PrintName = "HK USP Tactical (MW3)"
+SWEP.PrintName = "HK USP Tactical"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = [[Grey German pistol commonly found in the hands of police forces and counterterrorism untis.]]
 SWEP.Trivia_Manufacturer = "H&K"

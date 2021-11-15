@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Model 1887 (MW3)"
+SWEP.PrintName = "Model 1887"
 SWEP.Trivia_Class = "Shotgun"
 SWEP.Trivia_Desc = "Modernized 10 gauge lever-action shotgun. Basic but reliable. Sawn-off to be more compact."
 SWEP.Trivia_Manufacturer = "Winchester"

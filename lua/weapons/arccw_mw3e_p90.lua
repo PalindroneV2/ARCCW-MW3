@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "FN P90 (MW3)"
+SWEP.PrintName = "FN P90"
 SWEP.Trivia_Class = "Personal Defense Weapon"
 SWEP.Trivia_Desc = "A PDW in 5.7x28mm created by FN as a response to the increasing availability of body armor. Though it passed NATO's tests with no issue, even outperforming H&K's MP7, Germany vetoed its adoption, resulting in the weapon not becoming a NATO standard. Later it found favor with mercenaries, police and counter-terror forces."
 SWEP.Trivia_Manufacturer = "FN Herstal"
@@ -178,15 +178,13 @@ SWEP.Attachments = {
     },
     { --3
         PrintName = "Tactical",
-        Slot = {"bo1_tacprimary"},
-        VMScale = Vector(1, 1, 1),
+        Slot = {"mw3e_p90_laser"},
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(6.7, -1, 1), -- offset that the attachment will be relative to the bone
-            vang = Angle(0, 0, 90),
-            wpos = Vector(16, 0.4, -6),
-            wang = Angle(-7.5, 0, 85)
+            vpos = Vector(0, 0, 0),
+            vang = Angle(0, 0, 0),
         },
+        Installed = "tac_mw3_p90_laser",
         MergeSlots = {8},
     },
     { --4
@@ -215,13 +213,15 @@ SWEP.Attachments = {
     },
     {
         Hidden = true,
-        Slot = {"mw3e_p90_laser"},
+        Slot = {"bo1_tacprimary"},
+        VMScale = Vector(1, 1, 1),
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(0, 0, 0),
-            vang = Angle(0, 0, 0),
+            vpos = Vector(6.7, -1, 1), -- offset that the attachment will be relative to the bone
+            vang = Angle(0, 0, 90),
+            wpos = Vector(16, 0.4, -6),
+            wang = Angle(-7.5, 0, 85)
         },
-        Installed = "tac_mw3_p90_laser",
     }, --8
 }
 
@@ -231,7 +231,7 @@ SWEP.Hook_NameChange = function(wep, name)
     local gunname = "FN P90"
 
     if pap then
-        gunname = "Kinglslayer"
+        gunname = "Kingslayer"
     end
 
     return gunname

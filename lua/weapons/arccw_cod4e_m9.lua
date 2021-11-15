@@ -156,6 +156,7 @@ SWEP.Attachments = {
             vpos = Vector(5.625, -0.05, 1.25),
             vang = Angle(0, 0, 0),
         },
+        ExcludeFlags = {"doom_ee"},
     },
     { --3
         PrintName = "Tactical",
@@ -169,14 +170,16 @@ SWEP.Attachments = {
             wpos = Vector(8.5, 2, -2.9),
             wang = Angle(-5, -2, 177.5)
         },
+        ExcludeFlags = {"doom_ee"},
     },
     { --4
         PrintName = "Ammo Type",
-        Slot = {"ammo_pap"}
+        Slot = {"ammo_pap"},
+        ExcludeFlags = {"doom_ee"},
     },
     { --5
         PrintName = "Perk",
-        Slot = {"bo1_perk", "bo1_perk_doompistol"}
+        Slot = {"bo1_perk", "bo1_perk_doompistol"},
     },
     { --6
         PrintName = "Charm",
@@ -189,14 +192,16 @@ SWEP.Attachments = {
             wpos = Vector(8.5, 2.5, -4),
             wang = Angle(-5, -2, 177.5)
         },
+        ExcludeFlags = {"doom_ee"},
     },
     {
         PrintName = "Cosmetic",
         DefaultAttName = "Standard Issue",
         Slot = "cod4e_m9_cosmetic",
         FreeSlot = true,
-        DefaultAttIcon = Material("entities/acwatt_cod4_generic.png", "mips smooth")
-    }
+        DefaultAttIcon = Material("entities/acwatt_cod4_generic.png", "mips smooth"),
+        ExcludeFlags = {"doom_ee"},
+    },
 }
 
 SWEP.Hook_NameChange = function(wep, name)

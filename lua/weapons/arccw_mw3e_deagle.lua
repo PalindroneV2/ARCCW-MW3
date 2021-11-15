@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Desert Eagle (MW3)"
+SWEP.PrintName = "Desert Eagle"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "Magnum caliber semi-automatic pistol designed in the United States and produced by IMI. Though hard to control and unreliable at times it offers great stopping power due to its massive round."
 SWEP.Trivia_Manufacturer = "Magnum Research"

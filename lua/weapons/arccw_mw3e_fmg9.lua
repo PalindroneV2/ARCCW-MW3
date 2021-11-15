@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "FMG-9 (MW3)"
+SWEP.PrintName = "FMG-9"
 SWEP.Trivia_Class = "Machine Pistol"
 SWEP.Trivia_Desc = "American proof-of-concept firearm. Meant to be carried by security forces disguised as a handheld spotlight, the weapon unfolds into a small machine gun built from a Glock 18 inside a custom chassis."
 SWEP.Trivia_Manufacturer = "Magpul"
@@ -12,7 +12,7 @@ SWEP.Trivia_Mechanism = "Gas-Operated"
 SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 2008
 
-SWEP.Slot = 2
+SWEP.Slot = 1
 
 SWEP.UseHands = true
 

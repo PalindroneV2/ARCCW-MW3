@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "MP9 (MW3)"
+SWEP.PrintName = "MP9"
 SWEP.Trivia_Class = "Machine Pistol"
 SWEP.Trivia_Desc = "Austrian machine pistol with an integrated foregrip originally produced by Steyr as the TMP. Now features a top rail and a folding stock."
 SWEP.Trivia_Manufacturer = "Brügger & Thomet"
@@ -12,7 +12,7 @@ SWEP.Trivia_Mechanism = "Short Recoil"
 SWEP.Trivia_Country = "Austria"
 SWEP.Trivia_Year = 1992
 
-SWEP.Slot = 2
+SWEP.Slot = 1
 
 SWEP.UseHands = true
 

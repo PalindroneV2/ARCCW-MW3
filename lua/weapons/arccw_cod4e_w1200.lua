@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "W1200 (COD4)"
+SWEP.PrintName = "W1200"
 SWEP.Trivia_Class = "Shotgun"
 SWEP.Trivia_Desc = "12 gauge pump-action shotgun successor of the venerable M1897 Trench Gun. Saw use with the US military until it was phased out in favor of the Mossberg 500."
 SWEP.Trivia_Manufacturer = "Winchester"

@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "USAS-12 (MW3)"
+SWEP.PrintName = "USAS-12"
 SWEP.Trivia_Class = "Combat Shotgun"
 SWEP.Trivia_Desc = "12 gauge automatic combat shotgun produced in South Korea. Used by many police departments across Asia."
 SWEP.Trivia_Manufacturer = "Daewoo"

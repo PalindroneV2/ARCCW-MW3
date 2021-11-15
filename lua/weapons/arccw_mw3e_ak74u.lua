@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "AK-74u (MW3)"
+SWEP.PrintName = "AK-74u"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "A carbine length version of the AKM. Affectionally nicknamed the Krinkov, this weapon was issued to only Soviet tank crews, special forces and support units."
 SWEP.Trivia_Manufacturer = "Izhmash"

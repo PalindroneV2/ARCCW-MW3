@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "RSASS (MW3)"
+SWEP.PrintName = "RSASS"
 SWEP.Trivia_Class = "Designated Marksman Rifle"
 SWEP.Trivia_Desc = "Remington-made AR-10 specialized for marksman roles."
 SWEP.Trivia_Manufacturer = "Remington"

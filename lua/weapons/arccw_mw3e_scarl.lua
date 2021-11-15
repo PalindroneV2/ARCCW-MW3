@@ -5,7 +5,7 @@ SWEP.AdminOnly = false
 
 
 -- This one is so yall are aware.
-SWEP.PrintName = "FN SCAR-L (MW3)"
+SWEP.PrintName = "FN SCAR-L"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = [[
     The FN SCAR is a rifle based on the AR-15 platform. Designed to be a light, modular and highly customizable system, the SCAR has found favor with many special forces groups around the world.

@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Colt CM901 (MW3)"
+SWEP.PrintName = "Colt CM901"
 SWEP.Trivia_Class = "Battle Rifle"
 SWEP.Trivia_Desc = "An AR-15 derivative design by Colt, modular from the ground up. This variant fires the 7.62x51mm NATO round."
 SWEP.Trivia_Manufacturer = "Colt"

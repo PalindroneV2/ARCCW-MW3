@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Walther P99 (MW3)"
+SWEP.PrintName = "Walther P99"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "9mm german pistol. Pistol made for law enforcement, security forces and civilian shooting market. Successor of the P5 and P88."
 SWEP.Trivia_Manufacturer = "Walther GMBH"
