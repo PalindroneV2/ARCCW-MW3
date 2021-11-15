@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "M40A3 (COD4)"
+SWEP.PrintName = "M40A3"
 SWEP.Trivia_Class = "Rifle"
 SWEP.Trivia_Desc = [[
     American bolt action rifle built from a Remington 700, with the wooden stock replaced by a fiberglass stock produced by McMillan.

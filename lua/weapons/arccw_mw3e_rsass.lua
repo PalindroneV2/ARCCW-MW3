@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "RSASS (MW3)"
-SWEP.Trivia_Class = "Assault Rifle"
+SWEP.Trivia_Class = "Designated Marksman Rifle"
 SWEP.Trivia_Desc = "Remington-made AR-10 specialized for marksman roles."
 SWEP.Trivia_Manufacturer = "Remington"
 SWEP.Trivia_Calibre = "7.62x51mm NATO"

@@ -1473,6 +1473,82 @@ sound.Add( {
     }
 } )
 
+-- COD4E W1200 --
+
+sound.Add({
+    name = "ArcCW_COD4E.W1200_Fire",
+    channel = CHAN_STATIC,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_w1200/fire.wav",
+    }
+})
+sound.Add( {
+    name = "ArcCW_COD4E.W1200_Shell",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_w1200/loop.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.W1200_Pump",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_w1200/pump.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.W1200_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_w1200/lift.wav",
+    }
+} )
+
+-- COD4E M1014 --
+
+sound.Add({
+    name = "ArcCW_COD4E.M1014_Fire",
+    channel = CHAN_STATIC,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_m1014/fire.wav",
+    }
+})
+sound.Add( {
+    name = "ArcCW_COD4E.M1014_Shell",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_m1014/loop.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.M1014_End",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_m1014/end.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.M1014_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_m1014/lift.wav",
+    }
+} )
+
 --COD4 1911
 
 sound.Add( {
