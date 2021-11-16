@@ -9,6 +9,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 
 att.Slot = {"mw3_knife"}
+att.GivesFlags = {"mw3_tacknife"}
 att.SortOrder = 100
 
 att.MW3E_Knife = true

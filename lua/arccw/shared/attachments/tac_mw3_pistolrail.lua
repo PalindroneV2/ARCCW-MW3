@@ -10,6 +10,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = {"mw3_pistolrail"}
 att.GivesFlags = {"mw3_glocktac"}
+att.ExcludeFlags = {"mw3_tacknife"}
 
 att.Model = "models/weapons/arccw/atts/mw3_pistolrail.mdl"
 

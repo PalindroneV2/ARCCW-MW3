@@ -216,6 +216,10 @@ SWEP.Hook_NameChange = function(wep, name)
         desc = "A S.T.A.R.S. custom automatic. Fires 9mm Parabellum rounds."
     end
 
+    if wep.Attachments[6].Installed == "cod4e_cosmetic_m9_elite" then
+        gunname = ".40 Elite"
+    end
+
     if doompistol then
         gunname = "Pistol"
         wep.ActivePos = Vector(-2.15, 2, 0)
@@ -251,6 +255,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     if papcamo then
         vm:SetSkin(camo + 1)
+    end
+end
+
+SWEP.Hook_TranslateAnimation = function(wep, anim, data)
+    local elite = wep.Attachments[6].Installed == "cod4e_cosmetic_m9_elite"
+
+    if elite then
+        return "elite_" .. anim
     end
 end
 
@@ -366,5 +378,33 @@ SWEP.Animations = {
     ["exit_sprint_empty"] = {
         Source = "sprint_out_empty",
         Time = 10 / 30
+    },
+
+    -- ELITE RELOAD --
+
+    ["elite_reload"] = {
+        Source = "reload",
+        Time = 1.5,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.2,
+        SoundTable = {
+            {s = "ArcCW_COD4E.Elite_Out", t = 0.25},
+            {s = "ArcCW_COD4E.Elite_In", t = 0.5}
+        },
+    },
+    ["elite_reload_empty"] = {
+        Source = "reload_empty",
+        Time = 2,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.2,
+        SoundTable = {
+            {s = "ArcCW_COD4E.Elite_Out", t = 0.25},
+            {s = "ArcCW_COD4E.Elite_In", t = 0.5},
+            {s = "ArcCW_COD4E.Elite_Chamber", t = 1.5}
+        },
     },
 }

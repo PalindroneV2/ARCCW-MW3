@@ -1688,3 +1688,43 @@ sound.Add( {
         "^weapons/arccw/cod4_M9/out.wav",
     }
 } )
+
+-- CS EE ELITE --
+
+sound.Add( {
+    name = "ArcCW_COD4E.Elite_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_M9/cs/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_COD4E.Elite_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_M9/cs/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.Elite_In",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_M9/cs/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.Elite_Out",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_M9/cs/out.wav",
+    }
+} )
