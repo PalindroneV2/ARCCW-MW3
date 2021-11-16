@@ -3,21 +3,21 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "RSASS"
+SWEP.PrintName = "Mk 14 Mod 1"
 SWEP.Trivia_Class = "Designated Marksman Rifle"
-SWEP.Trivia_Desc = "Remington-made AR-10 specialized for marksman roles."
-SWEP.Trivia_Manufacturer = "Remington"
+SWEP.Trivia_Desc = "Modernized M14 battle rifle adapted for marksman roles."
+SWEP.Trivia_Manufacturer = "NSWC"
 SWEP.Trivia_Calibre = "7.62x51mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
 SWEP.Trivia_Country = "USA"
-SWEP.Trivia_Year = 2010
+SWEP.Trivia_Year = 2001
 
 SWEP.Slot = 2
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/arccw/c_mw3e_rsass.mdl"
-SWEP.WorldModel = "models/weapons/arccw/c_mw3e_rsass.mdl"
+SWEP.ViewModel = "models/weapons/arccw/c_mw3e_mk14.mdl"
+SWEP.WorldModel = "models/weapons/arccw/c_mw3e_mk14.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     pos        =    Vector(-7, 5, -7.5),
@@ -27,7 +27,7 @@ SWEP.WorldModelOffset = {
 }
 SWEP.ViewModelFOV = 60
 
-SWEP.DefaultBodygroups = "00000000"
+SWEP.DefaultBodygroups = "00010000"
 
 SWEP.Damage = 60
 SWEP.DamageMin = 40 -- damage done at maximum range
@@ -49,13 +49,20 @@ SWEP.VisualRecoilMult = 0.25
 
 SWEP.ChamberSize = 0 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 20 -- DefaultClip is automatically set.
-SWEP.ExtendedClipSize = 30
+SWEP.ExtendedClipSize = 40
 
 SWEP.Delay = 60 / 700-- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
         Mode = 1,
+    },
+    {
+        Mode = 2,
+        Mult_Damage = 40 / 60,
+        Mult_DamageMin = 30 / 40,
+        Mult_HipDispersion = 1.5,
+        Mult_MoveDispersion = 1.5,
     },
     {
         Mode = 0
@@ -78,7 +85,7 @@ SWEP.MagID = "ar10" -- the magazine pool this gun draws from
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "ArcCW_MW3E.RSASS_Fire"
+SWEP.ShootSound = "ArcCW_MW3E.MK14_Fire"
 SWEP.ShootSoundSilenced = "ArcCW_MW3E.RSASS_Sil"
 
 SWEP.MuzzleEffect = "muzzleflash_4"
@@ -98,6 +105,7 @@ SWEP.SightTime = 0.3
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     -- [0] = "bulletchamber",
     -- [1] = "bullet1"
+
 }
 
 SWEP.ProceduralRegularFire = false
@@ -107,8 +115,8 @@ SWEP.CaseBones = {}
 SWEP.DefaultSkin = 0
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-4.115, 0, 1.65),
-    Ang = Angle(-0.65, 0.025, 0),
+    Pos = Vector(-3.7, 0, 1.45),
+    Ang = Angle(0.1, 0.025, 0),
     Magnification = 1.1,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -145,26 +153,20 @@ SWEP.AttachmentElements = {
             {ind = 1, bg = 1},
         },
     },
-    ["stock_m"] = {
+    ["stock_l"] = {
         VMBodygroups = {
             {ind = 2, bg = 1},
         },
     },
-    ["stock_h"] = {
+    ["stock_m"] = {
         VMBodygroups = {
             {ind = 2, bg = 2},
         },
     },
     ["bo1_bipod"] = {
         VMBodygroups = {
-            {ind = 3, bg = 1},
+            {ind = 3, bg = 2},
         },
-    },
-    ["bo2_fcg_fullauto"] = {
-        Mult_Damage = 40 / 60,
-        Mult_DamageMin = 30 / 40,
-        Mult_HipDispersion = 1.5,
-        Mult_MoveDispersion = 1.5,
     },
 }
 
@@ -175,34 +177,22 @@ SWEP.Attachments = {
         Slot = {"optic"}, -- what kind of attachments can fit here, can be string or table
         Bone = "j_gun", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(2.5, 0-.025, 2.9), -- 4.6 offset that the attachment will be relative to the bone
+            vpos = Vector(8.75, 0-.025, 3.95), -- 4.6 offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
-        MergeSlots = {13},
+        MergeSlots = {12},
     }, --1
-    {
-        PrintName = "Backup Optics", -- print name
-        DefaultAttName = "None",
-        Slot = {"optic_lp"}, -- what kind of attachments can fit here, can be string or table
-        Bone = "j_gun", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(10.5, -0.925, 2.65), -- 4.6 offset that the attachment will be relative to the bone
-            vang = Angle(0, 0, -40),
-        },
-        CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(0.5, 0, 0),
-    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        VMScale = Vector(1.5, 1.125, 1.125),
+        VMScale = Vector(1.5, 1.2, 1.2),
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(24.5, 0, 1.325), -- offset that the attachment will be relative to the bone
+            vpos = Vector(34, 0, 2.5), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
     }, --2
@@ -216,14 +206,14 @@ SWEP.Attachments = {
             vpos = Vector(6.75, 0, 0.75), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
-        MergeSlots = {5,6}
+        MergeSlots = {4,5}
     }, --3
     {
         Hidden = true,
         Slot = {"foregrip"},
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(11, 0, 0.6), -- offset that the attachment will be relative to the bone
+            vpos = Vector(15, 0, 0.3), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
     }, --4
@@ -239,23 +229,23 @@ SWEP.Attachments = {
     {
         PrintName = "Tactical",
         Slot = {"bo1_tacprimary"},
-        VMScale = Vector(0.75, 0.75, 0.75),
+        VMScale = Vector(1, 1, 1),
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(10, 0.825, 1.65), -- offset that the attachment will be relative to the bone
+            vpos = Vector(21, 0.825, 1.9), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, -90),
         },
     }, --6
     {
         PrintName = "Fire Group",
-        Slot = {"bo1_fcg", "bo2_fcg_fullauto"},
+        Slot = {"bo1_fcg"},
         DefaultAttName = "Standard FCG"
     }, --7
     {
         PrintName = "Stock",
-        Slot = {"bo1_stock_mh"},
+        Slot = {"bo1_stock_lm"},
         DefaultAttName = "No Stock",
-        Installed = "bo1_stock_heavy",
+        Installed = "bo1_stock_medium",
     }, --8
     {
         PrintName = "Ammo Type",
@@ -271,20 +261,20 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(1.5, -0.5, 0.4),
+            vpos = Vector(4.35, -0.75, 1.25),
             vang = Angle(0, 0, 0),
         },
     }, --11
     {
         Hidden = true,
-        Slot = "mw3e_rsass_scope",
+        Slot = "mw3e_mk14_scope",
         Bone = "j_gun", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0, 0, 0), -- 4.6 offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"mount"},
-        Installed = "optic_mw3_rsass",
+        --Installed = "optic_mw3_mk14",
     }, --12
 }
 
@@ -298,10 +288,10 @@ end
 SWEP.Hook_NameChange = function(wep, name)
     local pap = wep:GetBuff_Override("PackAPunch")
 
-    local gunname = "RSASS"
+    local gunname = "Mk 14 Mod 1"
 
     if pap then
-        gunname = "Supersonic Artillery"
+        gunname = "Mnesia"
     end
 
     return gunname
@@ -339,7 +329,7 @@ SWEP.Animations = {
         Time = 0.5,
         ShellEjectAt = 0,
         SoundTable = {
-            {s = "ArcCW_MW3E.Mech_Sniper", t = 0},
+            {s = "ArcCW_MW3E.Mech_D", t = 1 / 35},
         },
     },
     ["fire_iron"] = {
@@ -347,7 +337,7 @@ SWEP.Animations = {
         Time = 0.5,
         ShellEjectAt = 0,
         SoundTable = {
-            {s = "ArcCW_MW3E.Mech_Sniper", t = 0},
+            {s = "ArcCW_MW3E.Mech_D", t = 1 / 35},
         },
     },
     ["reload"] = {
@@ -359,23 +349,23 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_MW3E.RSASS_MagOut", t = 0.75},
-            {s = "ArcCW_MW3E.RSASS_MagIn", t = 1.75}
+            {s = "ArcCW_MW3E.MK14_MagOut", t = 0.6},
+            {s = "ArcCW_MW3E.MK14_MagIn", t = 1.75}
         },
         MinProgress = 2.5,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        Time = 2.96,
+        Time = 3.5,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Framerate = 30,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_MW3E.RSASS_MagOut", t = 0.75},
-            {s = "ArcCW_MW3E.RSASS_MagIn", t = 1.75},
-            {s = "ArcCW_MW3E.RSASS_Chamber", t = 2.35}
+            {s = "ArcCW_MW3E.MK14_MagOut", t = 0.6},
+            {s = "ArcCW_MW3E.MK14_MagIn", t = 1.75},
+            {s = "ArcCW_MW3E.MK14_Chamber", t = 2.5}
         },
         MinProgress = 2.5,
     },
