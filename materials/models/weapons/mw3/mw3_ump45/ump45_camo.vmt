@@ -1,10 +1,12 @@
 VertexlitGeneric
 {
-	$basetexture	"models\weapons\cod4\cod4_ak47\ak47"
+	$basetexture	"models\weapons\mw3\mw3_ump45\ump45"
+	//$color2 "[0.5 0.5 0.5]"
+	$bumpmap	"models\weapons\mw3\mw3_ump45\ump45_n"
 
 	$detail "models\weapons\bo1\black_detail"
 	$detailblendmode 0
-	"$detailblendfactor" "0.75"
+	"$detailblendfactor" "1"
 
 	$phong                      		1
 	$phongexponent                      "20"
@@ -13,11 +15,9 @@ VertexlitGeneric
 	$phongalbedotint             "1"
 	$normalmapalphaphongmask    	1
 
-	$phongexponenttexture "models\weapons\cod4\cod4_ak47\ak47_s"
-	$envmapmask "models\weapons\cod4\cod4_ak47\ak47_s"
-
 	"$envmap" "env_cubemap"					
-	"$envmaptint" "[ .05 .05 .05 ]"					
+	"$envmaptint" "[ .025 .025 .025 ]"					
 	"$envmapFresnel" "1"
+
 	"$nocull" "1"
 }

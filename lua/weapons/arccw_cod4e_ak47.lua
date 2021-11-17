@@ -173,7 +173,7 @@ SWEP.Attachments = {
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
-        MergeSlots = {13}
+        MergeSlots = {14}
     }, --1
     {
         PrintName = "Muzzle",
@@ -273,6 +273,11 @@ SWEP.Attachments = {
         },
     }, --12
     {
+        PrintName = "Cosmetic",
+        Slot = "cod4_ak47_cosmetic",
+        DefaultAttName = "Standard Issue",
+    },
+    {
         Hidden = true,
         Slot = {"bo1_cobra"},
         Bone = "tag_weapon", -- relevant bone any attachments will be mostly referring to
@@ -302,6 +307,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
 
     local papcamo = wep:GetBuff_Override("PackAPunch")
+
+    if wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_gold" then
+        vm:SetSkin(1)
+    end
 
     if papcamo then
         vm:SetSkin(3)

@@ -146,6 +146,21 @@ SWEP.RejectAttachments = {
 
 SWEP.Attachments = {
     { --1
+        PrintName = "Sights",
+        DefaultAttName = "Iron Sights",
+        Slot = {"optic_lp"},
+        Bone = "tag_weapon",
+        VMScale = Vector(1, 1, 1),
+        Offset = {
+            vpos = Vector(0.5, 0-0.05, 1.725),
+            vang = Angle(0, 0, 0),
+        },
+        CorrectivePos = Vector(0, 0, 0.0125),
+        CorrectiveAng = Angle(2.5, 0, 0),
+        GivesFlags = {"pistolrail"},
+        RequireFlags = {"mw3_glocktac"}
+    },
+    { --1
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = {"muzzle"},
@@ -170,6 +185,7 @@ SWEP.Attachments = {
             wpos = Vector(8.5, 2, -2.9),
             wang = Angle(-5, -2, 177.5)
         },
+        MergeSlots = {8,9,10},
         ExcludeFlags = {"doom_ee"},
     },
     { --4
@@ -202,6 +218,36 @@ SWEP.Attachments = {
         DefaultAttIcon = Material("entities/acwatt_cod4_generic.png", "mips smooth"),
         ExcludeFlags = {"doom_ee"},
     },
+    {
+        Hidden = true,
+        Slot = "mw3e_lam_laser",
+        Bone = "tag_weapon",
+        VMScale = Vector(1, 1, 1),
+        Offset = {
+            vpos = Vector(0, 0.265, 0),
+            vang = Angle(0, 0, 0),
+        },
+    }, --7
+    {
+        Hidden = true,
+        Slot = "mw2e_lam_laser",
+        Bone = "tag_weapon",
+        VMScale = Vector(1, 1, 1),
+        Offset = {
+            vpos = Vector(0, 0-0.075, 0),
+            vang = Angle(0, 0, 0),
+        },
+    }, --7
+    {
+        Hidden = true,
+        Slot = "mw3_pistolrail",
+        Bone = "j_gun",
+        VMScale = Vector(0.75, 0.75, 0.75),
+        Offset = {
+            vpos = Vector(0, 0-0.075, 0.1),
+            vang = Angle(0, 0, 0),
+        },
+    }, --9
 }
 
 SWEP.Hook_NameChange = function(wep, name)
@@ -211,12 +257,12 @@ SWEP.Hook_NameChange = function(wep, name)
     local gunname = "Beretta M9"
     local desc = "9mm italian pistol. Currently the standard issue sidearm for US forces. Maligned due to its poor quality of parts for a military weapon and its lack of power compared to the venerable M1911. In the process of being replaced by a SIG-Sauer model."
 
-    if wep.Attachments[6].Installed == "cod4e_cosmetic_m9_stars" then
+    if wep.Attachments[7].Installed == "cod4e_cosmetic_m9_stars" then
         gunname = "Samurai Edge"
         desc = "A S.T.A.R.S. custom automatic. Fires 9mm Parabellum rounds."
     end
 
-    if wep.Attachments[6].Installed == "cod4e_cosmetic_m9_elite" then
+    if wep.Attachments[7].Installed == "cod4e_cosmetic_m9_elite" then
         gunname = ".40 Elite"
     end
 
@@ -243,10 +289,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
     local camo = 0
-    if wep.Attachments[6].Installed == "cod4e_cosmetic_m9_stars" then
+    if wep.Attachments[7].Installed == "cod4e_cosmetic_m9_stars" then
         camo = 2
         vm:SetBodygroup(1, 1)
-    elseif wep.Attachments[6].Installed == "cod4e_cosmetic_m9_elite" then
+    elseif wep.Attachments[7].Installed == "cod4e_cosmetic_m9_elite" then
         camo = 4
         vm:SetBodygroup(1, 1)
     end
@@ -259,7 +305,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim, data)
-    local elite = wep.Attachments[6].Installed == "cod4e_cosmetic_m9_elite"
+    local elite = wep.Attachments[7].Installed == "cod4e_cosmetic_m9_elite"
 
     if elite then
         return "elite_" .. anim

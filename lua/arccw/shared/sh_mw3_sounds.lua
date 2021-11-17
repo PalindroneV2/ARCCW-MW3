@@ -792,6 +792,65 @@ sound.Add( {
     }
 } )
 
+-- MW3E UMP45
+
+sound.Add( {
+    name = "ArcCW_MW3E.UMP45_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_UMP45/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.SMG_Sil",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_UMP45/sil.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.UMP45_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_UMP45/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.UMP45_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_UMP45/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.UMP45_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_UMP45/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.UMP45_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_UMP45/lift.wav",
+    }
+} )
+
 -- MW3E KSG --
 
 sound.Add({

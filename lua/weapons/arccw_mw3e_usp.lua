@@ -187,7 +187,7 @@ SWEP.Attachments = {
             vpos = Vector(2.5, 0.3, 0.25),
             vang = Angle(0, 0, 0),
         },
-        MergeSlots = {8,9},
+        MergeSlots = {8,9,10},
     }, --2
     {
         PrintName = "Underbarrel",
@@ -216,8 +216,19 @@ SWEP.Attachments = {
         Hidden = true,
         Slot = "mw3e_lam_laser",
         Bone = "tag_weapon",
+        VMScale = Vector(1, 1, 1),
         Offset = {
-            vpos = Vector(0, 0.5, 0),
+            vpos = Vector(0, 0.55, 0),
+            vang = Angle(0, 0, 0),
+        },
+    }, --7
+    {
+        Hidden = true,
+        Slot = "mw2e_lam_laser",
+        Bone = "tag_weapon",
+        VMScale = Vector(1, 1, 1),
+        Offset = {
+            vpos = Vector(0, 0.25, 0),
             vang = Angle(0, 0, 0),
         },
     }, --7
