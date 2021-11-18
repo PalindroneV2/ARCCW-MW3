@@ -1247,6 +1247,82 @@ sound.Add( {
     }
 } )
 
+-- MW3 XM25 --
+
+sound.Add({
+    name = "ArcCW_MW3E.XM25_Fire",
+    channel = CHAN_STATIC,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_XM25/fire/fire.wav",
+    }
+})
+sound.Add({
+    name = "ArcCW_MW3E.XM25_Decay",
+    channel = CHAN_STATIC,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_XM25/fire/decay.wav",
+    }
+})
+
+sound.Add( {
+    name = "ArcCW_MW3E.XM25_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_XM25/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.XM25_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_XM25/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.XM25_Hit",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_XM25/hit.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.XM25_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_XM25/out.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.XM25_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_XM25/lift.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.Mech_XM25",
+    channel = CHAN_USER_BASE,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_XM25/fire/mech.wav",
+    }
+} )
+
 -- COD 4 M4/M16
 
 sound.Add( {

@@ -2,7 +2,6 @@ att.PrintName = "M21 Barrel"
 att.Icon = Material("entities/acwatt_bo2_longbarrel.png", "mips smooth")
 att.Description = [[
   Longer, heavier barel increases range and reduce imprecision as well as recoil, at the cost of sight time.
-  A modification was also made to the receiver to remove full auto from this marksman's rifle.
 ]]
 
 att.SortOrder = 109

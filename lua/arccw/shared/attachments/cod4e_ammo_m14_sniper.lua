@@ -22,4 +22,13 @@ att.Mult_AccuracyMOA = 0.95
 att.Mult_ReloadTime = 0.875
 att.Override_ClipSize = 10
 att.Mult_Damage = 1.75
-att.Mult_DamageMin = 1.25
+att.Mult_DamageMin = 1.75
+
+att.Override_Firemodes = {
+    {
+      Mode = 1,
+    },
+    {
+      Mode = 0
+    }
+  }

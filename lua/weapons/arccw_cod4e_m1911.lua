@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
 
-SWEP.PrintName = "Custom 1911-A1 (COD4)"
+SWEP.PrintName = "Custom 1911-A1"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = [[
     This handgun is a staple of firearm design. It would come to influence many future semi-automatic handguns.
@@ -182,7 +182,7 @@ SWEP.Attachments = {
             vpos = Vector(2.5, 0.3, 0.5),
             vang = Angle(0, 0, 0),
         },
-        MergeSlots = {7},
+        MergeSlots = {8},
     },
     {
         PrintName = "Ammo Type",
@@ -191,6 +191,12 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Slot = "bo1_perk"
+    },
+    {
+        PrintName = "Comsetic",
+        Slot = {"cod4_1911_cosmetic"},
+        DefaultAttName = "Standard Issue",
+        DefaultAttIcon = Material("entities/acwatt_cod4_generic.png", "mips smooth"),
     },
     {
         PrintName = "Charm",
@@ -222,8 +228,15 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local pap = wep:GetBuff_Override("PackAPunch")
     local sally = wep.Attachments[4].Installed == "ammo_1911_pap"
 
+    local camo = 0
+    if wep.Attachments[6].Installed == "cod4e_cosmetic_1911_griggs" then
+        camo = 4
+    end
+
+    vm:SetSkin(camo)
+
     if pap or sally then
-        vm:SetSkin(1)
+        vm:SetSkin(camo + 1)
     end
 end
 
@@ -290,22 +303,22 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = {"fire"},
-        Time = 5 / 30,
+        Time = 7 / 30,
         ShellEjectAt = 1 / 30,
     },
     ["fire_empty"] = {
         Source = "fire_last",
-        Time = 5 / 30,
+        Time = 7 / 30,
         ShellEjectAt = 1 / 30,
     },
     ["fire_iron"] = {
         Source = "fire_ads",
-        Time = 5 / 30,
+        Time = 7 / 30,
         ShellEjectAt = 1 / 30,
     },
     ["fire_iron_empty"] = {
         Source = "fire_last",
-        Time = 5 / 30,
+        Time = 7 / 30,
         ShellEjectAt = 1 / 30,
     },
     ["reload"] = {
