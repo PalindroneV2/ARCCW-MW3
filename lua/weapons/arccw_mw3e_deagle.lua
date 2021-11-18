@@ -141,9 +141,20 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.DefaultBodygroups = "00000000"
 
 SWEP.AttachmentElements = {
-    ["bocw_deagle"] = {
+    ["classic_eagle"] = {
         VMBodygroups = {
             {ind = 0, bg = 1}
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-2.0125, 3, 0.85),
+            Ang = Angle(0, 0.0125, 0),
+            Magnification = 1.1,
+            CrosshairInSights = false,
+        },
+    },
+    ["bocw_deagle"] = {
+        VMBodygroups = {
+            {ind = 0, bg = 2}
         },
         Override_IronSightStruct = {
             Pos = Vector(-2, 3, 0.75),
@@ -222,8 +233,9 @@ SWEP.Attachments = {
     },
     { --9
         PrintName = "Cosmetic",
-        Slot = {"cde_cosmetic", "cde_cosmetic_silver", "cde_cosmetic_steel", "cde_cosmetic_handcannon"},
+        Slot = {"mw3_deagle_cosmetic", "cde_cosmetic_silver", "cde_cosmetic_handcannon"},
         FreeSlot = true,
+        DefaultAttIcon = Material("entities/acwatt_mw3_generic.png", "mips smooth"),
     },
     { --10
         Hidden = true,
@@ -272,17 +284,18 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local papcamo = wep:GetBuff_Override("PackAPunch")
     local camo = 0
     if wep.Attachments[8].Installed == "cde_cosmetic_silver" then camo = 1
-    elseif wep.Attachments[8].Installed == "cde_cosmetic_steel" then camo = 2
-    elseif wep.Attachments[8].Installed == "cde_cosmetic_od" then camo = 3
-    elseif wep.Attachments[8].Installed == "cde_cosmetic_red" then camo = 4
+    elseif wep.Attachments[8].Installed == "mw3e_cosmetic_deagle_classic" then camo = 1
+    elseif wep.Attachments[8].Installed == "mw3e_cosmetic_deagle_classic_gold" then camo = 2
     elseif wep.Attachments[8].Installed == "cde_cosmetic_handcannon" then camo = 0
     end
 
-    for k = camo, camo do
-        vm:SetSkin(k)
-    end
+    vm:SetSkin(camo)
+
     if papcamo then
-        vm:SetSkin(5)
+        vm:SetSkin(2)
+        if camo == 2 then
+            vm:SetSkin(3)
+        end
     end
 end
 

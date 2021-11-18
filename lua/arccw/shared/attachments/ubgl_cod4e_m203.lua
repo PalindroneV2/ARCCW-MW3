@@ -9,8 +9,10 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = "cod4e_m203"
 att.GivesFlags = {"ubanims", "m4anims"}
-att.ExcludeFlags = {"kali_barrel_short"}
+att.ExcludeFlags = {"kali_barrel_short", "m21_sniper"}
 att.BO1_UBGL = true
+
+att.HideIfBlocked = true
 
 att.SortOrder = 100
 

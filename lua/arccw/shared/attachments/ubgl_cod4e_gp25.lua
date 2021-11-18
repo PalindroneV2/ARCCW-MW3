@@ -10,6 +10,7 @@ att.AutoStats = true
 att.Slot = "cod4e_gp25"
 att.GivesFlags = {"ubanims"}
 att.BO1_UBGL = true
+att.HideIfBlocked = true
 
 att.SortOrder = 100
 

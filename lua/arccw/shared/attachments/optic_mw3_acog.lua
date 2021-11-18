@@ -1,5 +1,5 @@
 att.PrintName = "Trijicon ACOG TA31 (4x)"
-att.Icon = Material("entities/acwatt_optic_bo2_acog.png", "mips smooth")
+att.Icon = Material("entities/acwatt_optic_mw3_acog.png", "mips smooth")
 att.Description = "MW3 ACOG Scope. Medium range combat scope for improved precision at longer ranges."
 
 att.SortOrder = 6

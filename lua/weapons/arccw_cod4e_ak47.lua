@@ -276,6 +276,7 @@ SWEP.Attachments = {
         PrintName = "Cosmetic",
         Slot = "cod4_ak47_cosmetic",
         DefaultAttName = "Standard Issue",
+        DefaultAttIcon = Material("entities/acwatt_cod4_generic.png", "mips smooth"),
     },
     {
         Hidden = true,

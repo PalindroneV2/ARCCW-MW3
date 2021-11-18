@@ -792,6 +792,56 @@ sound.Add( {
     }
 } )
 
+--MW3E PM9--
+
+sound.Add( {
+    name = "ArcCW_MW3E.PM9_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_pm9/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.PM9_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_pm9/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.PM9_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_pm9/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.PM9_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_pm9/out.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.PM9_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_pm9/lift.wav",
+    }
+} )
+
 -- MW3E UMP45
 
 sound.Add( {
@@ -1354,6 +1404,65 @@ sound.Add( {
     }
 } )
 
+--COD4E M14--
+
+sound.Add( {
+    name = "ArcCW_COD4E.M14_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/COD4_M14/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_COD4E.M14_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/COD4_M14/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.M14_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/COD4_M14/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.M14_MagInTac",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/COD4_M14/in_tac.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.M14_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/COD4_M14/out.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_COD4E.M14_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/COD4_M14/lift.wav",
+    }
+} )
+
 -- COD 4 G3
 
 sound.Add( {
@@ -1655,6 +1764,56 @@ sound.Add( {
     level = 100,
     sound = {
         "^weapons/arccw/cod4_m1014/lift.wav",
+    }
+} )
+
+--COD4E UZI--
+
+sound.Add( {
+    name = "ArcCW_COD4E.UZI_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_uzi/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_COD4E.UZI_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_uzi/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.UZI_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_uzi/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.UZI_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_uzi/out.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_COD4E.UZI_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_uzi/lift.wav",
     }
 } )
 
