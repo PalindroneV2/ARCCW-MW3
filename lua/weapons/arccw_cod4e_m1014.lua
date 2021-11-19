@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "M1014 (COD4)"
+SWEP.PrintName = "M1014"
 SWEP.Trivia_Class = "Combat Shotgun"
 SWEP.Trivia_Desc = "12 gauge semi automatic combat shotgun. Originally named the 'Benelli M4' it was adopted by the US Military as the M1014 and has served since 1999."
 SWEP.Trivia_Manufacturer = "Benelli"
