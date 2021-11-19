@@ -2,9 +2,9 @@
 {
 	"$basetexture" "models/weapons/cod4/cod4_optics/reflex_sight"
 	$blendtintbybasealpha  "1"
-	"$bumpmap" "models/weapons/waw/normalmap"
+	"$bumpmap" "models/weapons/colors/normalmap"
 
-	$detail "models\weapons\bo1\black_detail"
+	$detail "models\weapons\colors\black_detail"
 	$detailblendmode 0
 	"$detailblendfactor" "0.75"
 

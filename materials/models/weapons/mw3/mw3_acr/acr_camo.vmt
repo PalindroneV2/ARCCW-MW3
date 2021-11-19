@@ -15,7 +15,7 @@ VertexlitGeneric
 	"$envmaptint"   "[0.005 0.005 0.005]"				
 	"$envmapFresnel" "1"
 
-	$detail "models/weapons/bo1/tan_mustard"
+	$detail "models/weapons/colors/tan_mustard"
 	$detailblendmode 0
 	"$detailblendfactor" "1"
 }

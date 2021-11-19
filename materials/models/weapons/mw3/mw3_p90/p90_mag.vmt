@@ -5,7 +5,7 @@ VertexlitGeneric
 	$bumpmap	"models\weapons\mw3\mw3_p90\p90_n"
 
 	"$translucent" "1"
-//	$detail "models\weapons\bo1\black_detail"
+//	$detail "models\weapons\colors\black_detail"
 //	$detailblendmode 0
 //	"$detailblendfactor" "1"
 

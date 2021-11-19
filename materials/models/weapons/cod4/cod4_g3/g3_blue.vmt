@@ -2,7 +2,7 @@ VertexlitGeneric
 {
 	$basetexture	"models\weapons\cod4\cod4_g3\g3"
 
-	$detail "models\weapons\bo1\blueshift"
+	$detail "models\weapons\colors\blueshift"
 	$detailblendmode 3
 	"$detailblendfactor" "1"
 

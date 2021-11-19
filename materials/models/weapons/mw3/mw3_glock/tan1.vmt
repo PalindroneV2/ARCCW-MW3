@@ -3,7 +3,7 @@ VertexlitGeneric
 	$basetexture	"models\weapons\mw3\mw3_glock\g18"
 	//$color2 "[0.5 0.5 0.5]"
 	$bumpmap	"models\weapons\mw3\mw3_glock\g18_n"
-	$detail "models\weapons\bo1\tan"
+	$detail "models\weapons\colors\tan"
 	$detailblendmode 4
 	$detailblendfactor 1
 

@@ -2,7 +2,7 @@
 {
 	$basetexture	"models\weapons\mw3\mw3_optics\scope_lens"
 	"$translucent" "0"
-	$bumpmap	"models\weapons\waw\normalmap"
+	$bumpmap	"models\weapons\colors\normalmap"
 	
 	"$envmap" "env_cubemap"
 	"$normalmapalphaenvmapmask" 1
