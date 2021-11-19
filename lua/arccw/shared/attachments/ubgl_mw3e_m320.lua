@@ -45,7 +45,7 @@ att.UBGL_NPCFire = function(wep, ubgl)
 
     wep:FireRocket("arccw_m203_he_bo1", 4000)
 
-    wep:EmitSound("ArcCW_BO1.M203_Fire", 100)
+    wep:EmitSound("ArcCW_MW3E.M320_Fire", 100)
 
     wep:SetClip2(wep:Clip2() - 1)
 
@@ -59,7 +59,7 @@ att.UBGL_Fire = function(wep, ubgl)
 
     wep:FireRocket("arccw_m203_he_bo1", 4000)
 
-    wep:EmitSound("ArcCW_BO1.M203_Fire", 100)
+    wep:EmitSound("ArcCW_MW3E.M320_Fire", 100)
 
     wep:SetClip2(wep:Clip2() - 1)
 

@@ -147,7 +147,7 @@ SWEP.AttachmentElements = {
             {ind = 2, bg = 1},
         },
     },
-    ["bo1_m320"] = {
+    ["mw3e_m320"] = {
         VMBodygroups = {
             {ind = 3, bg = 1},
         },
@@ -217,7 +217,7 @@ SWEP.Attachments = {
     }, --5
     {
         Hidden = true,
-        Slot = {"bo1_m320"},
+        Slot = {"mw3e_m320"},
     }, --6
     {
         Hidden = true,
@@ -527,9 +527,10 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.1,
         SoundTable = {
-            {s = "ArcCW_BO1.M203_40mmOut", t = 18 / 30},
-            {s = "ArcCW_BO1.M203_40mmIn", t = 48 / 30},
-            {s = "ArcCW_BO1.M203_Close", t = 62 / 30},
+            {s = "ArcCW_MW3E.M320_Open", t = 10 / 30},
+            {s = "ArcCW_MW3E.M320_Eject", t = 15 / 30},
+            {s = "ArcCW_MW3E.M320_Load", t = 40 / 30},
+            {s = "ArcCW_MW3E.M320_Close", t = 60 / 30},
         }
     },
     ["enter_sprint_glsetup"] = {

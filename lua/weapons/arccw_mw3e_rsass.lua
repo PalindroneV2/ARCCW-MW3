@@ -336,7 +336,7 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = {"fire"},
-        Time = 0.5,
+        Time = 5 / 30,
         ShellEjectAt = 0,
         SoundTable = {
             {s = "ArcCW_MW3E.Mech_Sniper", t = 0},
@@ -344,7 +344,7 @@ SWEP.Animations = {
     },
     ["fire_iron"] = {
         Source = {"fire"},
-        Time = 0.5,
+        Time = 5 / 30,
         ShellEjectAt = 0,
         SoundTable = {
             {s = "ArcCW_MW3E.Mech_Sniper", t = 0},

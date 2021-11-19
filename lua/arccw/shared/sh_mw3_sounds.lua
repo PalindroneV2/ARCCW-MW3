@@ -40,7 +40,7 @@ sound.Add( {
     volume = 1.0,
     level = 100,
     sound = {
-        "^weapons/arccw/mw3e_mech/sniper",
+        "^weapons/arccw/mw3e_mech/sniper.wav",
     }
 } )
 
@@ -376,6 +376,64 @@ sound.Add( {
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_MK14/lift.wav",
+    }
+} )
+
+-- MW3E AWM -- 
+
+sound.Add( {
+    name = "ArcCW_MW3E.AWM_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AWM/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.AWM_Open",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AWM/open.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.AWM_Close",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AWM/close.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.AWM_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AWM/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.AWM_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AWM/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.AWM_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AWM/lift.wav",
     }
 } )
 
@@ -1244,6 +1302,64 @@ sound.Add( {
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_mk46/lift.wav",
+    }
+} )
+
+-- MW3E M320
+
+sound.Add( {
+    name = "ArcCW_MW3E.M320_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW3E_M320/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.M320_Eject",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW3E_M320/eject.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.M320_Load",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW3E_M320/load.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.M320_Open",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW3E_M320/open.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.M320_Close",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW3E_M320/close.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.M320_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_M320/lift.wav",
     }
 } )
 

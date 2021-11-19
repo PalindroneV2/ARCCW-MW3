@@ -147,7 +147,7 @@ SWEP.DefaultBodygroups = "0000000"
 SWEP.DefaultWMBodygroups = "0000000"
 
 SWEP.AttachmentElements = {
-    ["bo1_m320"] = {
+    ["mw3e_m320"] = {
         VMBodygroups = {
             {ind = 3, bg = 1},
         },
@@ -193,7 +193,7 @@ SWEP.Attachments = {
     },
     { --3
         PrintName = "Underbarrel",
-        Slot = {"ubgl", "bo1_m320", "bo1_mk"},
+        Slot = {"ubgl", "mw3e_m320", "bo1_mk"},
         Bone = "tag_weapon",
         VMScale = Vector(1.2, 1, 1),
         WMScale = Vector(1.2, 1, 1),
@@ -600,9 +600,10 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         TPAnimStartTime = 0.1,
         SoundTable = {
-            {s = "ArcCW_BO1.M203_40mmOut", t = 18 / 30},
-            {s = "ArcCW_BO1.M203_40mmIn", t = 48 / 30},
-            {s = "ArcCW_BO1.M203_Close", t = 62 / 30},
+            {s = "ArcCW_MW3E.M320_Open", t = 10 / 30},
+            {s = "ArcCW_MW3E.M320_Eject", t = 15 / 30},
+            {s = "ArcCW_MW3E.M320_Load", t = 40 / 30},
+            {s = "ArcCW_MW3E.M320_Close", t = 60 / 30},
         }
     },
     ["enter_sprint_glsetup"] = {
