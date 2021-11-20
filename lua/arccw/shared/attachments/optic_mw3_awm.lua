@@ -1,6 +1,6 @@
-att.PrintName = "Leupod Mark 4 Scope (8x)"
+att.PrintName = "Leupold Mark 4 Scope (8x)"
 att.Icon = Material("entities/acwatt_optic_bo1_l96.png", "mips smooth")
-att.Description = "MW3 Sniper Scope. Long range combat scope for improved precision at longer ranges."
+att.Description = "MW3 Sniper Scope for the AWSM. Long range combat scope for improved precision at longer ranges."
 
 att.SortOrder = 115
 
@@ -36,8 +36,6 @@ att.HolosightPiece = "models/weapons/arccw/atts/mw3_awm_hsp.mdl"
 att.Colorable = true
 
 att.HolosightBlackbox = true
-att.HolosightMagnification = 4
-att.HolosightMagnificationMin = 2
-att.HolosightMagnificationMax = 8
+att.HolosightMagnification = 8
 
 att.Mult_SightTime = 1.1

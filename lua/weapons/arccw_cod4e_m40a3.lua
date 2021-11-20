@@ -31,10 +31,10 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "0000000000"
 
-SWEP.Damage = 110
-SWEP.DamageMin = 90 -- damage done at maximum range
-SWEP.RangeMin = 15
-SWEP.Range = 150 -- in METRES
+SWEP.Damage = 105
+SWEP.DamageMin = 85 -- damage done at maximum range
+SWEP.RangeMin = 40
+SWEP.Range = 400
 SWEP.Penetration = 7
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -72,7 +72,7 @@ SWEP.NPCWeaponType = {
 }
 SWEP.NPCWeight = 100
 
-SWEP.AccuracyMOA = 0.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 0.2 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 250
 
@@ -94,9 +94,9 @@ SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.ProceduralViewBobAttachment = 1
 SWEP.CamAttachment = 3
 
-SWEP.SpeedMult = 0.85
+SWEP.SpeedMult = 0.9
 SWEP.SightedSpeedMult = 0.5
-SWEP.SightTime = 0.4
+SWEP.SightTime = 0.3
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 }

@@ -25,9 +25,10 @@ SWEP.WorldModelOffset = {
 SWEP.WorldModel = "models/weapons/arccw/c_mw3e_awm.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.Damage = 120
-SWEP.DamageMin = 90 -- damage done at maximum range
-SWEP.Range = 2000 -- in METRES
+SWEP.Damage = 180
+SWEP.DamageMin = 110 -- damage done at maximum range
+SWEP.RangeMin = 50
+SWEP.Range = 500 -- in METRES
 SWEP.Penetration = 12
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -50,7 +51,7 @@ SWEP.Delay = 60 / 45 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
-        PrintName = "BOLT",
+        PrintName = "fcg.bolt",
         Mode = 1,
     },
     {
@@ -171,7 +172,7 @@ SWEP.Attachments = {
         },
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
-        --Installed = "optic_mw3_awm"
+        Installed = "optic_mw3_awm",
     },
     { --3
         PrintName = "Muzzle",
