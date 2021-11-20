@@ -29,9 +29,10 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "00000000000"
 
-SWEP.Damage = 45
-SWEP.DamageMin = 30 -- damage done at maximum range
-SWEP.Range = 125 -- in METRES
+SWEP.Damage = 55
+SWEP.DamageMin = 37 -- damage done at maximum range
+SWEP.RangeMin = 20
+SWEP.Range = 200 -- in METRES
 SWEP.Penetration = 10
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -46,12 +47,13 @@ SWEP.ChamberSize = 0 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 20 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 50
 
-SWEP.Recoil = 1.5
-SWEP.RecoilSide = 1
+SWEP.Recoil = 1.3
+SWEP.RecoilSide = 0.9
 SWEP.RecoilRise = 1
-SWEP.SpeedMult = 0.85
+
+SWEP.SpeedMult = 0.9
 SWEP.SightedSpeedMult = 0.5
-SWEP.SightTime = 0.3
+SWEP.SightTime = 0.4
 
 SWEP.Delay = 60 / 800 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -72,9 +74,9 @@ SWEP.NPCWeaponType = {
 }
 SWEP.NPCWeight = 100
 
-SWEP.AccuracyMOA = 1.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 650 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 200
+SWEP.AccuracyMOA = 2 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 700 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 150
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.MagID = "ar10" -- the magazine pool this gun draws from

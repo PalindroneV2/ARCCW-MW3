@@ -29,9 +29,10 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage = 45
-SWEP.DamageMin = 30 -- damage done at maximum range
-SWEP.Range = 175 -- in METRES
+SWEP.Damage = 58
+SWEP.DamageMin = 40 -- damage done at maximum range
+SWEP.RangeMin = 25
+SWEP.Range = 250 -- in METRES
 SWEP.Penetration = 10
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -42,7 +43,7 @@ SWEP.TracerNum = 1 -- tracer every X
 SWEP.TracerCol = Color(255, 25, 25)
 SWEP.TracerWidth = 3
 
-SWEP.Recoil = 1.5
+SWEP.Recoil = 1.4
 SWEP.RecoilSide = 1
 SWEP.RecoilRise = 1
 SWEP.VisualRecoilMult = 0.25
@@ -51,14 +52,14 @@ SWEP.ChamberSize = 0 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 20 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 30
 
-SWEP.Delay = 60 / 700-- 60 / RPM.
+SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
-        Mode = 1,
+        Mode = 2,
     },
     {
-        Mode = 2,
+        Mode = 1,
     },
     {
         Mode = 0
@@ -72,8 +73,8 @@ SWEP.NPCWeaponType = {
 SWEP.NPCWeight = 100
 
 SWEP.AccuracyMOA = 1.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 650 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 200
+SWEP.HipDispersion = 700 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 150
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 
@@ -96,7 +97,7 @@ SWEP.CamAttachment = 4
 
 SWEP.SpeedMult = 0.9
 SWEP.SightedSpeedMult = 0.5
-SWEP.SightTime = 0.3
+SWEP.SightTime = 0.4
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     -- [0] = "bulletchamber",

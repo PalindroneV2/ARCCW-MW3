@@ -29,9 +29,10 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage = 60
-SWEP.DamageMin = 40 -- damage done at maximum range
-SWEP.Range = 175 -- in METRES
+SWEP.Damage = 70
+SWEP.DamageMin = 45 -- damage done at maximum range
+SWEP.RangeMin = 50
+SWEP.Range = 500 -- in METRES
 SWEP.Penetration = 10
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -68,8 +69,8 @@ SWEP.NPCWeaponType = {
 }
 SWEP.NPCWeight = 100
 
-SWEP.AccuracyMOA = 1.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 650 -- inaccuracy added by hip firing.
+SWEP.AccuracyMOA = 0.6 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 700 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 200
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
@@ -93,7 +94,7 @@ SWEP.CamAttachment = 3
 
 SWEP.SpeedMult = 0.9
 SWEP.SightedSpeedMult = 0.5
-SWEP.SightTime = 0.3
+SWEP.SightTime = 0.4
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     -- [0] = "bulletchamber",

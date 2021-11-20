@@ -1,6 +1,6 @@
-att.PrintName = "Leupod Mark 4 Scope (8x)"
+att.PrintName = "Leupold Mark 4 Scope (8x)"
 att.Icon = Material("entities/acwatt_optic_bo1_l96.png", "mips smooth")
-att.Description = "COD4 Sniper Scope. Long range combat scope for improved precision at longer ranges."
+att.Description = "Sniper scope for the M14. Long range combat scope for improved precision at longer ranges."
 
 att.SortOrder = 115
 
@@ -11,6 +11,7 @@ att.Desc_Pros = {
 att.Desc_Neutrals = {"bo.desc"}
 
 att.AutoStats = true
+att.Free = true
 att.Slot = {"cod4e_m14_scope"}
 
 att.Model = "models/weapons/arccw/atts/cod4_m14scope.mdl"
@@ -46,8 +47,6 @@ att.HolosightPiece = "models/weapons/arccw/atts/cod4_m14scope_hsp.mdl"
 att.Colorable = true
 
 att.HolosightBlackbox = true
-att.HolosightMagnification = 4
-att.HolosightMagnificationMin = 2
-att.HolosightMagnificationMax = 8
+att.HolosightMagnification = 8
 
 att.Mult_SightTime = 1.1

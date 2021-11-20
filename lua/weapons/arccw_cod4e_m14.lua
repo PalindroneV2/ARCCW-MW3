@@ -29,9 +29,10 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage = 60
-SWEP.DamageMin = 40 -- damage done at maximum range
-SWEP.Range = 175 -- in METRES
+SWEP.Damage = 70
+SWEP.DamageMin = 44 -- damage done at maximum range
+SWEP.RangeMin = 20
+SWEP.Range = 200 -- in METRES
 SWEP.Penetration = 10
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -42,10 +43,10 @@ SWEP.TracerNum = 1 -- tracer every X
 SWEP.TracerCol = Color(255, 25, 25)
 SWEP.TracerWidth = 3
 
-SWEP.Recoil = 0.9
-SWEP.RecoilSide = 0.8
-SWEP.RecoilRise = 0.8
-SWEP.VisualRecoilMult = 0.1
+SWEP.Recoil = 1.2
+SWEP.RecoilSide = 0.6
+SWEP.RecoilRise = 1
+SWEP.VisualRecoilMult = 0.5
 
 SWEP.ChamberSize = 0 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 20 -- DefaultClip is automatically set.
@@ -59,10 +60,12 @@ SWEP.Firemodes = {
     },
     {
         Mode = 2,
-        Mult_Damage = 40 / 60,
-        Mult_DamageMin = 30 / 40,
-        Mult_HipDispersion = 1.5,
-        Mult_MoveDispersion = 1.5,
+        Mult_VisualRecoil = 2,
+        Mult_RecoilSide = 1.5,
+        --Mult_Damage = 40 / 60,
+        --Mult_DamageMin = 30 / 40,
+        --Mult_HipDispersion = 1.5,
+        --Mult_MoveDispersion = 1.5,
     },
     {
         Mode = 0
@@ -75,8 +78,8 @@ SWEP.NPCWeaponType = {
 }
 SWEP.NPCWeight = 100
 
-SWEP.AccuracyMOA = 1.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 650 -- inaccuracy added by hip firing.
+SWEP.AccuracyMOA = 1 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 200
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
@@ -98,9 +101,9 @@ SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.ProceduralViewBobAttachment = 3
 SWEP.CamAttachment = 3
 
-SWEP.SpeedMult = 0.9
+SWEP.SpeedMult = 0.87
 SWEP.SightedSpeedMult = 0.5
-SWEP.SightTime = 0.3
+SWEP.SightTime = 0.4
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     -- [0] = "bulletchamber",
@@ -117,7 +120,7 @@ SWEP.DefaultSkin = 0
 SWEP.IronSightStruct = {
     Pos = Vector(-4.3, -3, 2.4),
     Ang = Angle(-0.6, 0.025, 0),
-    Magnification = 1.1,
+    Magnification = 1.5,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
