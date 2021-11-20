@@ -53,13 +53,13 @@ SWEP.Primary.ClipSize = 20 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 30
 
 SWEP.Delay = 60 / 600 -- 60 / RPM.
-SWEP.Num = 1 -- number of shots per trigger pull.
+SWEP.Num = 1
 SWEP.Firemodes = {
     {
-        Mode = 2,
+        Mode = 1, -- THE G3 SHOULD START OUT SEMI-AUTO LIKE THE OG GAME
     },
     {
-        Mode = 1,
+        Mode = 2,
     },
     {
         Mode = 0

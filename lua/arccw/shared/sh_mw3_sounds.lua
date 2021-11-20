@@ -49,7 +49,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.G36_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_g36/fire.wav",
@@ -98,7 +98,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.Glock_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_Glock/fire.wav",
@@ -147,7 +147,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.ACR_Fire",
     channel = CHAN_STATIC,
-    volume = 0.5,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_ACR/fire.wav",
@@ -156,7 +156,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.ACR_Sil",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 1,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_ACR/sil.wav",
@@ -177,7 +177,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.RSASS_Sil",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 1,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_RSASS/sil.wav",
@@ -226,7 +226,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.CM901_Fire",
     channel = CHAN_STATIC,
-    volume = 0.5,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_CM901/fire.wav",
@@ -275,7 +275,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.SCARL_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_SCARL/fire.wav",
@@ -334,7 +334,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.MK14_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_MK14/fire.wav",
@@ -384,7 +384,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.AWM_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_AWM/fire.wav",
@@ -442,7 +442,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.MP9_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_MP9/fire.wav",
@@ -501,7 +501,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.P90_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_P90/fire.wav",
@@ -510,7 +510,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.P90_Sil",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 1,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_P90/sil.wav",
@@ -569,7 +569,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.FMG9_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_FMG9/fire.wav",
@@ -659,7 +659,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.M4_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_M4M16/fire_m4.wav",
@@ -668,7 +668,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.M16_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_M4M16/fire_m16.wav",
@@ -677,7 +677,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.M4M16_Sil",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 1,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_M4M16/sil.wav",
@@ -727,6 +727,7 @@ sound.Add( {
 sound.Add({
     name = "ArcCW_MW3E.Eagle_357",
     channel = CHAN_STATIC,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_deagle/fire_357.wav",
@@ -735,6 +736,7 @@ sound.Add({
 sound.Add({
     name = "ArcCW_MW3E.Eagle_44",
     channel = CHAN_STATIC,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_deagle/fire_44.wav",
@@ -743,6 +745,7 @@ sound.Add({
 sound.Add({
     name = "ArcCW_MW3E.Eagle_50",
     channel = CHAN_STATIC,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_deagle/fire_50.wav",
@@ -806,7 +809,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.AK74u_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_ak74u/fire.wav",
@@ -850,12 +853,79 @@ sound.Add( {
     }
 } )
 
+--MW3E MP5--
+
+sound.Add( {
+    name = "ArcCW_MW3E.MP5_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP5/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.MP5_Sil",
+    channel = CHAN_STATIC,
+    volume = 1,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP5/sil.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.MP5_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP5/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.MP5_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP5/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.MP5_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP5/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.MP5_Hit",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP5/hit.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.MP5_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP5/lift.wav",
+    }
+} )
+
 --MW3E PM9--
 
 sound.Add( {
     name = "ArcCW_MW3E.PM9_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_pm9/fire.wav",
@@ -905,7 +975,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.UMP45_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_UMP45/fire.wav",
@@ -915,7 +985,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.SMG_Sil",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 1,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_UMP45/sil.wav",
@@ -964,6 +1034,7 @@ sound.Add( {
 sound.Add({
     name = "ArcCW_MW3E.KSG_Fire",
     channel = CHAN_STATIC,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_ksg/fire.wav",
@@ -1100,6 +1171,7 @@ sound.Add( {
 sound.Add({
     name = "ArcCW_MW3E.Striker_Fire",
     channel = CHAN_STATIC,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_Striker/fire.wav",
@@ -1108,6 +1180,7 @@ sound.Add({
 sound.Add({
     name = "ArcCW_MW3E.Striker_Sil",
     channel = CHAN_STATIC,
+    volume = 1,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_Striker/sil.wav",
@@ -1233,7 +1306,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.MK46_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_mk46/fire.wav",
@@ -1310,7 +1383,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.M320_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/MW3E_M320/fire.wav",
@@ -1368,6 +1441,7 @@ sound.Add( {
 sound.Add({
     name = "ArcCW_MW3E.XM25_Fire",
     channel = CHAN_STATIC,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_XM25/fire/fire.wav",
@@ -1444,7 +1518,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.M4M16_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_m4m16/fire.wav",
@@ -1454,7 +1528,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.M4M16_Sil",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 1,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_m4m16/Sil.wav",
@@ -1503,7 +1577,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.AK47_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_AK47/fire.wav",
@@ -1552,7 +1626,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.AK74u_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_AK74u/fire.wav",
@@ -1601,7 +1675,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.M14_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/COD4_M14/fire.wav",
@@ -1660,7 +1734,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.G3_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_g3/fire.wav",
@@ -1709,7 +1783,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.M249_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_m249/fire_st.wav",
@@ -1767,7 +1841,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.GP25_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_GP25/fire.wav",
@@ -1798,7 +1872,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.M203_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_m203/fire.wav",
@@ -1838,7 +1912,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.M40_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_m40/fire.wav",
@@ -1888,6 +1962,7 @@ sound.Add( {
 sound.Add({
     name = "ArcCW_COD4E.W1200_Fire",
     channel = CHAN_STATIC,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_w1200/fire.wav",
@@ -1926,6 +2001,7 @@ sound.Add( {
 sound.Add({
     name = "ArcCW_COD4E.M1014_Fire",
     channel = CHAN_STATIC,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_m1014/fire.wav",
@@ -1959,12 +2035,61 @@ sound.Add( {
     }
 } )
 
+--COD4E MP5--
+
+sound.Add( {
+    name = "ArcCW_COD4E.MP5_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_MP5/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_COD4E.MP5_Sil",
+    channel = CHAN_STATIC,
+    volume = 1,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_MP5/sil.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.MP5_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_MP5/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.MP5_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_MP5/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.MP5_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_MP5/out.wav",
+    }
+} )
+
 --COD4E UZI--
 
 sound.Add( {
     name = "ArcCW_COD4E.UZI_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_uzi/fire.wav",
@@ -2014,7 +2139,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.1911_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_1911/fire.wav",
@@ -2024,7 +2149,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.1911_Sil",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 1,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_1911/sil.wav",
@@ -2064,7 +2189,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.M9_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_M9/fire.wav",
@@ -2104,7 +2229,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_COD4E.Elite_Fire",
     channel = CHAN_STATIC,
-    volume = 1.0,
+    volume = 0.75,
     level = 100,
     sound = {
         "^weapons/arccw/cod4_M9/cs/fire.wav",
