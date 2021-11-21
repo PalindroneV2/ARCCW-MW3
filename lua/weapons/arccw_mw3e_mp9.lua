@@ -188,7 +188,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = "mw3e_stock_l",
+        Slot = "mwc_stock_l",
         DefaultAttName = "Folded Stock",
     }, --5
     { --7

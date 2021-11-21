@@ -327,9 +327,9 @@ SWEP.Attachments = {
     }, --7
     {
         PrintName = "Stock",
-        Slot = "mw3e_stock_l",
+        Slot = "mwc_stock_l",
         DefaultAttName = "No Stock",
-        Installed = "mw3e_stock_light",
+        Installed = "mwc_stock_light",
     }, --8
     {
         PrintName = "Fire Group",
@@ -370,7 +370,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     elseif wep.Attachments[3].Installed == "mw3e_g36_mgbarrel" then barrel = 3
     end
 
-    local stock = wep.Attachments[8].Installed == "mw3e_stock_light"
+    local stock = wep.Attachments[8].Installed == "mwc_stock_light"
     local bipod = wep:GetBuff_Override("BO1_Bipod")
     local optic = wep.Attachments[1].Installed
 

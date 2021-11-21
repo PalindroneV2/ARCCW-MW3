@@ -1,5 +1,5 @@
 att.PrintName = "Heavy Stock"
-att.Icon = Material("entities/acwatt_bo1_stock_icon.png", "mips smooth")
+att.Icon = Material("entities/acwatt_mwc_stock_icon.png", "mips smooth")
 att.Description = "A sturdy stock that provides excellent recoil control at the cost of mobility."
 att.Desc_Pros = {
 }
@@ -8,7 +8,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 
 att.SortOrder = 1
-att.Slot = {"mw3e_stock_h", "mw3e_stock"}
+att.Slot = {"mwc_stock_h", "mwc_stock"}
 
 att.Mult_Recoil = 0.50
 att.Mult_RecoilSide = 0.50

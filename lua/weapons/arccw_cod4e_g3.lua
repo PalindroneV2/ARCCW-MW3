@@ -299,9 +299,9 @@ SWEP.Attachments = {
     }, --9
     {
         PrintName = "Stock",
-        Slot = {"mw3e_stock"},
+        Slot = {"mwc_stock"},
         DefaultAttName = "No Stock",
-        Installed = "mw3e_stock_medium",
+        Installed = "mwc_stock_medium",
     }, --10
     {
         PrintName = "Ammo Type",
@@ -352,7 +352,7 @@ SWEP.Hook_NameChange = function(wep, name)
         model = "G3K"
     end
 
-    if wep.Attachments[10].Installed == "mw3e_stock_heavy" then
+    if wep.Attachments[10].Installed == "mwc_stock_heavy" then
         alt = "A3"
     end
 

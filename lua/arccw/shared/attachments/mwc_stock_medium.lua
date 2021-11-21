@@ -1,5 +1,5 @@
 att.PrintName = "Medium Stock"
-att.Icon = Material("entities/acwatt_bo1_stock_icon.png", "mips smooth")
+att.Icon = Material("entities/acwatt_mwc_stock_icon.png", "mips smooth")
 att.Description = "A balanced stock that provides good recoil reduction at the cost of some mobility."
 att.Desc_Pros = {
 }
@@ -8,7 +8,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 
 att.SortOrder = 3
-att.Slot = {"mw3e_stock_m", "mw3e_stock"}
+att.Slot = {"mwc_stock_m", "mwc_stock"}
 
 att.Mult_Recoil = 0.7
 att.Mult_RecoilSide = 0.7
