@@ -186,8 +186,8 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "No Stock",
-        Slot = "bo1_stock_lm",
-        Installed = "bo1_stock_medium",
+        Slot = {"mw3e_stock_l", "mw3e_stock_m"},
+        Installed = "mw3e_stock_medium",
     },
     { --6
         PrintName = "Fire Group",

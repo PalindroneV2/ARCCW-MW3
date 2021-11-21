@@ -213,7 +213,7 @@ SWEP.Attachments = {
     }, --4
     {
         PrintName = "Stock",
-        Slot = "bo1_stock_lm",
+        Slot = {"mw3e_stock_l", "mw3e_stock_m"},
         DefaultAttName = "No Stock",
         GivesFlags = {"notfolded"}
     }, --5
@@ -264,7 +264,7 @@ end
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local papcamo = wep:GetBuff_Override("PackAPunch")
-    local folded = wep.Attachments[5].Installed == "bo1_stock_light"
+    local folded = wep.Attachments[5].Installed == "mw3e_stock_light"
 
     if papcamo then
         vm:SetSkin(3)

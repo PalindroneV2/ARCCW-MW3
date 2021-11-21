@@ -259,8 +259,8 @@ SWEP.Attachments = {
     }, --6
     {
         PrintName = "Stock",
-        Slot = "bo1_stock_h",
-        Installed = "bo1_stock_heavy"
+        Slot = "mw3e_stock_h",
+        Installed = "mw3e_stock_heavy"
     }, --7
     {
         PrintName = "Ammo Type",

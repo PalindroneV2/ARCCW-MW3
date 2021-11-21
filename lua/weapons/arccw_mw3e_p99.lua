@@ -163,7 +163,7 @@ SWEP.AttachmentElements = {
 SWEP.ExtraSightDist = 3.5
 
 SWEP.RejectAttachments = {
-    ["bo1_stock_medium"] = true,
+    ["mw3e_stock_medium"] = true,
 }
 
 SWEP.Attachments = {
@@ -216,7 +216,7 @@ SWEP.Attachments = {
     },
     { --5
         PrintName = "Stock",
-        Slot = {"bo1_stock"},
+        Slot = "mw3e_stock_l",
         DefaultAttName = "No Stock",
     },
     { --6

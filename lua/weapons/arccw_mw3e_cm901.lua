@@ -251,9 +251,9 @@ SWEP.Attachments = {
     }, --9
     {
         PrintName = "Stock",
-        Slot = {"bo1_stock_lm"},
+        Slot = {"mw3e_stock_l", "mw3e_stock_m"},
         DefaultAttName = "Buffer Tube",
-        Installed = "bo1_stock_medium",
+        Installed = "mw3e_stock_medium",
     }, --10
     {
         PrintName = "Ammo Type",

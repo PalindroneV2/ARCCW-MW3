@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Remington ACR (MW3)"
+SWEP.PrintName = "Remington ACR"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "Military variant of a high end assault rifle originally by Magpul, later adopted by Bushmaster and now produced by Remington. This is a select-fire varaint which fires the more powerful 6.8mm SPC."
 SWEP.Trivia_Manufacturer = "Remington"
@@ -245,9 +245,9 @@ SWEP.Attachments = {
     }, --9
     {
         PrintName = "Stock",
-        Slot = {"bo1_stock_lm"},
+        Slot = {"mw3e_stock_l", "mw3e_stock_m"},
         DefaultAttName = "No Stock",
-        Installed = "bo1_stock_medium",
+        Installed = "mw3e_stock_medium",
     }, --10
     {
         PrintName = "Ammo Type",

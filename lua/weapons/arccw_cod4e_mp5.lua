@@ -240,7 +240,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Slot = "bo1_stocks_all",
+        Slot = "mw3e_stock",
         DefaultAttName = "No Stock",
     }, --5
     { --5
@@ -277,13 +277,13 @@ SWEP.Hook_NameChange = function(wep, name)
 
     local gunname = "HK MP5A3"
 
-    if wep.Attachments[6].Installed == "bo1_stock_heavy" then
+    if wep.Attachments[6].Installed == "mw3e_stock_heavy" then
         gunname = "HK MP5A2"
     end
 
     if wep.Attachments[2].Installed == "cod4e_barrel_mp5_sd" then
         gunname = "HK MP5SD3"
-        if wep.Attachments[6].Installed == "bo1_stock_heavy" then
+        if wep.Attachments[6].Installed == "mw3e_stock_heavy" then
             gunname = "HK MP5SD2"
         end
     end
