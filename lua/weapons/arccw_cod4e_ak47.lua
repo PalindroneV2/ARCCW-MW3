@@ -309,12 +309,15 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
+    local camo = 0
+
     if wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_gold" then
-        vm:SetSkin(1)
+        camo = 4
     end
+    vm:SetSkin(camo)
 
     if papcamo then
-        vm:SetSkin(3)
+        vm:SetSkin(camo + 3)
     end
 end
 

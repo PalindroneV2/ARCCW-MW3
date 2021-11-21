@@ -109,8 +109,8 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.55, -2, 0.65),
-    Ang = Angle(0.5, 0-0.0125, 0),
+    Pos = Vector(-2.55, -2, 0.75),
+    Ang = Angle(0, 0.0125, 0),
     Magnification = 1.1,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -128,8 +128,8 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 SWEP.SprintPos = Vector(0, 3, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
-SWEP.CustomizePos = Vector(14, 2, -1)
-SWEP.CustomizeAng = Angle(15, 40, 15)
+SWEP.CustomizePos = Vector(14, 2, 0)
+SWEP.CustomizeAng = Angle(15, 40, 20)
 
 SWEP.HolsterPos = Vector(3, 0, 0)
 SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
@@ -148,7 +148,7 @@ SWEP.AttachmentElements = {
         },
         ExcludeFlags = {"cobrakai"},
     },
-    ["MW3E_gp25"] = {
+    ["cod4e_gp25"] = {
         VMBodygroups = {
             {ind = 2, bg = 1},
         },
@@ -167,7 +167,7 @@ SWEP.Attachments = {
         Slot = {"optic"}, -- what kind of attachments can fit here, can be string or table
         Bone = "tag_weapon", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(4.5, 0-0.02, 3.05), -- 4.6 offset that the attachment will be relative to the bone
+            vpos = Vector(1.1, 0, 3.35), -- 4.6 offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
             wpos = Vector(5.5, 1.45, -5.9),
             wang = Angle(172.5, 179, -5)
@@ -175,7 +175,7 @@ SWEP.Attachments = {
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
-        MergeSlots = {14}
+        MergeSlots = {13}
     }, --1
     {
         PrintName = "Muzzle",
@@ -183,7 +183,7 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(22.1, 0, 1), -- offset that the attachment will be relative to the bone
+            vpos = Vector(23, 0, 1.45), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
             wpos = Vector(0, 0, 0),
             wang = Angle(0, 0, 0)
@@ -225,7 +225,7 @@ SWEP.Attachments = {
     }, --5
     {
         Hidden = true,
-        Slot = {"MW3E_gp25", "cod4_dong"},
+        Slot = {"cod4e_gp25"},
         Bone = "tag_weapon",
         Offset = {
             vpos = Vector(11, -0.75, 0.9), -- offset that the attachment will be relative to the bone
@@ -244,12 +244,6 @@ SWEP.Attachments = {
             wang = Angle(-7, 5, 85)
         },
     }, --7
-    {
-        PrintName = "Stock",
-        Slot = {"mwc_stock_h"},
-        DefaultAttName = "No Stock",
-        Installed = "mwc_stock_heavy",
-    }, --8
     {
         PrintName = "Fire Group",
         Slot = {"bo1_fcg"}
@@ -278,14 +272,14 @@ SWEP.Attachments = {
         PrintName = "Cosmetic",
         Slot = "cod4_ak47_cosmetic",
         DefaultAttName = "Standard Issue",
-        DefaultAttIcon = Material("entities/acwatt_cod4_generic.png", "mips smooth"),
+        DefaultAttIcon = Material("entities/acwatt_mw3_generic.png", "mips smooth"),
     },
     {
         Hidden = true,
         Slot = {"bo1_cobra"},
         Bone = "tag_weapon", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(2, 0, 2.5), -- 4.6 offset that the attachment will be relative to the bone
+            vpos = Vector(2, 0.02, 2.6), -- 4.6 offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
         GivesFlags = {"cobrakai"},
@@ -313,7 +307,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local camo = 0
 
-    if wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_gold" then
+    if wep.Attachments[12].Installed == "cod4e_cosmetic_ak47_gold" then
         camo = 4
     end
     vm:SetSkin(camo)
