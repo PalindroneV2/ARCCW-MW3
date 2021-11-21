@@ -343,11 +343,14 @@ SWEP.Animations = {
         LHIKOut = 0.25,
     },
     ["ready"] = {
-        Source = "draw",
-        Time = 0.5,
+        Source = "first_draw",
+        Time = 1.25,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.25,
+        SoundTable = {
+            {s = "ArcCW_MW3E.MP5_Hit", t = 0.5},
+        },
     },
     ["fire"] = {
         Source = {"fire"},

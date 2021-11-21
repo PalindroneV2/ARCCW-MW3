@@ -221,6 +221,55 @@ sound.Add( {
     }
 } )
 
+-- MW3E AK47
+
+sound.Add( {
+    name = "ArcCW_MW3E.AK47_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AK47/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.AK47_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AK47/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.AK47_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AK47/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.AK47_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AK47/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.AK47_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_AK47/lift.wav",
+    }
+} )
+
 --MW3E CM901--
 
 sound.Add( {

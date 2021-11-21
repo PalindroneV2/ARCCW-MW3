@@ -3,9 +3,11 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "AK-47 (COD4)"
+SWEP.PrintName = "AK-47"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "A soviet design assault rifle with inspiration from the StG-44 and the M1 Carbine. It uses the 7,62x39mm designed for the SKS, a rifle which the AK quickly replaced as the standard issue rifle of the Soviet Union. Many other countries, especially those under communist regimes, adopted this rifle or variants of it as their standard as well. 1 in every 5 small arms is a Kalashnikov."
+SWEP.Trivia_Desc = [[
+    Modernized AKM with a RIS Railed handguard and a collapsible stock. Remains in the 7.62x39mm M43 round rather than the AK-74's 5.45x39mm.
+]]
 SWEP.Trivia_Manufacturer = "Izhmash"
 SWEP.Trivia_Calibre = "7.62x39mm M43"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -16,8 +18,8 @@ SWEP.Slot = 2
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/arccw/c_cod4_ak47.mdl"
-SWEP.WorldModel = "models/weapons/arccw/c_cod4_ak47.mdl"
+SWEP.ViewModel = "models/weapons/arccw/c_mw3e_ak47.mdl"
+SWEP.WorldModel = "models/weapons/arccw/c_mw3e_ak47.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     pos        =    Vector(-3, 3, -6),
@@ -79,8 +81,8 @@ SWEP.MagID = "ak47" -- the magazine pool this gun draws from
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "ArcCW_COD4E.AK47_Fire"
-SWEP.ShootSoundSilenced = "ArcCW_COD4E.M4M16_Sil"
+SWEP.ShootSound = "ArcCW_MW3E.AK47_Fire"
+SWEP.ShootSoundSilenced = "ArcCW_MW3E.M4M16_Sil"
 
 SWEP.MuzzleEffect = "muzzleflash_1"
 SWEP.ShellModel = "models/shells/shell_762nato.mdl"
@@ -146,14 +148,14 @@ SWEP.AttachmentElements = {
         },
         ExcludeFlags = {"cobrakai"},
     },
-    ["cod4e_gp25"] = {
-        VMBodygroups = {
-            {ind = 3, bg = 1},
-        },
-    },
-    ["stock_h"] = {
+    ["MW3E_gp25"] = {
         VMBodygroups = {
             {ind = 2, bg = 1},
+        },
+    },
+    ["cover"] = {
+        VMBodygroups = {
+            {ind = 3, bg = 1},
         },
     },
 }
@@ -223,7 +225,7 @@ SWEP.Attachments = {
     }, --5
     {
         Hidden = true,
-        Slot = {"cod4e_gp25", "cod4_dong"},
+        Slot = {"MW3E_gp25", "cod4_dong"},
         Bone = "tag_weapon",
         Offset = {
             vpos = Vector(11, -0.75, 0.9), -- offset that the attachment will be relative to the bone
@@ -244,9 +246,9 @@ SWEP.Attachments = {
     }, --7
     {
         PrintName = "Stock",
-        Slot = {"mw3e_stock_h"},
+        Slot = {"bo1_stock_h"},
         DefaultAttName = "No Stock",
-        Installed = "mw3e_stock_heavy",
+        Installed = "bo1_stock_heavy",
     }, --8
     {
         PrintName = "Fire Group",
@@ -295,10 +297,10 @@ SWEP.Attachments = {
 SWEP.Hook_NameChange = function(wep, name)
     local pap = wep:GetBuff_Override("PackAPunch")
 
-    local gunname = "AK-47"
+    local gunname = "AKM"
 
     if pap then
-        gunname = "Reznov's Revenge"
+        gunname = "Reznov's Resurrection"
     end
 
     return gunname
@@ -309,12 +311,15 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
+    local camo = 0
+
     if wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_gold" then
-        vm:SetSkin(1)
+        camo = 4
     end
+    vm:SetSkin(camo)
 
     if papcamo then
-        vm:SetSkin(3)
+        vm:SetSkin(camo + 3)
     end
 end
 
@@ -364,11 +369,17 @@ SWEP.Animations = {
         Source = {"fire"},
         Time = 0.5,
         ShellEjectAt = 0,
+        SoundTable = {
+            {s = "ArcCW_MW3E.Mech_D", t = 1 / 35},
+        },
     },
     ["fire_iron"] = {
         Source = {"fire_ads"},
         Time = 0.5,
         ShellEjectAt = 0,
+        SoundTable = {
+            {s = "ArcCW_MW3E.Mech_D", t = 1 / 35},
+        },
     },
     ["reload"] = {
         Source = "reload",
@@ -380,8 +391,8 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_COD4E.AK47_MagOut", t = 15 / 35},
-            {s = "ArcCW_COD4E.AK47_MagIn", t = 59 / 35}
+            {s = "ArcCW_MW3E.AK47_MagOut", t = 15 / 35},
+            {s = "ArcCW_MW3E.AK47_MagIn", t = 59 / 35}
         },
     },
     ["reload_empty"] = {
@@ -394,9 +405,9 @@ SWEP.Animations = {
         LHIKIn = 0.25,
         LHIKOut = 1.45,
         SoundTable = {
-            {s = "ArcCW_COD4E.AK47_MagOut", t = 15 / 35},
-            {s = "ArcCW_COD4E.AK47_MagIn", t = 59 / 35},
-            {s = "ArcCW_COD4E.AK47_Chamber", t = 85 / 35},
+            {s = "ArcCW_MW3E.AK47_MagOut", t = 15 / 35},
+            {s = "ArcCW_MW3E.AK47_MagIn", t = 59 / 35},
+            {s = "ArcCW_MW3E.AK47_Chamber", t = 85 / 35},
         },
     },
     ["enter_sprint"] = {
@@ -436,11 +447,17 @@ SWEP.Animations = {
         Source = {"fire_gl"},
         Time = 0.5,
         ShellEjectAt = 0,
+        SoundTable = {
+            {s = "ArcCW_MW3E.Mech_D", t = 1 / 35},
+        },
     },
     ["fire_iron_m203"] = {
         Source = {"fire_ads_gl"},
         Time = 0.5,
         ShellEjectAt = 0,
+        SoundTable = {
+            {s = "ArcCW_MW3E.Mech_D", t = 1 / 35},
+        },
     },
     ["reload_m203"] = {
         Source = "reload_gl",
@@ -452,8 +469,8 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_COD4E.AK47_MagOut", t = 21 / 35},
-            {s = "ArcCW_COD4E.AK47_MagIn", t = 63 / 35}
+            {s = "ArcCW_MW3E.AK47_MagOut", t = 21 / 35},
+            {s = "ArcCW_MW3E.AK47_MagIn", t = 63 / 35}
         },
     },
     ["reload_empty_m203"] = {
@@ -466,9 +483,9 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_COD4E.AK47_MagOut", t = 21 / 35},
-            {s = "ArcCW_COD4E.AK47_MagIn", t = 63 / 35},
-            {s = "ArcCW_COD4E.AK47_Chamber", t = 85 / 35},
+            {s = "ArcCW_MW3E.AK47_MagOut", t = 21 / 35},
+            {s = "ArcCW_MW3E.AK47_MagIn", t = 63 / 35},
+            {s = "ArcCW_MW3E.AK47_Chamber", t = 85 / 35},
         },
     },
     ["enter_sprint_m203"] = {
