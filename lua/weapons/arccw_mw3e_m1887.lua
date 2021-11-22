@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
+SWEP.Category = "ArcCW - MW3" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Model 1887"
@@ -114,7 +114,7 @@ SWEP.IronSightStruct = {
 }
 
 SWEP.HoldtypeHolstered = "passive"
-SWEP.HoldtypeActive = "shotgun"
+SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN

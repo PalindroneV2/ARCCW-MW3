@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
+SWEP.Category = "ArcCW - MW3" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "PM-9"
@@ -21,7 +21,7 @@ SWEP.WorldModel = "models/weapons/arccw/c_mw3e_pm9.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     scale = 1.1,
-    pos        =    Vector(-13.25, 5.4, -3.5),
+    pos        =    Vector(-10.25, 5.4, -4.75),
     ang        =    Angle(-6, 2, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
 }

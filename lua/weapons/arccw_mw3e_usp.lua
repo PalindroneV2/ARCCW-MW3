@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
+SWEP.Category = "ArcCW - MW3" -- edit this if you like
 SWEP.AdminOnly = false
 
 
@@ -19,7 +19,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/c_mw3e_usp.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_mw3e_usp.mdl"
-SWEP.MirrorVMWM = true
+SWEP.MirrorVMWM = truew
 SWEP.WorldModelOffset = {
     scale = 1.1,
     pos        =    Vector(-10, 2.75, -3.785),
@@ -174,7 +174,7 @@ SWEP.Attachments = {
         WMScale = Vector(1, 0.75, 0.75),
         Bone = "tag_Weapon",
         Offset = {
-            vpos = Vector(5.25, 0.3, 1),
+            vpos = Vector(4.8, 0.275, 1),
             vang = Angle(0, 0, 0),
         },
     }, --1

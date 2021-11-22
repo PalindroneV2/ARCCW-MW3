@@ -20,10 +20,10 @@ SWEP.ViewModel = "models/weapons/arccw/c_cod4_m14.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_cod4_m14.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-7, 5, -7.5),
-    ang        =    Angle(-5, -1, 180),
+    pos        =    Vector(-5, 5, -5.25),
+    ang        =    Angle(-10, -1, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
-    scale = 1.065,
+    scale = 1.2,
 }
 SWEP.ViewModelFOV = 60
 
@@ -83,7 +83,7 @@ SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 200
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
-SWEP.MagID = "ar10" -- the magazine pool this gun draws from
+SWEP.MagID = "m14" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -127,7 +127,7 @@ SWEP.IronSightStruct = {
 
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
-SWEP.HoldtypeSights = "rpg"
+SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 

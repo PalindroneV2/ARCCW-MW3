@@ -288,12 +288,12 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
-    local camo = 0
+    local camo = 6
     if wep.Attachments[7].Installed == "cod4e_cosmetic_m9_stars" then
-        camo = 2
+        camo = camo + 2
         vm:SetBodygroup(1, 1)
     elseif wep.Attachments[7].Installed == "cod4e_cosmetic_m9_elite" then
-        camo = 4
+        camo = camo + 4
         vm:SetBodygroup(1, 1)
     end
 

@@ -19,8 +19,8 @@ SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/arccw/c_cod4_m1014.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-3.5, 4, -6),
-    ang        =    Angle(-7, 1, 180),
+    pos        =    Vector(-4, 4.25, -6),
+    ang        =    Angle(-6, 0, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
     scale   =   1.05,
 }
@@ -113,8 +113,8 @@ SWEP.IronSightStruct = {
 
 
 SWEP.HoldtypeHolstered = "passive"
-SWEP.HoldtypeActive = "smg"
-SWEP.HoldtypeSights = "smg"
+SWEP.HoldtypeActive = "shotgun"
+SWEP.HoldtypeSights = "shotgun"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 

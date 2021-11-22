@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
+SWEP.Category = "ArcCW - MW3" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Colt M4A1"
@@ -209,34 +209,31 @@ SWEP.Attachments = {
     }, --2
     {
         PrintName = "Underbarrel",
-        Slot = {"ubgl"},
+        DefaultAttName = "Integrated Foregrip",
+        Slot = {"foregrip", "cod4e_m203"},
         Bone = "tag_weapon",
         VMScale = Vector(1, 1, 1),
         WMScale = Vector(1, 1, 1),
-        Offset = {
-            vpos = Vector(6.75, 0, 1), -- offset that the attachment will be relative to the bone
-            vang = Angle(0, 0, 0),
-            wpos = Vector(11, 1.25, -3.5),
-            wang = Angle(170.5, -180, 0),
-        },
-        MergeSlots = {4,5,6}
-    }, --4
-    {
-        Hidden = true,
-        Slot = {"foregrip"},
-        Bone = "tag_weapon",
         Offset = {
             vpos = Vector(10, 0, 1.45), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
             wpos = Vector(13.75, 1.15, -4.1),
             wang = Angle(170, -180, 0),
         },
-        GivesFlags = {"nocover"},
-    }, --5
+        MergeSlots = {4,5}
+    }, --4
     {
         Hidden = true,
-        Slot = {"cod4e_m203"},
-    }, --6
+        Slot = {"ubgl"},
+        Bone = "tag_weapon",
+        Offset = {
+            vpos = Vector(6.75, 0, 1), -- offset that the attachment will be relative to the bone
+            vang = Angle(0, 0, 0),
+            wpos = Vector(11, 1.25, -3.5),
+            wang = Angle(170.5, -180, 0),
+        },
+        GivesFlags = {"nocover"},
+    }, --5
     {
         Hidden = true,
         Slot = {"bipod"},

@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
+SWEP.Category = "ArcCW - MW3" -- edit this if you like
 SWEP.AdminOnly = true
 SWEP.AutoSpawnable = false
 
@@ -20,7 +20,7 @@ SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/arccw/c_mw3e_xm25.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-5, 5, -6),
+    pos        =    Vector(-10, 5, -7.5),
     ang        =    Angle(-5, 2, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
     scale   =  1
@@ -112,8 +112,8 @@ SWEP.IronSightStruct = {
 }
 
 SWEP.HoldtypeHolstered = "passive"
-SWEP.HoldtypeActive = "smg"
-SWEP.HoldtypeSights = "smg"
+SWEP.HoldtypeActive = "ar2"
+SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 

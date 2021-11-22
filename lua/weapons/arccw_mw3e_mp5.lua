@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
+SWEP.Category = "ArcCW - MW3" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "HK MP5A2 (MW3)"
@@ -20,8 +20,8 @@ SWEP.ViewModel = "models/weapons/arccw/c_mw3e_mp5.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_mw3e_mp5.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    scale = 1.1,
-    pos        =    Vector(-13.25, 5.4, -3.5),
+    scale = 1,
+    pos        =    Vector(-6.5, 4.35, -7.25),
     ang        =    Angle(-6, 2, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
@@ -124,7 +124,7 @@ SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "ar2"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 
 SWEP.ActivePos = Vector(0, 2, 0.5)
 SWEP.ActiveAng = Angle(0, 0, 0)

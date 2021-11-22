@@ -1778,6 +1778,45 @@ sound.Add( {
     }
 } )
 
+-- COD 4 MP44
+
+sound.Add( {
+    name = "ArcCW_COD4E.MP44_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_MP44/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.MP44_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_MP44/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.MP44_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_MP44/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.MP44_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_MP44/lift.wav",
+    }
+} )
+
 -- COD 4 G3
 
 sound.Add( {

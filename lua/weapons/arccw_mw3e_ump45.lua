@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
+SWEP.Category = "ArcCW - MW3" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "HK UMP-45"
@@ -24,9 +24,9 @@ SWEP.ViewModel = "models/weapons/arccw/c_mw3e_ump45.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_mw3e_ump45.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    scale = 1.15,
-    pos        =    Vector(-8.9, 4, -3.5),
-    ang        =    Angle(-10, -2, 180),
+    scale = 1,
+    pos        =    Vector(-8, 4, -6.6),
+    ang        =    Angle(-7, 1, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
 SWEP.ViewModelFOV = 60
@@ -123,8 +123,8 @@ SWEP.IronSightStruct = {
 }
 
 SWEP.HoldtypeHolstered = "passive"
-SWEP.HoldtypeActive = "smg"
-SWEP.HoldtypeSights = "smg"
+SWEP.HoldtypeActive = "ar2"
+SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 
@@ -134,10 +134,6 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 SWEP.SprintPos = Vector(0, 1.5, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
-/*
-SWEP.CustomizePos = Vector(1, 3, 0.5)
-SWEP.CustomizeAng = Angle(0, 0, 0)
-*/
 SWEP.CustomizePos = Vector(12, 1, -0.5)
 SWEP.CustomizeAng = Angle(15, 40, 25)
 
@@ -301,7 +297,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         Time = 2.5,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SMG1,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Framerate = 30,
         LHIK = true,
         LHIKIn = 0.5,
@@ -315,7 +311,7 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         Time = 3.03,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SMG1,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Framerate = 30,
         LHIK = true,
         LHIKIn = 0.5,

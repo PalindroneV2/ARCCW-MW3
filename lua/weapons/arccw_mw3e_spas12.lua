@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
+SWEP.Category = "ArcCW - MW3" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "SPAS-12"
@@ -62,11 +62,13 @@ SWEP.Firemodes = {
         PrintName = "PUMP",
         Mode = 1,
         Override_ManualAction = true,
+        Override_AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
     },
     {
         PrintName = "SEMI-AUTO",
         Mode = 1,
         Override_ManualAction = false,
+        Override_AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
     },
     {
         Mode = 0,
@@ -123,7 +125,7 @@ SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "shotgun"
 SWEP.HoldtypeSights = "ar2"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 
 SWEP.ActivePos = Vector(0, 1, 0.25)
 SWEP.ActiveAng = Angle(0, 0, 0)

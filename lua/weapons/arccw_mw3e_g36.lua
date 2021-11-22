@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
+SWEP.Category = "ArcCW - MW3" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "HK G36"
@@ -26,7 +26,7 @@ SWEP.WorldModelOffset = {
     pos        =    Vector(-6.5, 3.5, -6),
     ang        =    Angle(-9, -1, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
-    scale = 1.1,
+    scale = 1.35,
 }
 SWEP.ViewModelFOV = 60
 

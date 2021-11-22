@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
+SWEP.Category = "ArcCW - MW3" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Colt CM901"
@@ -86,7 +86,7 @@ SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "ArcCW_MW3E.CM901_Fire"
 SWEP.ShootSoundSilenced = "ArcCW_MW3E.RSASS_Sil"
-SWEP.DistantShootSound = "weapons/arccw/bo1_m16/ringoff_f.wav"
+SWEP.DistantShootSound = ""
 
 SWEP.MuzzleEffect = "muzzleflash_4"
 SWEP.ShellModel = "models/shells/shell_556.mdl"

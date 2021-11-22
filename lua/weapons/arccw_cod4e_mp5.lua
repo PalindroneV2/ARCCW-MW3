@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "HK MP5A3 (COD4)"
+SWEP.PrintName = "HK MP5A3"
 SWEP.Trivia_Class = "Submachine Gun"
 SWEP.Trivia_Desc = "A submachinegun derivative of the G3 design chambered in 9mm. Known for its use by the British SAS."
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
@@ -20,9 +20,9 @@ SWEP.ViewModel = "models/weapons/arccw/c_cod4_mp5.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_cod4_mp5.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    scale = 1.1,
-    pos        =    Vector(-13.25, 5.4, -3.5),
-    ang        =    Angle(-6, 2, 180),
+    scale = 1,
+    pos        =    Vector(-5.75, 4.35, -7.6),
+    ang        =    Angle(-8, 2, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
 SWEP.ViewModelFOV = 60
@@ -126,7 +126,7 @@ SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "ar2"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 
 SWEP.ActivePos = Vector(0, 2, 0.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
@@ -169,11 +169,10 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 1, bg = 1},
         },
-    },
-    ["rishg"] = {
-        VMBodygroups = {
-            {ind = 1, bg = 2},
-            {ind = 2, bg = 2}
+        AttPosMods = {
+            [4] = {
+                vpos = Vector(4, 0, 0.25),
+            },
         },
     },
 }
@@ -223,7 +222,7 @@ SWEP.Attachments = {
         Slot = {"foregrip"},
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(4, 0, 0), -- offset that the attachment will be relative to the bone
+            vpos = Vector(4, 0, 0.5), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
     }, --3
