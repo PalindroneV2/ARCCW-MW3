@@ -1,6 +1,7 @@
 VertexlitGeneric
 {
 	$basetexture	"models\weapons\cod4\cod4_uzi\golden"
+	$bumpmap	"models\weapons\colors\normalmap"
 
 	$detail "models\weapons\cod4\cod4_uzi\golden_s"
 	$detailblendmode 0
@@ -14,7 +15,6 @@ VertexlitGeneric
 	$normalmapalphaphongmask    	1
 
 	$phongexponenttexture "models\weapons\cod4\cod4_uzi\golden_s"
-	$envmapmask "models\weapons\cod4\cod4_uzi\golden_s"
 
 	"$envmap" "env_cubemap"					
 	"$envmaptint" "[ .005 .005 .005 ]"

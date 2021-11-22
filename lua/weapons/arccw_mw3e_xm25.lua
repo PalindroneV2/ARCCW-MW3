@@ -35,7 +35,7 @@ SWEP.DamageMin = 15 -- damage done at maximum range
 SWEP.Range = 350 -- in METRES
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
-SWEP.ShootEntity = "arccw_25mm_he_bo1" -- entity to fire, if any
+SWEP.ShootEntity = "arccw_bo1_25mm_he" -- entity to fire, if any
 SWEP.MuzzleVelocity = 5000 -- projectile or phys bullet muzzle velocity
 -- IN M/S
 
