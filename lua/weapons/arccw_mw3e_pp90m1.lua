@@ -3,26 +3,26 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW3" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "PM-9"
-SWEP.Trivia_Class = "Machine Pistol"
-SWEP.Trivia_Desc = "9mm japanese machine pistol based on the Mini-Uzi standard for the JSDF."
+SWEP.PrintName = "PP-90M1"
+SWEP.Trivia_Class = "Submachine Gun"
+SWEP.Trivia_Desc = "9mm russian submachine gun similar to the PP-19 Bizon in appearance and functionality. It uses a helical 64 round magazine."
 SWEP.Trivia_Manufacturer = "Minebea Co."
 SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Blowback"
-SWEP.Trivia_Country = "Japan"
-SWEP.Trivia_Year = 1990
+SWEP.Trivia_Country = "Russia"
+SWEP.Trivia_Year = "1990s"
 
 SWEP.Slot = 1
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/arccw/c_mw3e_pm9.mdl"
-SWEP.WorldModel = "models/weapons/arccw/c_mw3e_pm9.mdl"
+SWEP.ViewModel = "models/weapons/arccw/c_mw3e_pp90m1.mdl"
+SWEP.WorldModel = "models/weapons/arccw/c_mw3e_pp90m1.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    scale = 1.1,
-    pos        =    Vector(-10.25, 5.4, -4.75),
-    ang        =    Angle(-6, 2, 180),
+    scale = 1,
+    pos        =    Vector(-9, 5.4, -6.25),
+    ang        =    Angle(-10, -1, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
 SWEP.ViewModelFOV = 60
@@ -47,14 +47,14 @@ SWEP.TracerCol = Color(255, 25, 25)
 SWEP.TracerWidth = 3
 
 SWEP.ChamberSize = 0  -- how many rounds can be chambered.
-SWEP.Primary.ClipSize = 25 -- DefaultClip is automatically set.
-SWEP.ExtendedClipSize = 50
+SWEP.Primary.ClipSize = 64 -- DefaultClip is automatically set.
+SWEP.ExtendedClipSize = 128
 
-SWEP.Recoil = 0.65
+SWEP.Recoil = 0.4
 SWEP.RecoilSide = 0.5
-SWEP.RecoilRise = 1
+SWEP.RecoilRise = 0.5
 
-SWEP.Delay = 60 / 1100 -- 60 / RPM.
+SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -78,12 +78,12 @@ SWEP.MoveDispersion = 120
 SWEP.ShootWhileSprint = false
 
 SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
-SWEP.MagID = "uzi" -- the magazine pool this gun draws from
+SWEP.MagID = "pp90m1" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "ArcCW_MW3E.PM9_Fire"
+SWEP.ShootSound = "ArcCW_MW3E.PP90M1_Fire"
 SWEP.ShootSoundSilenced = "ArcCW_MW3E.SMG_Sil"
 
 SWEP.MuzzleEffect = "muzzleflash_pistol"
@@ -96,7 +96,7 @@ SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.ProceduralViewBobAttachment = 1
 SWEP.CamAttachment = 3
 
-SWEP.SightTime = 0.175
+SWEP.SightTime = 0.3
 SWEP.SpeedMult = 1
 SWEP.SightedSpeedMult = 0.75
 
@@ -113,24 +113,24 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.49, 3, 0.9),
-    Ang = Angle(-0.75, 0, 0),
+    Pos = Vector(-4.85, 3, 1.9),
+    Ang = Angle(0, 0, 0),
     Magnification = 1.1,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
 SWEP.HoldtypeHolstered = "normal"
-SWEP.HoldtypeActive = "pistol"
-SWEP.HoldtypeSights = "revolver"
+SWEP.HoldtypeActive = "ar2"
+SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 
 SWEP.ActivePos = Vector(0, 2, 0.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CustomizePos = Vector(14, 0, 0)
-SWEP.CustomizeAng = Angle(15, 40, 20)
+SWEP.CustomizePos = Vector(15, 2, 0)
+SWEP.CustomizeAng = Angle(15, 40, 30)
 
 SWEP.SprintPos = Vector(0, 2, 0.5)
 SWEP.SprintAng = Angle(0, 0, 0)
@@ -155,11 +155,11 @@ SWEP.Attachments = {
     { --1
         PrintName = "Sights",
         DefaultAttName = "Iron Sights",
-        Slot = {"optic_lp"},
+        Slot = {"optic"},
         Bone = "tag_weapon",
         VMScale = Vector(1, 1, 1),
         Offset = {
-            vpos = Vector(-3.2, 0, 2.5),
+            vpos = Vector(1.75, 0, 3.5),
             vang = Angle(0, 0, 0),
         },
         CorrectivePos = Vector(0, 0, 0.0125),
@@ -173,7 +173,7 @@ SWEP.Attachments = {
         VMScale = Vector(1.3, 1, 1),
         Bone = "tag_Weapon",
         Offset = {
-            vpos = Vector(8, 0, 1.35),
+            vpos = Vector(15.5, 0, 1.325),
             vang = Angle(0, 0, 0),
         },
     },
@@ -184,8 +184,8 @@ SWEP.Attachments = {
         WMScale = Vector(0.85, 0.85, 0.85),
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(3.5, -0.3, 0.25),
-            vang = Angle(0, 0, 90),
+            vpos = Vector(9, 0.5, 1.325),
+            vang = Angle(0, 0, -90),
         },
     },
     { --5
@@ -199,13 +199,11 @@ SWEP.Attachments = {
     { --8
         PrintName = "Charm",
         Slot = "charm",
-        Bone = "j_bolt",
-        VMScale = Vector(0.55, 0.55, 0.55),
+        Bone = "tag_weapon",
+        VMScale = Vector(1, 1, 1),
         Offset = {
-            vpos = Vector(5, -0.5, -0.45),
+            vpos = Vector(-1, -0.65, 1.5),
             vang = Angle(0, 0, 0),
-            wpos = Vector(8.5, 2.5, -4),
-            wang = Angle(-5, -2, 177.5)
         },
     },
 }
@@ -216,10 +214,10 @@ SWEP.RejectAttachments = {
 SWEP.Hook_NameChange = function(wep, name)
     local pap = wep:GetBuff_Override("PackAPunch")
 
-    local gunname = "PM-9"
+    local gunname = "PP-90M1"
 
     if pap then
-        gunname = "Permanent Mutilation 9X"
+        gunname = "Pulya Shlangs"
     end
 
     return gunname
@@ -254,46 +252,55 @@ SWEP.Animations = {
         LHIKOut = 0.25,
     },
     ["ready"] = {
-        Source = "draw",
-        Time = 0.5,
+        Source = "first_draw",
+        Time = 1.96,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.25,
+        SoundTable = {
+            {s = "ArcCW_MW3E.PP90M1_Chamber", t = 0.2},
+        },
     },
     ["fire"] = {
         Source = {"fire"},
         Time = 8 / 30,
         ShellEjectAt = 1 / 30,
+        SoundTable = {
+            {s = "ArcCW_MW3E.Mech_D", t = 1 / 60},
+        },
     },
     ["fire_iron"] = {
         Source = "fire_ads",
         Time = 8 / 30,
         ShellEjectAt = 1 / 30,
+        SoundTable = {
+            {s = "ArcCW_MW3E.Mech_D", t = 1 / 60},
+        },
     },
     ["reload"] = {
         Source = "reload",
         Time = 2.5,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.2,
         SoundTable = {
-            {s = "ArcCW_MW3E.PM9_MagOut", t = 0.25},
-            {s = "ArcCW_MW3E.PM9_MagIn", t = 1.4},
+            {s = "ArcCW_MW3E.PP90M1_MagOut", t = 0.25},
+            {s = "ArcCW_MW3E.PP90M1_MagIn", t = 1.4},
         },
         MinProgress = 2,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         Time = 3.36,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.2,
         SoundTable = {
-            {s = "ArcCW_MW3E.PM9_MagOut", t = 0.25},
-            {s = "ArcCW_MW3E.PM9_MagIn", t = 1.4},
-            {s = "ArcCW_MW3E.PM9_Chamber", t = 2}
+            {s = "ArcCW_MW3E.PP90M1_MagOut", t = 0.25},
+            {s = "ArcCW_MW3E.PP90M1_MagIn", t = 1.4},
+            {s = "ArcCW_MW3E.PP90M1_Chamber", t = 2}
         },
         MinProgress = 2.7,
     },

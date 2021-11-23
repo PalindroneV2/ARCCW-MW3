@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "M249 SAW (COD4)"
+SWEP.PrintName = "M249 SAW"
 SWEP.Trivia_Class = "Light Machine Gun"
 SWEP.Trivia_Desc = "Belgian light machine gun. Standard squad automatic weapon for the United States armed forces."
 SWEP.Trivia_Manufacturer = "FN Herstal"

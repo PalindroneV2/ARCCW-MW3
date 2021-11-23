@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW3" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "HK MP5A2 (MW3)"
+SWEP.PrintName = "HK MP5A2"
 SWEP.Trivia_Class = "Submachine Gun"
 SWEP.Trivia_Desc = "A submachinegun derivative of the G3 design chambered in 9mm. Known for its use by the British SAS."
 SWEP.Trivia_Manufacturer = "Heckler & Koch"

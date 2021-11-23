@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "AK-47 (COD4)"
+SWEP.PrintName = "AK-47"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "A soviet design assault rifle with inspiration from the StG-44 and the M1 Carbine. It uses the 7,62x39mm designed for the SKS, a rifle which the AK quickly replaced as the standard issue rifle of the Soviet Union. Many other countries, especially those under communist regimes, adopted this rifle or variants of it as their standard as well. 1 in every 5 small arms is a Kalashnikov."
 SWEP.Trivia_Manufacturer = "Izhmash"

@@ -545,6 +545,65 @@ sound.Add( {
     }
 } )
 
+--MW3E PP90M1--
+
+sound.Add( {
+    name = "ArcCW_MW3E.PP90M1_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_PP90M1/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.PP90M1_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_PP90M1/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.PP90M1_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_PP90M1/in_a.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.PP90M1_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_PP90M1/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.PP90M1_MagIn_B",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_PP90M1/in_b.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.PP90M1_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_PP90M1/lift.wav",
+    }
+} )
+
 --MW3E P90--
 
 sound.Add( {
