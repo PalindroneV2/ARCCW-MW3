@@ -276,7 +276,7 @@ SWEP.Hook_NameChange = function(wep, name)
     end
 
     if pap then
-        gunname = "Wu WonderNine"
+        gunname = "Woo WonderNine"
     end
 
     wep.Trivia_Desc = desc
