@@ -152,9 +152,20 @@ SWEP.AttachmentElements = {
             CrosshairInSights = false,
         },
     },
-    ["bocw_deagle"] = {
+    ["tac_eagle"] = {
         VMBodygroups = {
             {ind = 0, bg = 2}
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-2.0125, 3, 0.85),
+            Ang = Angle(0, 0.0125, 0),
+            Magnification = 1.1,
+            CrosshairInSights = false,
+        },
+    },
+    ["bocw_deagle"] = {
+        VMBodygroups = {
+            {ind = 0, bg = 3}
         },
         Override_IronSightStruct = {
             Pos = Vector(-2, 3, 0.75),
@@ -181,19 +192,6 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0, 0, 0),
         ExcludeFlags = {"top_laser", "cw_handcannon"},
     }, --1
-    { --2
-        PrintName = "Muzzle",
-        DefaultAttName = "Standard Muzzle",
-        Slot = "muzzle",
-        VMScale = Vector(1, 1, 1),
-        WMScale = Vector(1, 1, 1),
-        Bone = "tag_Weapon",
-        Offset = {
-            vpos = Vector(7.4, 0.315, 1.05),
-            vang = Angle(0, 0, 0),
-        },
-        ExcludeFlags = {"cw_handcannon"},
-    },
     { --3
         PrintName = "Tactical",
         Slot = {"bo1_tacpistol", "tac_pistol"},
@@ -204,7 +202,7 @@ SWEP.Attachments = {
             vpos = Vector(3.6, 0.315, 0.3),
             vang = Angle(0, 0, 0),
         },
-        MergeSlots = {9,10},
+        MergeSlots = {8,9,10},
     },
     { --5
         PrintName = "Caliber",
@@ -257,10 +255,21 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
     },
+    { --11
+        Hidden = true,
+        Slot = {"mw2e_deagle_laser"},
+        Bone = "j_gun",
+        VMScale = Vector(1, 1, 1),
+        Offset = {
+            vpos = Vector(0, 0.275, 0),
+            vang = Angle(0, 0, 0),
+        },
+    },
 }
 
 SWEP.RejectAttachments = {
     ["cde_cosmetic_black"] = true,
+    ["tac_mw2_x400"] = true,
 }
 
 SWEP.Hook_NameChange = function(wep, name)
@@ -283,10 +292,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local papcamo = wep:GetBuff_Override("PackAPunch")
     local camo = 0
-    if wep.Attachments[8].Installed == "cde_cosmetic_silver" then camo = 1
-    elseif wep.Attachments[8].Installed == "mw3e_cosmetic_deagle_classic" then camo = 1
-    elseif wep.Attachments[8].Installed == "mw3e_cosmetic_deagle_classic_gold" then camo = 2
-    elseif wep.Attachments[8].Installed == "cde_cosmetic_handcannon" then camo = 0
+    if wep.Attachments[7].Installed == "cde_cosmetic_silver" then camo = 1
+    elseif wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_classic" then camo = 1
+    elseif wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_classic_gold" then camo = 2
+    elseif wep.Attachments[7].Installed == "cde_cosmetic_handcannon" then camo = 0
     end
 
     vm:SetSkin(camo)
@@ -300,7 +309,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
-    if wep.Attachments[8].Installed == "cde_cosmetic_handcannon" then
+    if wep.Attachments[7].Installed == "cde_cosmetic_handcannon" then
         return anim .. "_cw"
     end
 end

@@ -1,6 +1,6 @@
 att.PrintName = "P-2000 Maxx Laser (BOCW)"
 att.Icon = Material("entities/acwatt_tac_bo2_anpeq.png", "mips smooth")
-att.Description = "Tacical laser pointer. Tighter aim when firing from hip, less dispersion when moving."
+att.Description = "Tacical laser pointer with backup iron sights. Tighter aim when firing from hip, less dispersion when moving."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {

@@ -18,7 +18,7 @@ att.LaserBone = "laser"
 att.HideIfBlocked = true
 att.ExcludeFlags = {"nolam"}
 
-att.ColorOptionsTable = {Color(0, 255, 0)}
+att.ColorOptionsTable = {Color(0, 115, 0)}
 
 att.ToggleStats = {
     {

@@ -1,5 +1,5 @@
-att.PrintName = "Laser Aiming Module"
-att.AbbrevName = "LAM (MW2)"
+att.PrintName = "SureFire X400 Ultra WeaponLight"
+att.AbbrevName = "SureFire X400 (MW2)"
 att.Icon = Material("entities/acwatt_tac_bo2_anpeq.png", "mips smooth")
 att.Description = "Tacical laser pointer. Tighter aim when firing from hip, less dispersion when moving."
 att.Desc_Pros = {
@@ -9,17 +9,17 @@ att.Desc_Cons = {
     "- Visible Light Beam"
 }
 att.AutoStats = true
-att.Slot = {"mw2e_lam_laser"}
+att.Slot = {"mw2e_deagle_laser"}
+att.GivesFlags = {"mw2_x400"}
 
-att.Model = "models/weapons/arccw/atts/mw2e_usp_lam.mdl"
+att.Model = "models/weapons/arccw/atts/mw2_x400_special.mdl"
 
 att.Laser = false
 att.LaserStrength = 5 / 5
 att.LaserBone = "laser"
 att.HideIfBlocked = true
-att.ExcludeFlags = {"nolam"}
 
-att.ColorOptionsTable = {Color(0, 255, 255)}
+att.ColorOptionsTable = {Color(255, 0, 0)}
 
 att.ToggleStats = {
     {
