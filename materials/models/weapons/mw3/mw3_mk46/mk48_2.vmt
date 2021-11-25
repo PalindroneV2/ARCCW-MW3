@@ -1,8 +1,8 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models/weapons/bo2/bo2_mk48/mk48"
+	"$basetexture" "models/weapons/colors/black_detail"
 	$blendtintbybasealpha  "1"
-	"$bumpmap" "models/weapons/bo2/bo2_mk48/mk48_n"
+	"$bumpmap" "models/weapons/colors/normalmap"
 
 	$detail "models/weapons/colors/gunmetal"
 	$detailblendmode "0"

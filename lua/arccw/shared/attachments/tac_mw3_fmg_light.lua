@@ -1,6 +1,6 @@
 att.PrintName = "Tactical Flashlight (MW3)"
 att.AbbrevName = "Tac Light (MW3)"
-att.Icon = Material("entities/acwatt_tac_bo2_anpeq.png", "mips smooth")
+att.Icon = Material("entities/acwatt_mw3_laser.png", "mips smooth")
 att.Description = "Special tacical flashlight attached in the carry handle of the weapon. It is unavailable would you choose to use optics. Off by default."
 att.Desc_Pros = {
 }

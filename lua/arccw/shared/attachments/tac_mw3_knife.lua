@@ -1,6 +1,6 @@
 att.PrintName = "Bolo Tactical Knife (MW3)"
 att.AbbrevName = "Tac Knife"
-att.Icon = Material("entities/acwatt_muzz_waw_bayonet.png", "mips smooth")
+att.Icon = Material("entities/acwatt_mw3_knife.png", "mips smooth")
 att.Description = "Remember the basics of CQC."
 att.Desc_Pros = {
 }

@@ -17,3 +17,4 @@ att.RequireFlags = {"m21_scope"}
 att.GivesFlags = {"all_ghillied_up"}
 
 att.NoRandom = true
+att.AttachSound = "weapons/arccw/palindrone_misc/mw_motif_short.wav"

@@ -1,5 +1,5 @@
 att.PrintName = "PSR Scope (8x)"
-att.Icon = Material("entities/acwatt_optic_bo1_l96.png", "mips smooth")
+att.Icon = Material("entities/acwatt_optic_mw3_sniper.png", "mips smooth")
 att.Description = "Sniper scope for the RSASS. Long range combat scope for improved precision at longer ranges."
 
 att.SortOrder = 115

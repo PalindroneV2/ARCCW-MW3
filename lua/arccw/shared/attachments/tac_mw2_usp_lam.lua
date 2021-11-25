@@ -1,6 +1,6 @@
 att.PrintName = "Laser Aiming Module"
 att.AbbrevName = "LAM (MW2)"
-att.Icon = Material("entities/acwatt_tac_bo2_anpeq.png", "mips smooth")
+att.Icon = Material("entities/acwatt_mw3_laser.png", "mips smooth")
 att.Description = "Tacical laser pointer. Tighter aim when firing from hip, less dispersion when moving."
 att.Desc_Pros = {
 }

@@ -1,5 +1,5 @@
 att.PrintName = "Tasco Red Dot (REFLEX)"
-att.Icon = Material("entities/acwatt_optic_bo1_reflex.png", "mips smooth")
+att.Icon = Material("entities/acwatt_optic_mw3_reflex.png", "mips smooth")
 att.Description = "COD4 Reflex Sight. Standard holographic sight. Provides a small electronic dot reticle which speeds up target acquisition by eliminating the need to line up irons."
 
 att.SortOrder = 1

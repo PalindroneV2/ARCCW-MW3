@@ -19,3 +19,6 @@ att.Mult_SpeedMult = 0.99
 att.Mult_SightedSpeedMult = 0.95
 
 att.GivesFlags = {"light_stock", "aks", "stockblock", "stock_l"}
+
+
+att.MWC_Stock_L = true

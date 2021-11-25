@@ -1,5 +1,5 @@
 att.PrintName = "M40 Scope (COD4)"
-att.Icon = Material("entities/acwatt_optic_bo1_l96.png", "mips smooth")
+att.Icon = Material("entities/acwatt_optic_mw3_sniper.png", "mips smooth")
 att.Description = "Sniper Scope for the Remington 700/M40A3."
 att.Desc_Pros = {
     "autostat.holosight",

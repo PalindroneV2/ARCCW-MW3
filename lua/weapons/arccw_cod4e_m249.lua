@@ -133,11 +133,11 @@ SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(0, 1, 0)
+SWEP.ActivePos = Vector(0, 3, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 
-SWEP.SprintPos = Vector(0, 1, 0)
+SWEP.SprintPos = Vector(0, 3, 1)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.CustomizePos = Vector(15, 5, 0)
@@ -307,9 +307,6 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" and wep.Attachments[1].Installed then
         return "reload_optic"
     end
-    if anim == "reload_empty" and wep.Attachments[1].Installed then
-        return "reload_empty_optic"
-    end
 end
 
 SWEP.RejectAttachments = {
@@ -357,11 +354,10 @@ SWEP.Animations = {
         Source = "reload",
         Time = 5.16,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Framerate = 37,
-        Checkpoints = {28, 38, 69},
         LHIK = true,
         LHIKIn = nil,
         LHIKOut = 1,
+        LastClip1OutTime = 2.5,
         SoundTable = {
             {s = "ArcCW_COD4E.M249_Chamber", t = 0.25},
             {s = "ArcCW_COD4E.M249_Open", t = 1},
@@ -374,45 +370,10 @@ SWEP.Animations = {
         Source = "reload_optic",
         Time = 5.16,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Framerate = 37,
-        Checkpoints = {28, 38, 69},
         LHIK = true,
         LHIKIn = nil,
         LHIKOut = 1,
-        SoundTable = {
-            {s = "ArcCW_COD4E.M249_Chamber", t = 0.25},
-            {s = "ArcCW_COD4E.M249_Open", t = 1},
-            {s = "ArcCW_COD4E.M249_Out", t = 2},
-            {s = "ArcCW_COD4E.M249_In", t = 3.25},
-            {s = "ArcCW_COD4E.M249_Close", t = 4.25},
-        },
-    },
-    ["reload_empty"] = {
-        Source = "reload_empty",
-        Time = 5.16,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Framerate = 37,
-        Checkpoints = {28, 38, 69},
-        LHIK = true,
-        LHIKIn = nil,
-        LHIKOut = 1,
-        SoundTable = {
-            {s = "ArcCW_COD4E.M249_Chamber", t = 0.25},
-            {s = "ArcCW_COD4E.M249_Open", t = 1},
-            {s = "ArcCW_COD4E.M249_Out", t = 2},
-            {s = "ArcCW_COD4E.M249_In", t = 3.25},
-            {s = "ArcCW_COD4E.M249_Close", t = 4.25},
-        },
-    },
-    ["reload_empty_optic"] = {
-        Source = "reload_empty_optic",
-        Time = 5.16,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Framerate = 37,
-        Checkpoints = {28, 38, 69},
-        LHIK = true,
-        LHIKIn = nil,
-        LHIKOut = 1,
+        LastClip1OutTime = 2.5,
         SoundTable = {
             {s = "ArcCW_COD4E.M249_Chamber", t = 0.25},
             {s = "ArcCW_COD4E.M249_Open", t = 1},

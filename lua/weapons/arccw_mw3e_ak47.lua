@@ -294,7 +294,7 @@ SWEP.Hook_NameChange = function(wep, name)
     local gunname = "AKM"
 
     if pap then
-        gunname = "Reznov's Resurrection"
+        gunname = "Reznov's Rezurrection"
     end
 
     return gunname

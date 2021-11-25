@@ -156,6 +156,23 @@ SWEP.AttachmentElements = {
             {ind = 2, bg = 1},
         },
     },
+    ["ak47_tactical"] = {
+        Override_IronSightStruct = {
+            Pos = Vector(-2.55, -2, 0.8),
+            Ang = Angle(-0.1, 0, 0),
+            Magnification = 1.1,
+            CrosshairInSights = false,
+            SwitchToSound = "", -- sound that plays when switching to this sight
+        },
+        AttPosMods = {
+            [1] = {
+                vpos = Vector(1.75, 0-0.02, 3.35),
+            },
+            [2] = {
+                vpos = Vector(21.75, 0, 1.55),
+            },
+        },
+    }
 }
 
 SWEP.Attachments = {
@@ -297,8 +314,15 @@ SWEP.Hook_NameChange = function(wep, name)
 
     local gunname = "AK-47"
 
+    if wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_tactical" then
+        gunname = "AKM"
+    end
+
     if pap then
         gunname = "Reznov's Revenge"
+        if wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_tactical" then
+            gunname = "Reznov's Rezurrection"
+        end
     end
 
     return gunname
@@ -313,7 +337,18 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     if wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_gold" then
         camo = 4
+    elseif wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_tactical" then
+        camo = 0
+        vm:SetBodygroup(0, 1)
+        vm:SetBodygroup(1, 2)
+        if wep.Attachments[14].Installed then
+            vm:SetBodygroup(1, 0)
+        end
+        if wep:GetBuff_Override("MWC_Stock_H") then
+            vm:SetBodygroup(2, 2)
+        end
     end
+
     vm:SetSkin(camo)
 
     if papcamo then

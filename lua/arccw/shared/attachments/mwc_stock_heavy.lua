@@ -19,3 +19,5 @@ att.Mult_SpeedMult = 0.97
 att.Mult_SightedSpeedMult = 0.85
 
 att.GivesFlags = {"solider_stock", "mp5a2", "stock_h"}
+
+att.MWC_Stock_H = true

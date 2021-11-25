@@ -224,7 +224,7 @@ SWEP.Attachments = {
     }, --6
     {
         PrintName = "Stock",
-        Slot = "mwc_stock",
+        Slot = {"mwc_stock_l", "mwc_stock_m"},
         Installed = "mwc_stock_medium"
     }, --7
     {
@@ -316,6 +316,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = nil,
         LHIKOut = 1,
+        LastClip1OutTime = 3.5,
         SoundTable = {
             {s = "ArcCW_MW3E.MK46_Open", t = 1},
             {s = "ArcCW_MW3E.MK46_Out", t = 1.9},
@@ -333,6 +334,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = nil,
         LHIKOut = 1,
+        LastClip1OutTime = 3.5,
         SoundTable = {
             {s = "ArcCW_MW3E.MK46_Open", t = 1},
             {s = "ArcCW_MW3E.MK46_Out", t = 1.9},
