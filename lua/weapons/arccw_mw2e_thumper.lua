@@ -248,20 +248,6 @@ SWEP.Animations = {
             {s = "ArcCW_BO1.M203_Close", t = 83 / 35},
         },
     },
-    ["reload_empty"] = {
-        Source = "reload",
-        Time = 93 / 35,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_CROSSBOW,
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 1,
-        SoundTable = {
-            {s = "ArcCW_BO1.M203_Open", t = 5 / 35},
-            {s = "ArcCW_BO1.M203_40mmOut", t = 29 / 35},
-            {s = "ArcCW_BO1.M203_40mmIn", t = 61 / 35},
-            {s = "ArcCW_BO1.M203_Close", t = 83 / 35},
-        },
-    },
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 10 / 30

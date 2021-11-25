@@ -26,6 +26,9 @@ att.DrawFunc = function(wep, element)
     else
         element.Model:SetSkin(0)
     end
+    if table.HasValue(wep:GetWeaponFlags(), "is_cod4_m14") then
+        element.Model:SetBodygroup(0,1)
+    end
 end
 
 att.AdditionalSights = {
