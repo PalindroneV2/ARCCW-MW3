@@ -177,6 +177,11 @@ SWEP.AttachmentElements = {
             {ind = 3, bg = 3},
         },
     },
+    ["m21_scope"] = {
+        VMBodygroups = {
+            {ind = 5, bg = 1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -286,7 +291,7 @@ SWEP.Attachments = {
             vpos = Vector(0, 0, 0), -- 4.6 offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
-        InstalledEles = {"mount"},
+        GivesFlags = {"mount", "has_m21_scope", "is_cod4_m14"},
         --Installed = "optic_mw3_mk14",
     }, --12
     {

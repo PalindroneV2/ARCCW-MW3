@@ -3,7 +3,7 @@
 sound.Add( {
     name = "ArcCW_MW3E.Mech_C",
     channel = CHAN_USER_BASE,
-    volume = 1.0,
+    volume = 0.6,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_mech/mech_c/1.wav",
@@ -20,7 +20,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.Mech_D",
     channel = CHAN_USER_BASE,
-    volume = 1.0,
+    volume = 0.6,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_mech/mech_d/1.wav",
@@ -37,7 +37,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.Mech_Sniper",
     channel = CHAN_USER_BASE,
-    volume = 1.0,
+    volume = 0.6,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_mech/sniper.wav",
@@ -1614,7 +1614,7 @@ sound.Add( {
 sound.Add( {
     name = "ArcCW_MW3E.Mech_XM25",
     channel = CHAN_USER_BASE,
-    volume = 1.0,
+    volume = 0.6,
     level = 100,
     sound = {
         "^weapons/arccw/mw3e_XM25/fire/mech.wav",

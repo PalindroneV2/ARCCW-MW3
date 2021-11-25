@@ -281,7 +281,7 @@ SWEP.Hook_NameChange = function(wep, name)
         gunname = "Thunderbird Mk CXV"
     end
 
-    if wep.Attachments[8].Installed == "cde_cosmetic_handcannon" then
+    if wep.Attachments[7].Installed == "cde_cosmetic_handcannon" then
         gunname = "Handcannon"
     end
 
