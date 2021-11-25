@@ -29,10 +29,11 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage = 70
-SWEP.DamageMin = 44 -- damage done at maximum range
-SWEP.RangeMin = 20
-SWEP.Range = 200 -- in METRES
+SWEP.Damage = 62
+SWEP.DamageMin = 42 -- damage done at maximum range
+SWEP.RangeMin = 30
+SWEP.Range = 300 -- in METRES
+
 SWEP.Penetration = 10
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -43,8 +44,8 @@ SWEP.TracerNum = 1 -- tracer every X
 SWEP.TracerCol = Color(255, 25, 25)
 SWEP.TracerWidth = 3
 
-SWEP.Recoil = 1.2
-SWEP.RecoilSide = 0.6
+SWEP.Recoil = 1
+SWEP.RecoilSide = 0.4
 SWEP.RecoilRise = 1
 SWEP.VisualRecoilMult = 0.5
 
@@ -79,7 +80,7 @@ SWEP.NPCWeaponType = {
 SWEP.NPCWeight = 100
 
 SWEP.AccuracyMOA = 1 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
+SWEP.HipDispersion = 700 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 200
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
@@ -101,9 +102,9 @@ SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.ProceduralViewBobAttachment = 3
 SWEP.CamAttachment = 3
 
-SWEP.SpeedMult = 0.87
+SWEP.SpeedMult = 0.85
 SWEP.SightedSpeedMult = 0.5
-SWEP.SightTime = 0.4
+SWEP.SightTime = 0.35
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     -- [0] = "bulletchamber",
@@ -257,7 +258,7 @@ SWEP.Attachments = {
     {
         PrintName = "Magazine",
         Slot = {"cod4_m14_mag"},
-        DefaultAttName = "Standard 20 rnd"
+        DefaultAttName = "Standard Magazine"
     }, --7
     {
         PrintName = "Ammo Type",

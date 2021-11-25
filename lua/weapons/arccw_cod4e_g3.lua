@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "HK G3A4"
-SWEP.Trivia_Class = "Assault Rifle"
+SWEP.Trivia_Class = "Battle Rifle"
 SWEP.Trivia_Desc = "German Army standard issue rifle chambered in 7.62mm NATO. The power of the cardtridge makes it difficult to control in full-auto."
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
 SWEP.Trivia_Calibre = "7.62x51mm NATO"
@@ -29,10 +29,11 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "00000000"
 
-SWEP.Damage = 58
-SWEP.DamageMin = 40 -- damage done at maximum range
-SWEP.RangeMin = 25
-SWEP.Range = 250 -- in METRES
+SWEP.Damage = 62
+SWEP.DamageMin = 37 -- damage done at maximum range
+SWEP.RangeMin = 40
+SWEP.Range = 400 -- in METRES
+
 SWEP.Penetration = 10
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -43,8 +44,8 @@ SWEP.TracerNum = 1 -- tracer every X
 SWEP.TracerCol = Color(255, 25, 25)
 SWEP.TracerWidth = 3
 
-SWEP.Recoil = 1.4
-SWEP.RecoilSide = 1
+SWEP.Recoil = 1.2
+SWEP.RecoilSide = 0.8
 SWEP.RecoilRise = 1
 SWEP.VisualRecoilMult = 0.25
 
@@ -60,6 +61,8 @@ SWEP.Firemodes = {
     },
     {
         Mode = 2,
+        Mult_VisualRecoil = 2,
+        Mult_RecoilSide = 1.5,
     },
     {
         Mode = 0
@@ -74,7 +77,7 @@ SWEP.NPCWeight = 100
 
 SWEP.AccuracyMOA = 1.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 700 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150
+SWEP.MoveDispersion = 100
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 
@@ -95,9 +98,9 @@ SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 SWEP.ProceduralViewBobAttachment = 3
 SWEP.CamAttachment = 4
 
-SWEP.SpeedMult = 0.9
+SWEP.SpeedMult = 0.85
 SWEP.SightedSpeedMult = 0.5
-SWEP.SightTime = 0.4
+SWEP.SightTime = 0.35
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     -- [0] = "bulletchamber",
