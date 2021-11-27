@@ -74,7 +74,7 @@ SWEP.Primary.Ammo = "SMG1_Grenade" -- what ammo type the gun uses
 SWEP.ShootVol = 120 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "ArcCW_BO1.M203_Fire"
+SWEP.ShootSound = "ArcCW_MW2E.M79_Fire"
 SWEP.ShootSoundSilenced = "ArcCW_BO1.M16_Sil"
 
 SWEP.MuzzleEffect = "muzzleflash_shotgun"
@@ -100,8 +100,8 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3, 3, -0.25),
-    Ang = Angle(5, -0.3, 0),
+    Pos = Vector(-2.9, 3, -7.1),
+    Ang = Angle(18.75, -0.05, 0),
     Magnification = 1.1,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -207,6 +207,9 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.2,
+        SoundTable = {
+            {s = "ArcCW_MW2E.M79_Draw", t = 1 / 35},
+        }
     },
     ["holster"] = {
         Source = "holster",
@@ -214,13 +217,9 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.2,
-    },
-    ["ready"] = {
-        Source = "draw",
-        Time = 25 / 35,
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.2,
+        SoundTable = {
+            {s = "ArcCW_MW2E.M79_Holster", t = 1 / 35},
+        }
     },
     ["fire"] = {
         Source = {
@@ -242,10 +241,10 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKOut = 0.2,
         SoundTable = {
-            {s = "ArcCW_BO1.M203_Open", t = 5 / 35},
-            {s = "ArcCW_BO1.M203_40mmOut", t = 29 / 35},
-            {s = "ArcCW_BO1.M203_40mmIn", t = 61 / 35},
-            {s = "ArcCW_BO1.M203_Close", t = 83 / 35},
+            {s = "ArcCW_MW2E.M79_Open", t = 5 / 35},
+            {s = "ArcCW_MW2E.M79_Out", t = 29 / 35},
+            {s = "ArcCW_MW2E.M79_In", t = 61 / 35},
+            {s = "ArcCW_MW2E.M79_Close", t = 83 / 35},
         },
     },
     ["enter_sprint"] = {

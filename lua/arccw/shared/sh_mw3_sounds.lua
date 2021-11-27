@@ -51,6 +51,7 @@ sound.Add( {
     channel = CHAN_STATIC,
     volume = 0.75,
     level = 100,
+    pitch = {120,130},
     sound = {
         "^weapons/arccw/mw3e_g36/fire.wav",
     }
@@ -1486,6 +1487,82 @@ sound.Add( {
     }
 } )
 
+-- MW2E M79
+
+sound.Add( {
+    name = "ArcCW_MW2E.M79_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_M79/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW2E.M79_Out",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_M79/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.M79_In",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_M79/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.M79_Open",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_M79/open.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.M79_Close",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_M79/close.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.M79_Draw",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_M79/draw.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.M79_Holster",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_M79/holster.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.M79_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_M79/lift.wav",
+    }
+} )
+
 -- MW3E M320
 
 sound.Add( {
@@ -1931,6 +2008,7 @@ sound.Add( {
     name = "ArcCW_COD4E.M249_Fire",
     channel = CHAN_STATIC,
     volume = 0.75,
+    pitch = {65, 75},
     level = 100,
     sound = {
         "^weapons/arccw/cod4_m249/fire_st.wav",
@@ -2061,6 +2139,7 @@ sound.Add( {
     channel = CHAN_STATIC,
     volume = 0.75,
     level = 100,
+    pitch = {65, 75},
     sound = {
         "^weapons/arccw/cod4_m40/fire.wav",
     }

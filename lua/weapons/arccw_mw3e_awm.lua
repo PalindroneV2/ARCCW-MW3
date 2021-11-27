@@ -79,6 +79,7 @@ SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "ArcCW_MW3E.AWM_Fire"
 SWEP.ShootSoundSilenced = "ArcCW_MW3E.RSASS_Sil"
+SWEP.DistantShootSound = "ArcCW_MW3E.Mech_Sniper"
 
 SWEP.MuzzleEffect = "muzzleflash_6"
 SWEP.ShellModel = "models/shells/shell_338mag.mdl"
@@ -298,16 +299,10 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"fire"},
         Time = 5 / 30,
-        SoundTable = {
-            {s = "ArcCW_MW3E.Mech_Sniper", t = 0},
-        },
     },
     ["fire_iron"] = {
         Source = {"fire"},
         Time = 5 / 30,
-        SoundTable = {
-            {s = "ArcCW_MW3E.Mech_Sniper", t = 0},
-        },
     },
     ["cycle"] = {
         Source = "cycle",
