@@ -20,8 +20,8 @@ SWEP.ViewModel = "models/weapons/arccw/c_cod4_dragunov.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_cod4_dragunov.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    scale = 1.035,
-    pos        =    Vector(-4.25, 4, -6.5),
+    scale = 1.2,
+    pos        =    Vector(-4.5, 4, -6.3),
     ang        =    Angle(-6, -1.25, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
@@ -175,7 +175,7 @@ SWEP.Attachments = {
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
         MergeSlots = {2},
-    },
+    }, --1
     {
         Hidden = true,
         Slot = "cod4_dragunov_scope",
@@ -189,7 +189,7 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(1.2, 0, 0),
         Installed = "optic_cod4_pso1",
         InstalledEles = {"cobrakai"},
-    },
+    }, --2
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
@@ -201,7 +201,7 @@ SWEP.Attachments = {
             vpos = Vector(31, 0, 1.35),
             vang = Angle(0, 0, 90),
         },
-    },
+    }, --3
     {
         PrintName = "Underbarrel",
         Slot = {"foregrip"},
@@ -210,8 +210,8 @@ SWEP.Attachments = {
             vpos = Vector(12.5, 0, 1.1),
             vang = Angle(0, 0, 0),
         },
-    },
-    { --6
+    }, --4
+    {
         PrintName = "Tactical",
         Slot = {"bo1_tacall"},
         Bone = "tag_weapon",
@@ -221,16 +221,22 @@ SWEP.Attachments = {
             vpos = Vector(17.5, 0.25, 1.75),
             vang = Angle(0, 0, -90),
         },
-    },
-    { --7
+    }, --5
+    {
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"}
-    },
-    { --8
+    }, --6
+    {
         PrintName = "Perk",
         Slot = "bo1_perk"
-    },
-    { --9
+    }, --7
+    {
+        PrintName = "Cosmetic",
+        Slot = "cod4_dragunov_cosmetic",
+        DefaultAttName = "Standard Issue",
+        DefaultAttIcon = Material("entities/acwatt_cod4_generic.png", "mips smooth"),
+    }, --8
+    {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
@@ -239,14 +245,25 @@ SWEP.Attachments = {
             vpos = Vector(6.5, -0.35, 1.5),
             vang = Angle(0, 0, 0),
         },
-    },
+    }, --9
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
+
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
-    if papcamo then vm:SetSkin(3) end
+    local camo = 0
+
+    if wep.Attachments[8].Installed == "cod4e_cosmetic_dragunov_gold" then
+        camo = 4
+    end
+
+    vm:SetSkin(camo)
+
+    if papcamo then
+        vm:SetSkin(camo + 3)
+    end
 end
 
 SWEP.Animations = {

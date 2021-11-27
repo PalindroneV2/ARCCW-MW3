@@ -1,15 +1,15 @@
 VertexlitGeneric
 {
-	$basetexture	"models\weapons\cod4\cod4_ak47\gold"
-	"$bumpmap" "models\weapons\colors\normalmap"
+	$basetexture	"models\weapons\cod4\cod4_dragunov\gold"
+	$bumpmap	"models\weapons\cod4\cod4_dragunov\dragunov_n"
 
-	$detail "models\weapons\cod4\cod4_ak47\gold_s"
+	$detail "models\weapons\cod4\cod4_dragunov\gold_s"
 	$detailblendmode 0
-	"$detailblendfactor" "0"
+	"$detailblendfactor" "1"
 	"$detailscale" "1"
 
-	$phongexponenttexture "models\weapons\cod4\cod4_ak47\gold_s"
-//	$envmapmask "models\weapons\cod4\cod4_ak47\ak47_s"
+	$phongexponenttexture "models\weapons\cod4\cod4_dragunov\gold_s"
+//	$envmapmask "models\weapons\cod4\cod4_dragunov\dragunov_s"
 
 	$phong "1"
 //	$phongexponent	"100"
