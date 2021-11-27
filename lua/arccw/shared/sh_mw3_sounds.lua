@@ -2132,6 +2132,56 @@ sound.Add( {
     }
 } )
 
+--COD4E Dragunov--
+
+sound.Add( {
+    name = "ArcCW_COD4E.Dragunov_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_Dragunov/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_COD4E.Dragunov_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_Dragunov/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.Dragunov_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_Dragunov/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_COD4E.Dragunov_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_Dragunov/out.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_COD4E.Dragunov_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/cod4_Dragunov/lift.wav",
+    }
+} )
+
 --COD4 M40
 
 sound.Add( {

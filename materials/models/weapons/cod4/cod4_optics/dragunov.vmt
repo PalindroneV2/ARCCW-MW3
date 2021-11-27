@@ -1,0 +1,23 @@
+VertexlitGeneric
+{
+	$basetexture	"models\weapons\cod4\cod4_dragunov\dragunov"
+	$bumpmap	"models\weapons\cod4\cod4_dragunov\dragunov_n"
+
+	$detail "models\weapons\colors\black_detail"
+	$detailblendmode 0
+	"$detailblendfactor" "0.75"
+
+	$phong                      		1
+//	$phongexponent                      "20"
+	$phongboost                         "0.5"
+	$phongfresnelranges         "[0.1 0.5 0.5]"
+	$phongalbedotint             "1"
+	$normalmapalphaphongmask    	1
+
+	$phongexponenttexture "models\weapons\cod4\cod4_dragunov\dragunov_s"
+
+	"$envmap" "env_cubemap"					
+	"$envmaptint" "[ .005 .005 .005 ]"					
+	"$envmapFresnel" "1"
+	"$nocull" "1"
+}
