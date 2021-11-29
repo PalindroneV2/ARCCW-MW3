@@ -320,6 +320,65 @@ sound.Add( {
     }
 } )
 
+--MW3E L86--
+
+sound.Add( {
+    name = "ArcCW_MW3E.L86_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_L86/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.L86_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_L86/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.L86_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_L86/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.L86_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_L86/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.L86_Hit",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_L86/hit.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.L86_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_L86/lift.wav",
+    }
+} )
+
 --MW3E SCARL--
 
 sound.Add( {
