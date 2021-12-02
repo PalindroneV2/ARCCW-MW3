@@ -167,9 +167,9 @@ SWEP.AttachmentElements = {
             {ind = 1, bg = 1},
         },
     },
-    ["bo1_bipod"] = {
+    ["mwc_bipod"] = {
         VMBodygroups = {
-            {ind = 3, bg = 2},
+            {ind = 3, bg = 1},
         },
     },
     ["cod4e_m203"] = {
@@ -238,7 +238,7 @@ SWEP.Attachments = {
     }, --4
     {
         Hidden = true,
-        Slot = {"bipod", "bo1_bipod"},
+        Slot = {"bipod", "mwc_bipod"},
         Bone = "tag_weapon",
         Offset = {
             vpos = Vector(12, 0, 1.575), -- offset that the attachment will be relative to the bone
@@ -339,6 +339,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     end
 
     vm:SetSkin(camo)
+
+    if wep:InBipod() then
+        vm:SetBodygroup(3, 2)
+    end
 
     if pap then vm:SetSkin(camo + 2) end
 end

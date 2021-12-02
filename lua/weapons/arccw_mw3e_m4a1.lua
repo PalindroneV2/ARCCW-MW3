@@ -27,7 +27,7 @@ SWEP.WorldModelOffset = {
 }
 SWEP.ViewModelFOV = 60
 
-SWEP.DefaultBodygroups = "01000000000"
+SWEP.DefaultBodygroups = "00000000000"
 
 SWEP.Damage = 30
 SWEP.DamageMin = 20 -- damage done at maximum range
@@ -111,7 +111,7 @@ SWEP.IronSightStruct = {
     Pos = Vector(-2.825, 0, 0.2),
     Ang = Angle(-1.2, 0.025, 0),
     Magnification = 1.1,
-    CrosshairInSights = false,
+    CrosshairInSights = true,
     SwitchToSound = "",
 }
 
@@ -138,10 +138,7 @@ SWEP.BarrelLength = 25
 SWEP.ExtraSightDist = 5
 
 SWEP.AttachmentElements = {
-    ["bo2_altirons"] = {
-        VMBodygroups = {
-            {ind = 2, bg = 1},
-        },
+    ["mwc_altirons"] = {
         Override_IronSightStruct = {
             Pos = Vector(-2.825, 0, 0.675),
             Ang = Angle(0.1, 0.01, 0),
@@ -152,32 +149,59 @@ SWEP.AttachmentElements = {
     },
     ["cod4e_m203"] = {
         VMBodygroups = {
-            {ind = 3, bg = 1},
+            {ind = 4, bg = 1},
         },
     },
     ["nocover"] = {
         VMBodygroups = {
-            {ind = 3, bg = 2},
+            {ind = 4, bg = 2},
         },
     },
     ["stock_l"] = {
         VMBodygroups = {
-            {ind = 4, bg = 1},
+            {ind = 5, bg = 1},
         },
     },
     ["stock_m"] = {
         VMBodygroups = {
-            {ind = 4, bg = 2},
+            {ind = 5, bg = 2},
         },
     },
     ["stock_h"] = {
         VMBodygroups = {
-            {ind = 4, bg = 3},
+            {ind = 5, bg = 3},
         },
     },
-    ["mount"] = {
+    ["mk18_barrel"] = {
+        VMBodygroups = {
+            {ind = 2, bg = 1},
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(16.5, 0, 2.45),
+            },
+        },
+    },
+    ["mk12_barrel"] = {
+        VMBodygroups = {
+            {ind = 1, bg = 1},
+            {ind = 2, bg = 2},
+            {ind = 6, bg = 1},
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(26, 0, 2.45),
+            },
+        },
+    },
+    ["m16_barrel"] = {
         VMBodygroups = {
             {ind = 2, bg = 2},
+        },
+        AttPosMods = {
+            [3] = {
+                vpos = Vector(26, 0, 2.45),
+            },
         },
     },
 }
@@ -186,7 +210,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic", "bo2_altirons"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {"optic", "mwc_altirons"}, -- what kind of attachments can fit here, can be string or table
         Bone = "j_gun", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(3.75, 0-0.02, 3.75), -- 4.6 offset that the attachment will be relative to the bone
@@ -195,7 +219,19 @@ SWEP.Attachments = {
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
+        MergeSlots = {14}
     }, --1
+    {
+        PrintName = "Barrel",
+        DefaultAttName = "M4A1 14.5 in. Barrel",
+        DefaultAttIcon = Material("entities/acwatt_mw3_generic.png", "mips smooth"),
+        Slot = {"mw3e_m4_barrel"},
+        Bone = "j_gun",
+        Offset = {
+            vpos = Vector(0, 0, 0),
+            vang = Angle(0, 0, 0),
+        },
+    }, --2
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
@@ -203,26 +239,28 @@ SWEP.Attachments = {
         VMScale = Vector(1.3, 1.125, 1.125),
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(20.5, 0-0.02, 2.5), -- offset that the attachment will be relative to the bone
+            vpos = Vector(20.5, 0-0.02, 2.45), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
-    }, --2
+    }, --3
     {
         PrintName = "Underbarrel",
         DefaultAttName = "Integrated Foregrip",
-        Slot = {"foregrip", "cod4e_m203"},
+        Slot = {"cod4e_m203"},
+        MergeSlots = {5,6,7},
+    }, --4
+    {
+        Hidden = true,
+        Slot = {"foregrip"},
         Bone = "tag_weapon",
         VMScale = Vector(1, 1, 1),
         WMScale = Vector(1, 1, 1),
         Offset = {
             vpos = Vector(10, 0, 1.45), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
-            wpos = Vector(13.75, 1.15, -4.1),
-            wang = Angle(170, -180, 0),
         },
-        MergeSlots = {4,5},
         GivesFlags = {"nocover"},
-    }, --4
+    },
     {
         Hidden = true,
         Slot = {"ubgl"},
@@ -230,22 +268,20 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(6.75, 0, 1), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
-            wpos = Vector(11, 1.25, -3.5),
-            wang = Angle(170.5, -180, 0),
         },
         GivesFlags = {"nocover"},
     }, --5
     {
         Hidden = true,
-        Slot = {"bipod"},
+        Slot = {"mk12_bipod"},
         Bone = "tag_weapon",
         Offset = {
             vpos = Vector(12, 0, 1.575), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
-            wpos = Vector(15, 1.15, -4.1),
-            wang = Angle(170, -180, 0),
         },
-    }, --7
+        RequireFlags = {"mk12_barrel"},
+        HideIfBlocked = true,
+    }, --6
     {
         PrintName = "Tactical",
         Slot = {"bo1_tacprimary"},
@@ -257,26 +293,26 @@ SWEP.Attachments = {
             wpos = Vector(15, 0.3, -5.25),
             wang = Angle(-10, 0, 90)
         },
-    }, --8
+    }, --7
     {
         PrintName = "Fire Group",
         Slot = {"bo1_fcg", "bo1_fcg_burst"},
         DefaultAttName = "Standard FCG"
-    }, --9
+    }, --8
     {
         PrintName = "Stock",
         Slot = {"mwc_stock"},
         DefaultAttName = "Buffer Tube",
         Installed = "mwc_stock_light",
-    }, --10
+    }, --9
     {
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"},
-    }, --11
+    }, --10
     {
         PrintName = "Perk",
         Slot = {"bo1_perk"}
-    }, --12
+    }, --11
     {
         PrintName = "Charm",
         Slot = "charm",
@@ -289,6 +325,16 @@ SWEP.Attachments = {
             wang = Angle(-175, -175, 0)
         },
     }, --13
+    {
+        Hidden = true,
+        Slot = "mw3e_rsass_scope",
+        Bone = "j_gun", -- relevant bone any attachments will be mostly referring to
+        Offset = {
+            vpos = Vector(-0.5, 0, 0.7), -- 4.6 offset that the attachment will be relative to the bone
+            vang = Angle(0, 0, 0),
+        },
+        InstalledEles = {"mount"},
+    }, --14
 }
 
 SWEP.Hook_NameChange = function(wep, name)
@@ -298,6 +344,25 @@ SWEP.Hook_NameChange = function(wep, name)
 
     if wep.Attachments[8].Installed == "bo1_fcg_s13" then
         gunname = "Colt M4 Carbine"
+    end
+
+    if wep.Attachments[2].Installed == "mw3e_barrel_m4_mk12" then
+        gunname = "Mk. 12 SPR"
+        if wep.Attachments[8].Installed == "bo1_fcg_s13" then
+            gunname = "M16A4 SPR"
+        end
+    end
+    if wep.Attachments[2].Installed == "mw3e_barrel_m4_m16" then
+        gunname = "Colt M16A3"
+        if wep.Attachments[8].Installed == "bo1_fcg_s13" then
+            gunname = "Colt M16A4"
+        end
+    end
+    if wep.Attachments[2].Installed == "mw3e_barrel_m4_mk18" then
+        gunname = "Mk. 18 Mod 0"
+        if wep.Attachments[8].Installed == "bo1_fcg_s13" then
+            gunname = "Colt M4 Carbine"
+        end
     end
 
     if pap then gunname = "Xeno Mater 4000" end
@@ -310,7 +375,44 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
     if papcamo then
-        vm:SetSkin(3)
+        vm:SetSkin(2)
+    end
+
+    local sights = 0
+    if wep.Attachments[2].Installed == "mw3e_barrel_m4_mk12" then
+        sights = 3
+    elseif wep.Attachments[2].Installed == "mw3e_barrel_m4_m16" then
+        sights = 3
+    end
+
+    vm:SetBodygroup(3, sights)
+
+    if wep.Attachments[1].Installed or wep.Attachments[14].Installed then
+        vm:SetBodygroup(3, sights + 2)
+        if wep:GetBuff_Override("AltIrons") then
+            vm:SetBodygroup(3, sights + 1)
+        end
+    end
+    if wep:GetBuff_Override("BO1_Bipod") then
+        vm:SetBodygroup(6,2)
+    end
+
+    wep.IronSightStruct = {
+        Pos = Vector(-2.825, 0, 0.175),
+        Ang = Angle(-1.15, 0.025, 0),
+        Magnification = 1.1,
+        CrosshairInSights = false,
+        SwitchToSound = "",
+    }
+
+    if sights == 3 and !wep:GetBuff_Override("AltIrons") then
+        wep.IronSightStruct = {
+            Pos = Vector(-2.825, 0, 0.1),
+            Ang = Angle(-0.75, 0.025, 0),
+            Magnification = 1.1,
+            CrosshairInSights = false,
+            SwitchToSound = "",
+        }
     end
 end
 

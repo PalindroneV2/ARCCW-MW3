@@ -10,8 +10,8 @@ att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
-att.Slot = {"cod4_m4m16_barrel"}
-att.GivesFlags = {"mk18_barrel","m203_leaf"}
+att.Slot = {"mw3e_m4_barrel", "mw3e_m16_barrel"}
+att.GivesFlags = {"mk18_barrel"}
 
 att.Mult_Range = 0.75
 att.Mult_Recoil = 1.2
@@ -20,4 +20,4 @@ att.Mult_SpeedMult = 1.2
 att.Mult_SightedSpeedMult = 1.2
 att.Mult_SightTime = 0.75
 att.Mult_AccuracyMOA = 1.2
-att.Override_MuzzleEffectAttachment = 5
+att.Override_MuzzleEffectAttachment = 6

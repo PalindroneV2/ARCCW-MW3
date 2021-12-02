@@ -12,6 +12,7 @@ att.Desc_Neutrals = {"bo.desc"}
 
 att.AutoStats = true
 att.Slot = {"mw3e_rsass_scope"}
+att.GivesFlags = {"mw3_psr_scope"}
 
 att.Model = "models/weapons/arccw/atts/mw3_rsass_scope.mdl"
 att.ModelOffset = Vector(0, 0, 0)

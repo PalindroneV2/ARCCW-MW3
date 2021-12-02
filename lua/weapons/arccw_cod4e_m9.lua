@@ -108,8 +108,8 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.15, 2, 1.8),
-    Ang = Angle(-2.1, -0.1, 0),
+    Pos = Vector(-2.425, 2, 1.8),
+    Ang = Angle(-2.15, -0.1, 0),
     Magnification = 1.1,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -152,7 +152,7 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         VMScale = Vector(1, 1, 1),
         Offset = {
-            vpos = Vector(0.5, 0-0.05, 1.725),
+            vpos = Vector(0.5, 0.225, 1.725),
             vang = Angle(0, 0, 0),
         },
         CorrectivePos = Vector(0, 0, 0.0125),
@@ -168,7 +168,7 @@ SWEP.Attachments = {
         WMScale = Vector(1, 0.75, 0.75),
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(5.625, -0.05, 1.25),
+            vpos = Vector(5.625, 0.225, 1.25),
             vang = Angle(0, 0, 0),
         },
         ExcludeFlags = {"doom_ee"},
@@ -180,7 +180,7 @@ SWEP.Attachments = {
         WMScale = Vector(0.75, 0.75, 0.75),
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(3.25, -0.05, 0.3),
+            vpos = Vector(3.25, 0.225, 0.3),
             vang = Angle(0, 0, 0),
             wpos = Vector(8.5, 2, -2.9),
             wang = Angle(-5, -2, 177.5)
@@ -203,7 +203,7 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "j_bolt",
         Offset = {
-            vpos = Vector(5, -0.4, -0.6),
+            vpos = Vector(5, -0.175, -0.6),
             vang = Angle(0, 0, 0),
             wpos = Vector(8.5, 2.5, -4),
             wang = Angle(-5, -2, 177.5)
@@ -224,7 +224,7 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         VMScale = Vector(1, 1, 1),
         Offset = {
-            vpos = Vector(0, 0.265, 0),
+            vpos = Vector(0, 0.5, 0),
             vang = Angle(0, 0, 0),
         },
     }, --7
@@ -234,7 +234,7 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         VMScale = Vector(1, 1, 1),
         Offset = {
-            vpos = Vector(0, 0-0.075, 0),
+            vpos = Vector(0, 0.225, 0),
             vang = Angle(0, 0, 0),
         },
     }, --7
@@ -243,8 +243,9 @@ SWEP.Attachments = {
         Slot = "mw3_pistolrail",
         Bone = "j_gun",
         VMScale = Vector(0.75, 0.75, 0.75),
+        WMScale = Vector(0.75, 0.75, 0.75),
         Offset = {
-            vpos = Vector(0, 0-0.075, 0.1),
+            vpos = Vector(0, 0.225, 0.1),
             vang = Angle(0, 0, 0),
         },
     }, --9
@@ -268,11 +269,15 @@ SWEP.Hook_NameChange = function(wep, name)
 
     if doompistol then
         gunname = "Pistol"
-        wep.ActivePos = Vector(-2.15, 2, 0)
+        wep.ActivePos = Vector(-2.425, 2, 0)
         wep.ActiveAng = Angle(0, -0.1, 0)
+        wep.SprintPos = Vector(-2.425, 2, 0)
+        wep.SprintAng = Angle(0, -0.1, 0)
     else
         wep.ActivePos = Vector(1, 3, 0.5)
         wep.ActiveAng = Angle(0, 0, 0)
+        wep.SprintPos = Vector(0, 3, 0)
+        wep.SprintAng = Angle(0, 0, 0)
     end
 
     if pap then

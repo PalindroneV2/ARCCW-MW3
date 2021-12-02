@@ -168,10 +168,21 @@ SWEP.AttachmentElements = {
             {ind = 0, bg = 3}
         },
         Override_IronSightStruct = {
-            Pos = Vector(-2, 3, 0.75),
-            Ang = Angle(0.45, 0.05, 0),
+            Pos = Vector(-2, 3, 0.525),
+            Ang = Angle(0.95, 0.05, 0),
             Magnification = 1.1,
             CrosshairInSights = false,
+        },
+    },
+    ["bocw_hybrid"] = {
+        VMBodygroups = {
+            {ind = 0, bg = 4}
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-2.0125, 3, 0.9),
+            Ang = Angle(0.1, 0, 0),
+            Magnification = 1.1,
+            CrosshairInSights = true,
         },
     },
 }
@@ -190,9 +201,9 @@ SWEP.Attachments = {
         },
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0, 0, 0),
-        ExcludeFlags = {"top_laser", "cw_handcannon"},
+        MergeSlots = {8},
     }, --1
-    { --3
+    { --2
         PrintName = "Tactical",
         Slot = {"bo1_tacpistol", "tac_pistol"},
         VMScale = Vector(0.75, 0.75, 0.75),
@@ -202,22 +213,22 @@ SWEP.Attachments = {
             vpos = Vector(3.6, 0.315, 0.3),
             vang = Angle(0, 0, 0),
         },
-        MergeSlots = {8,9,10},
+        MergeSlots = {9},
     },
-    { --5
+    { --3
         PrintName = "Caliber",
         Slot = {"mw3e_ammo_deagle"},
         DefaultAttName = ".357 Magnum",
     },
-    { --5
+    { --4
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"}
     },
-    { --6
+    { --5
         PrintName = "Perk",
         Slot = "bo1_perk"
     },
-    { --7
+    { --6
         PrintName = "Charm",
         Slot = "charm",
         Bone = "j_bolt",
@@ -229,25 +240,15 @@ SWEP.Attachments = {
             wang = Angle(-5, -2, 177.5)
         },
     },
-    { --9
+    { --7
         PrintName = "Cosmetic",
         Slot = {"mw3_deagle_cosmetic", "cde_cosmetic_silver", "cde_cosmetic_handcannon"},
         FreeSlot = true,
         DefaultAttIcon = Material("entities/acwatt_mw3_generic.png", "mips smooth"),
     },
-    { --10
+    { --8
         Hidden = true,
         Slot = {"bocw_deagle_laser"},
-        Bone = "j_bolt",
-        VMScale = Vector(1, 1, 1),
-        Offset = {
-            vpos = Vector(-0.5, 0.375, -3.675),
-            vang = Angle(0, 0, 0),
-        },
-    },
-    { --10
-        Hidden = true,
-        Slot = {"mw3e_deagle_laser"},
         Bone = "j_gun",
         VMScale = Vector(1, 1, 1),
         Offset = {
@@ -255,7 +256,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
     },
-    { --11
+    { --9
         Hidden = true,
         Slot = {"mw2e_deagle_laser"},
         Bone = "j_gun",
@@ -281,7 +282,7 @@ SWEP.Hook_NameChange = function(wep, name)
         gunname = "Thunderbird Mk CXV"
     end
 
-    if wep.Attachments[7].Installed == "cde_cosmetic_handcannon" then
+    if wep:GetBuff_Override("BOCW_Handcannon") then
         gunname = "Handcannon"
     end
 
@@ -295,21 +296,22 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep.Attachments[7].Installed == "cde_cosmetic_silver" then camo = 1
     elseif wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_classic" then camo = 1
     elseif wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_classic_gold" then camo = 2
-    elseif wep.Attachments[7].Installed == "cde_cosmetic_handcannon" then camo = 0
+    elseif wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_twotone" then camo = 1
+    elseif wep:GetBuff_Override("BOCW_Handcannon") then camo = 1
     end
 
     vm:SetSkin(camo)
 
     if papcamo then
-        vm:SetSkin(2)
+        vm:SetSkin(3)
         if camo == 2 then
-            vm:SetSkin(3)
+            vm:SetSkin(camo + 2)
         end
     end
 end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
-    if wep.Attachments[7].Installed == "cde_cosmetic_handcannon" then
+    if wep:GetBuff_Override("BOCW_Handcannon") then
         return anim .. "_cw"
     end
 end

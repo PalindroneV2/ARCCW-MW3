@@ -274,7 +274,11 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
-    if papcamo then return vm:SetSkin(2) end
+    if wep:InBipod() then
+        vm:SetBodygroup(1, 2)
+    end
+
+    if papcamo then vm:SetSkin(2) end
 end
 
 SWEP.Animations = {
