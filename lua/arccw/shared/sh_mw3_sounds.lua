@@ -972,6 +972,64 @@ sound.Add( {
     }
 } )
 
+-- MW3E MP412
+
+sound.Add( {
+    name = "ArcCW_MW3E.MP412_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP412/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.MP412_Open",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP412/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.MP412_In",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP412/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.MP412_Close",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP412/close.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.MP412_Hit",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP412/hit.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.MP412_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_MP412/lift.wav",
+    }
+} )
+
 -- MW3E AK74u
 
 sound.Add( {
