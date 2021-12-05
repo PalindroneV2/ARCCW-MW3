@@ -270,7 +270,7 @@ SWEP.Attachments = {
     }, --12
     {
         PrintName = "Cosmetic",
-        Slot = "cod4_ak47_cosmetic",
+        Slot = "mw3e_ak47_cosmetic",
         DefaultAttName = "Standard Issue",
         DefaultAttIcon = Material("entities/acwatt_mw3_generic.png", "mips smooth"),
     },

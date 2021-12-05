@@ -13,3 +13,6 @@ att.SortOrder = 100
 att.Slot = {"cod4_1911_cosmetic"}
 
 att.NoRandom = true
+
+att.AttachSound = "weapons/arccw/mwc_ui/cod4/select.wav"
+att.DetachSound = "weapons/arccw/mwc_ui/cod4/select.wav"

@@ -242,7 +242,7 @@ SWEP.Attachments = {
     },
     { --7
         PrintName = "Cosmetic",
-        Slot = {"mw3_deagle_cosmetic", "cde_cosmetic_silver", "cde_cosmetic_handcannon"},
+        Slot = {"mw3_deagle_cosmetic", "cde_cosmetic_handcannon"},
         FreeSlot = true,
         DefaultAttIcon = Material("entities/acwatt_mw3_generic.png", "mips smooth"),
     },
@@ -293,7 +293,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local papcamo = wep:GetBuff_Override("PackAPunch")
     local camo = 0
-    if wep.Attachments[7].Installed == "cde_cosmetic_silver" then camo = 1
+    if wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_silver" then camo = 1
     elseif wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_classic" then camo = 1
     elseif wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_classic_gold" then camo = 2
     elseif wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_twotone" then camo = 1

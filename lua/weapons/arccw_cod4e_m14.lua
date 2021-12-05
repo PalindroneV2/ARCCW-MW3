@@ -334,6 +334,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep.Attachments[14].Installed == "cod4e_cosmetic_m14_ghillie" then
         camo = 4
         vm:SetBodygroup(4,1)
+    elseif wep.Attachments[14].Installed == "cod4e_cosmetic_m14_woodland" then
+        camo = 4
     elseif wep.Attachments[14].Installed == "cod4e_cosmetic_m14_wood" then
         camo = 8
     end

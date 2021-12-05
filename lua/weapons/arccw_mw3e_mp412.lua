@@ -94,7 +94,7 @@ SWEP.ShellPitch = 90
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = nil -- which attachment to put the case effect on
 SWEP.ProceduralViewBobAttachment = 1
-SWEP.CamAttachment = 3
+SWEP.CamAttachment = 2
 
 SWEP.SightTime = 0.175
 
@@ -116,8 +116,8 @@ SWEP.CaseBones = {}
 SWEP.ShotgunReload = false
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.555, 0, 1.8),
-    Ang = Angle(0.4, 0.025, 0),
+    Pos = Vector(-3.245, 0, 0.25),
+    Ang = Angle(0.525, -0.02, 0),
     Magnification = 1.1,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -149,6 +149,17 @@ SWEP.AttachmentElements = {
         NamePriority = 10,
         NameChange = "Aeternus Tyrannus",
     },
+    ["mw3_knife"] = {
+        VMBodygroups = {
+            {ind = 2, bg = 1},
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-1.835, 0, -1),
+            Ang = Angle(0.45, 0.025, 0),
+            Magnification = 1.1,
+            CrosshairInSights = false,
+        },
+    },
 }
 
 SWEP.ExtraSightDist = 2
@@ -160,11 +171,11 @@ SWEP.Attachments = {
     { --1
         PrintName = "Optic",
         Slot = {"optic", "optic_lp", "bo1_lp_optic"},
-        Bone = "tag_weapon",
+        Bone = "j_reload",
         VMScale = Vector(1, 1, 1),
         WMScale = Vector(1, 1, 1),
         Offset = {
-            vpos = Vector(4.5, -0.025, 2.7),
+            vpos = Vector(3, 0, 2.25),
             vang = Angle(0, 0, 0),
             wpos = Vector(7.9, 2, -3.2),
             wang = Angle(-5, -2, 177.5)
@@ -173,14 +184,18 @@ SWEP.Attachments = {
     { --1
         PrintName = "Tactical",
         Slot = {"bo1_tacpistol", "tac_pistol"},
-        Bone = "tag_weapon",
-        VMScale = Vector(.75, .75, .75),
-        WMScale = Vector(.75, .75, .75),
+        Bone = "j_reload",
+        VMScale = Vector(1, 1, 1),
+        WMScale = Vector(1, 1, 1),
         Offset = {
-            vpos = Vector(5.6, -0.025, 1.5),
+            vpos = Vector(4, 0, 0.25),
             vang = Angle(0, 0, 0),
         },
     },
+    {
+        PrintName = "Underbarrel",
+        Slot = {"mw3_knife"},
+    }, --3
     { --2
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"}
@@ -206,6 +221,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     if papcamo then
         return vm:SetSkin(3)
+    end
+end
+
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+    local knife = wep:GetBuff_Override("MW3E_Knife")
+
+    if knife then
+        return anim .. "_k"
     end
 end
 
@@ -236,16 +259,16 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-        Time = 89 / 30,
+        Time = 4.1,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_REVOLVER,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.2,
         SoundTable = {
-            {s = "ArcCW_MW3E.MP412_Open", t = 20 / 35},
-            {s = "ArcCW_MW3E.MP412_In", t = 40 / 35},
-            {s = "ArcCW_MW3E.MP412_Close", t = 60 / 35},
-            {s = "ArcCW_MW3E.MP412_Hit", t = 80 / 35},
+            {s = "ArcCW_MW3E.MP412_Open", t = 0.25},
+            {s = "ArcCW_MW3E.MP412_In", t = 2},
+            {s = "ArcCW_MW3E.MP412_Close", t = 2.9},
+            {s = "ArcCW_MW3E.MP412_Hit", t = 3.5},
         },
     },
     ["enter_sprint"] = {
@@ -259,5 +282,62 @@ SWEP.Animations = {
     ["exit_sprint"] = {
         Source = "sprint_out",
         Time = 10 / 30
+    },
+
+    -- KNIFE
+
+    ["idle_k"] = {
+        Source = "idle_k",
+        Time = 1 / 30,
+    },
+    ["draw_k"] = {
+        Source = "draw_k",
+        Time = 15 / 30,
+    },
+    ["holster_k"] = {
+        Source = "holster_k",
+        Time = 15 / 30,
+    },
+    ["ready_k"] = {
+        Source = "draw_k",
+        Time = 15 / 30,
+    },
+    ["fire_k"] = {
+        Source = {"fire_k"},
+        Time = 0.266,
+    },
+    ["fire_iron_k"] = {
+        Source = "fire_ads_k",
+        Time = 0.233,
+    },
+    ["reload_k"] = {
+        Source = "reload_k",
+        Time = 4.1,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_REVOLVER,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.2,
+        SoundTable = {
+            {s = "ArcCW_MW3E.MP412_Open", t = 0.25},
+            {s = "ArcCW_MW3E.MP412_In", t = 2.5},
+            {s = "ArcCW_MW3E.MP412_Close", t = 3.2},
+        },
+    },
+    ["enter_sprint_k"] = {
+        Source = "sprint_in_k",
+        Time = 10 / 30
+    },
+    ["idle_sprint_k"] = {
+        Source = "sprint_loop_k",
+        Time = 30 / 40
+    },
+    ["exit_sprint_k"] = {
+        Source = "sprint_out_k",
+        Time = 10 / 30
+    },
+
+    ["bash"] = {
+        Source = "stab",
+        Time = 16 / 30,
     },
 }

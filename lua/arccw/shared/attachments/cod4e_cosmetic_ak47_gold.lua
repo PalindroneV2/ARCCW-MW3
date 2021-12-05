@@ -10,6 +10,9 @@ att.Free = true
 att.IgnorePickX = true
 
 att.SortOrder = 100
-att.Slot = {"cod4_ak47_cosmetic"}
+att.Slot = {"cod4_ak47_cosmetic", "mw3e_ak47_cosmetic"}
 
 att.NoRandom = true
+
+att.AttachSound = "weapons/arccw/mwc_ui/cod4/select.wav"
+att.DetachSound = "weapons/arccw/mwc_ui/cod4/select.wav"

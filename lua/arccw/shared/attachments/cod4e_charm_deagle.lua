@@ -15,7 +15,8 @@ att.IgnorePickX = true
 att.Model = "models/weapons/arccw/atts/charmbase.mdl"
 
 att.DroppedModel = "models/weapons/arccw/c_mw3e_deagle.mdl"
---att.AttachSound = "weapons/arccw/bo1_raygun/obtain.wav"
+att.AttachSound = "weapons/arccw/mwc_ui/cod4/select.wav"
+att.DetachSound = "weapons/arccw/mwc_ui/cod4/select.wav"
 
 att.Charm = true
 att.CharmModel = "models/weapons/arccw/c_mw3e_deagle.mdl"

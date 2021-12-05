@@ -15,3 +15,6 @@ att.Slot = {"cod4_ak47_cosmetic"}
 att.GivesFlags = {"ak47_tactical"}
 
 att.NoRandom = true
+
+att.AttachSound = "weapons/arccw/mwc_ui/mw2/select.wav"
+att.DetachSound = "weapons/arccw/mwc_ui/mw2/select.wav"

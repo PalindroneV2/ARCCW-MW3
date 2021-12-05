@@ -990,7 +990,7 @@ sound.Add( {
     volume = 1.0,
     level = 100,
     sound = {
-        "^weapons/arccw/mw3e_MP412/out.wav",
+        "^weapons/arccw/mw3e_MP412/Open.wav",
     }
 } )
 sound.Add( {

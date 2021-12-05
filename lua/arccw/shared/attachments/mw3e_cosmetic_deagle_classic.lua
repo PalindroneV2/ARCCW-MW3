@@ -15,3 +15,6 @@ att.Slot = {"mw3_deagle_cosmetic"}
 att.GivesFlags = {"classic_eagle"}
 
 att.NoRandom = true
+
+att.AttachSound = "weapons/arccw/mwc_ui/cod4/select.wav"
+att.DetachSound = "weapons/arccw/mwc_ui/cod4/select.wav"

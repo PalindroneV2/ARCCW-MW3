@@ -12,6 +12,9 @@ att.IgnorePickX = true
 att.SortOrder = 100
 att.Slot = {"mw3e_ak74u_comsetic"}
 
+att.AttachSound = "weapons/arccw/mwc_ui/cod4/select.wav"
+att.DetachSound = "weapons/arccw/mwc_ui/cod4/select.wav"
+
 att.Hook_GetShootSound = function(wep, sound)
     local sil = wep:GetBuff_Override("Silencer")
     if sil then
