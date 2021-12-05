@@ -180,6 +180,7 @@ SWEP.Attachments = {
             wpos = Vector(7.9, 2, -3.2),
             wang = Angle(-5, -2, 177.5)
         },
+        ExcludeFlags = {"mw3_knife"}
     },
     { --1
         PrintName = "Tactical",
@@ -207,9 +208,9 @@ SWEP.Attachments = {
     { --4
         PrintName = "Charm",
         Slot = "charm",
-        Bone = "j_gun",
+        Bone = "j_reload",
         Offset = {
-            vpos = Vector(-3, -0.5, -3),
+            vpos = Vector(2, -0.65, 1),
             vang = Angle(0, 0, 0),
         },
     },

@@ -6,7 +6,7 @@ att.AutoStats = true
 att.Free = true
 att.IgnorePickX = true
 
-att.SortOrder = 100
+att.SortOrder = 97
 att.Slot = {"mw3_deagle_cosmetic"}
 att.ExcludeFlags = {
 }

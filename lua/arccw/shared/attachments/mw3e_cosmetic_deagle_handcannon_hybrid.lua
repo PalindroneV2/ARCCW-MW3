@@ -6,7 +6,7 @@ att.AutoStats = true
 att.Free = false
 att.IgnorePickX = false
 
-att.SortOrder = 100
+att.SortOrder = 95
 att.Slot = {"cde_cosmetic_handcannon"}
 att.GivesFlags = {"bocw_hybrid", "cw_handcannon"}
 att.ExcludeFlags = {

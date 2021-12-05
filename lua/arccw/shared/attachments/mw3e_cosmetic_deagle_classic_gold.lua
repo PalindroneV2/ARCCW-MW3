@@ -9,7 +9,7 @@ att.HideIfBlocked = true
 att.Free = true
 att.IgnorePickX = true
 
-att.SortOrder = 100
+att.SortOrder = 99
 att.Slot = {"mw3_deagle_cosmetic"}
 
 att.GivesFlags = {"classic_eagle"}
