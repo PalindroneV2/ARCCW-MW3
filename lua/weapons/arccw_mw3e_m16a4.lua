@@ -145,7 +145,7 @@ SWEP.AttachmentElements = {
             Pos = Vector(-2.825, 0, 0.675),
             Ang = Angle(0.1, 0.01, 0),
             Magnification = 1.1,
-            CrosshairInSights = true,
+            CrosshairInSights = false,
             SwitchToSound = "",
         },
     },
