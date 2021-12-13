@@ -21,5 +21,4 @@ VertexlitGeneric
 	"$envmaptint" "[ .01 .01 .01 ]"
 	"$envmapFresnel" "1"
 	"$nocull" "1"
-	"$normalmapalphaenvmapmask" 1
 }

@@ -8,7 +8,7 @@ VertexlitGeneric
 	$detailblendfactor 0.35
 
 	$phong "1"
-	$phongexponent	"100"
+//	$phongexponent	"100"
 	$phongboost "2.5"
 	$phongfresnelranges "[0.5 1.5 1.5]"
 	$phongtint "[.2 .65 1]"

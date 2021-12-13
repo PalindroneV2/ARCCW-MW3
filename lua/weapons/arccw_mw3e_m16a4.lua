@@ -173,7 +173,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {
             {ind = 1, bg = 1},
             {ind = 2, bg = 1},
-            {ind = 4, bg = 2},
+            {ind = 4, bg = 0},
         },
     },
     ["rails_barrel"] = {
@@ -226,7 +226,7 @@ SWEP.Attachments = {
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
-        MergeSlots = {14,15}
+        MergeSlots = {14}
     }, --1
     {
         PrintName = "Barrel",
@@ -288,7 +288,7 @@ SWEP.Attachments = {
             vpos = Vector(12, 0, 1.575), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
-        RequireFlags = {"mk12_barrel"},
+        RequireFlags = {"mk12_bipod_ok"},
         HideIfBlocked = true,
     }, --6
     {
@@ -424,7 +424,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         end
     end
     if wep:GetBuff_Override("BO1_Bipod") then
-        vm:SetBodygroup(4,3)
+        vm:SetBodygroup(4,2)
+        if wep:InBipod() then
+            vm:SetBodygroup(4, 3)
+        end
     end
 
     wep.IronSightStruct = {

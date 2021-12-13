@@ -3,12 +3,11 @@ VertexlitGeneric
 	$basetexture	"models\weapons\pap\pap_blue_burn"
 	$bumpmap	"models\weapons\pap\pap_n"
 	$detail		"models\weapons\colors\gold_c"
-	$envmapmask	"models\weapons\colors\gold_s"
 	$detailblendmode		3
 	$detailblendfactor 1
 	
 	$phong "1"
-	$phongexponent	"100"
+//	$phongexponent	"100"
 	$phongboost "2.5"
 	$phongfresnelranges "[0.5 1.5 1.5]"
 	$phongtint "[1 .65 .2]"

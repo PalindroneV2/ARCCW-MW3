@@ -12,4 +12,4 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.Slot = {"mw3e_m16_barrel"}
-att.GivesFlags = {"rails_barrel"}
+att.GivesFlags = {"rails_barrel", "mk12_bipod_ok"}

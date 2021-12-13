@@ -8,13 +8,13 @@ VertexlitGeneric
 	"$detailblendfactor" "1"
 	"$detailscale" "1"
 
-	$phongexponenttexture "models\weapons\cod4\cod4_deagle\gold_s"
+//	$phongexponenttexture "models\weapons\cod4\cod4_deagle\gold_s"
 //	$envmapmask "models\weapons\cod4\cod4_deagle\gold_s"
 
 	$phong "1"
 //	$phongexponent	"100"
-	$phongboost "2.5"
-	$phongfresnelranges "[0.5 1.5 1.5]"
+	$phongboost "50"
+	$phongfresnelranges "[1 3 3]"
 	$phongtint "[1 .65 .2]"
 	$phongalbedotint "1"
 	$blendtintbybasealpha  "1"
@@ -22,7 +22,7 @@ VertexlitGeneric
 	
 	$envmap "env_cubemap"
 	$envmaptint "[1 .75 .25]"
-	$envmapfresnel "[1 1 1]"
+	$envmapfresnel "1"
 
 	"$nocull" "1"
 }

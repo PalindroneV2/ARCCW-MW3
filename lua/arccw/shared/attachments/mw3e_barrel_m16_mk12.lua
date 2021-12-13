@@ -12,7 +12,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.Slot = {"mw3e_m16_barrel"}
-att.GivesFlags = {"mk12_barrel"}
+att.GivesFlags = {"mk12_barrel", "mk12_bipod_ok"}
 att.ExcludeFlags = {"bo1_3burst", "bo2_fullauto"}
 
 att.Mult_Range = 1.5

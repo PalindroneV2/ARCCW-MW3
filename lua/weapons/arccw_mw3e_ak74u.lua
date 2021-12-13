@@ -282,6 +282,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     if classic then
         vm:SetBodygroup(1, 0)
+        if wep.Attachments[1].Installed then
+            vm:SetBodygroup(1, 1)
+        end
     end
 
     if papcamo then

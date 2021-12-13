@@ -14,7 +14,7 @@ VertexlitGeneric
 	$phongalbedotint             "1"
 	$normalmapalphaphongmask    	1
 
-	$phongexponenttexture "models\weapons\cod4\cod4_ak47\ak47_s"
+//	$phongexponenttexture "models\weapons\cod4\cod4_ak47\ak47_s"
 //	$envmapmask "models\weapons\cod4\cod4_ak47\ak47_s"
 
 	"$envmap" "env_cubemap"					

@@ -2,7 +2,7 @@
 {
 	"$basetexture" "models/weapons/cod4/cod4_optics/m14_woodland"
 	$blendtintbybasealpha  "1"
-	"$bumpmap" "models/weapons/colors/normalmap"
+	"$bumpmap" "models/weapons/cod4/cod4_optics/m14_scope_n"
 
 	$detail "models\weapons\colors\black_detail"
 	$detailblendmode 0

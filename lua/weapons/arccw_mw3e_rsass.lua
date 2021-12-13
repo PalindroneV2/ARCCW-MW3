@@ -27,7 +27,7 @@ SWEP.WorldModelOffset = {
 }
 SWEP.ViewModelFOV = 60
 
-SWEP.DefaultBodygroups = "00000000"
+SWEP.DefaultBodygroups = "00020000"
 
 SWEP.Damage = 70
 SWEP.DamageMin = 45 -- damage done at maximum range
@@ -159,7 +159,7 @@ SWEP.AttachmentElements = {
     },
     ["bo1_bipod"] = {
         VMBodygroups = {
-            {ind = 3, bg = 1},
+            {ind = 3, bg = 0},
         },
     },
     ["bo2_fcg_fullauto"] = {
@@ -295,6 +295,13 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local pap = wep:GetBuff_Override("PackAPunch")
 
     if pap then vm:SetSkin(2) end
+
+    if wep:GetBuff_Override("BO1_Bipod") then
+        vm:SetBodygroup(3,0)
+        if wep:InBipod() then
+            vm:SetBodygroup(3, 1)
+        end
+    end
 end
 
 SWEP.Hook_NameChange = function(wep, name)

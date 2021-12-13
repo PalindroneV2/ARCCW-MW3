@@ -12,7 +12,7 @@ att.ActivateElements = {"mwc_bipod"}
 att.ExcludeFlags = {"g36c", "g3k", "g3k_ris", "sd_barrel"}
 att.BO1_Bipod = true
 att.HideIfBlocked = true
-att.RequireFlags = {"mk12_barrel"}
+att.RequireFlags = {"mk12_bipod_ok"}
 
 att.Free = true
 

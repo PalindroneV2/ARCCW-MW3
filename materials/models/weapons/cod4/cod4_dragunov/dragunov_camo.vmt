@@ -14,10 +14,10 @@ VertexlitGeneric
 	$phongalbedotint             "1"
 	$normalmapalphaphongmask    	1
 
-	$phongexponenttexture "models\weapons\cod4\cod4_dragunov\dragunov_s"
+//	$phongexponenttexture "models\weapons\cod4\cod4_dragunov\dragunov_s"
 
 	"$envmap" "env_cubemap"					
-	"$envmaptint" "[ .005 .005 .005 ]"					
+	"$envmaptint" ".01"					
 	"$envmapFresnel" "1"
 	"$nocull" "1"
 }

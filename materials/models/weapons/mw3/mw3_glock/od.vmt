@@ -4,12 +4,12 @@ VertexlitGeneric
 	//$color2 "[0.5 0.5 0.5]"
 	$bumpmap	"models\weapons\mw3\mw3_glock\g18_n"
 	$detail "models\weapons\colors\od_green"
-	$detailblendmode 4
-	$detailblendfactor 2
+	$detailblendmode 0
+	$detailblendfactor 1.25
     "$detailscale" "5"
 
 	$phong                      		1
-	$phongexponent                      "20"
+//	$phongexponent                      "20"
 	$phongboost                         "0.5"
 	$phongfresnelranges         "[0.1 0.5 0.5]"
 	$phongalbedotint             "1"

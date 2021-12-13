@@ -17,7 +17,7 @@ VertexlitGeneric
 	$phongexponenttexture "models\weapons\cod4\cod4_mp5\sd_s"
 
 	"$envmap" "env_cubemap"					
-	"$envmaptint" "[ .005 .005 .005 ]"					
+	"$envmaptint" "[ .005 .005 .005 ]"
 	"$envmapFresnel" "1"
 	"$nocull" "1"
 }
