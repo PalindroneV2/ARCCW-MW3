@@ -226,7 +226,7 @@ SWEP.Attachments = {
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
-        MergeSlots = {14}
+        MergeSlots = {15}
     }, --1
     {
         PrintName = "Barrel",
@@ -305,7 +305,7 @@ SWEP.Attachments = {
     }, --8
     {
         PrintName = "Fire Group",
-        Slot = {"bo1_fcg", "bo2_fcg_fullauto"},
+        Slot = {"bo1_fcg", "mwc_fcg_fullauto"},
         DefaultAttName = "Standard FCG"
     }, --9
     {
@@ -320,8 +320,12 @@ SWEP.Attachments = {
     }, --11
     {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
-    }, --12
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
     {
         PrintName = "Charm",
         Slot = "charm",
@@ -359,31 +363,31 @@ SWEP.Hook_NameChange = function(wep, name)
 
     local gunname = "Colt M16A4"
 
-    if wep.Attachments[9].Installed == "bo2_fcg_fullauto" then
+    if wep.Attachments[9].Installed == "mwc_fcg_fullauto" then
         gunname = "Colt M16A3"
     end
 
     if barrel == 1 then
         gunname = "Mk. 12 SPR"
-        if wep.Attachments[9].Installed == "bo2_fcg_fullauto" then
+        if wep.Attachments[9].Installed == "mwc_fcg_fullauto" then
             gunname = "M16A3 SPR"
         end
     end
     if barrel == 2 then
         gunname = "Colt M4 Carbine"
-        if wep.Attachments[9].Installed == "bo2_fcg_fullauto" then
+        if wep.Attachments[9].Installed == "mwc_fcg_fullauto" then
             gunname = "Mk. 18 Mod 0"
         end
     end
     if barrel == 3 then
         gunname = "Colt M4 Carbine"
-        if wep.Attachments[9].Installed == "bo2_fcg_fullauto" then
+        if wep.Attachments[9].Installed == "mwc_fcg_fullauto" then
             gunname = "Colt M4A1"
         end
     end
     if barrel == 4 then
         gunname = "Colt M4 Carbine"
-        if wep.Attachments[9].Installed == "bo2_fcg_fullauto" then
+        if wep.Attachments[9].Installed == "mwc_fcg_fullauto" then
             gunname = "Colt M4A1"
         end
     end

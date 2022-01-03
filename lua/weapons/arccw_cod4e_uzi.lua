@@ -211,9 +211,13 @@ SWEP.Attachments = {
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"},
     },
-    { --6
+    {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
     },
     {
         PrintName = "Cosmetic",
@@ -255,7 +259,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
     local camo = 0
-    if wep.Attachments[8].Installed == "cod4e_cosmetic_uzi_gold" then
+    if wep.Attachments[9].Installed == "cod4e_cosmetic_uzi_gold" then
         camo = 4
     end
 

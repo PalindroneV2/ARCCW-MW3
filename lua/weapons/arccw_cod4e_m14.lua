@@ -197,7 +197,7 @@ SWEP.Attachments = {
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
-        MergeSlots = {13},
+        MergeSlots = {14},
     }, --1
     {
         PrintName = "Barrel",
@@ -271,8 +271,12 @@ SWEP.Attachments = {
     }, --9
     {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
+        Slot = {"mw3_perk"}
     }, --10
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    }, --11
     {
         PrintName = "Charm",
         Slot = {"charm"},
@@ -282,7 +286,7 @@ SWEP.Attachments = {
             vpos = Vector(4.35, -0.75, 1.25),
             vang = Angle(0, 0, 0),
         },
-    }, --11
+    }, --12
     {
         Hidden = true,
         Slot = "cod4e_m14_scope",
@@ -293,13 +297,13 @@ SWEP.Attachments = {
         },
         GivesFlags = {"mount", "has_m21_scope", "is_cod4_m14"},
         --Installed = "optic_mw3_mk14",
-    }, --12
+    }, --13
     {
         PrintName = "Cosmetic",
         Slot = "cod4_m14_cosmetic",
         DefaultAttName = "Black Polymer",
         DefaultAttIcon = Material("entities/acwatt_cod4_generic.png", "mips smooth"),
-    }, --13
+    }, --14
 }
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
@@ -331,12 +335,12 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local pap = wep:GetBuff_Override("PackAPunch")
     local camo = 0
-    if wep.Attachments[14].Installed == "cod4e_cosmetic_m14_ghillie" then
+    if wep.Attachments[15].Installed == "cod4e_cosmetic_m14_ghillie" then
         camo = 4
         vm:SetBodygroup(4,1)
-    elseif wep.Attachments[14].Installed == "cod4e_cosmetic_m14_woodland" then
+    elseif wep.Attachments[15].Installed == "cod4e_cosmetic_m14_woodland" then
         camo = 4
-    elseif wep.Attachments[14].Installed == "cod4e_cosmetic_m14_wood" then
+    elseif wep.Attachments[15].Installed == "cod4e_cosmetic_m14_wood" then
         camo = 8
     end
 
@@ -354,13 +358,13 @@ SWEP.Hook_NameChange = function(wep, name)
 
     local gunname = "M14"
 
-    if wep.Attachments[13].Installed == "optic_cod4_m14" then
+    if wep.Attachments[14].Installed == "optic_cod4_m14" then
         gunname = "M21"
     end
 
     if pap then
         gunname = "Mnesia"
-        if wep.Attachments[13].Installed == "optic_cod4_m14" then
+        if wep.Attachments[14].Installed == "optic_cod4_m14" then
             gunname = "Shadow of Chernobyl"
         end
     end

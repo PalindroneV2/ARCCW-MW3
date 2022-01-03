@@ -286,7 +286,7 @@ SWEP.Attachments = {
     }, --8
     {
         PrintName = "Fire Group",
-        Slot = {"bo2_fcg_fullauto", "bo1_fcg"},
+        Slot = {"mwc_fcg_fullauto", "bo1_fcg"},
         DefaultAttName = "Standard FCG"
     }, --9
     {
@@ -301,8 +301,12 @@ SWEP.Attachments = {
     }, --11
     {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
+        Slot = {"mw3_perk"}
     }, --12
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    }, --13
     {
         PrintName = "Charm",
         Slot = "charm",
@@ -314,7 +318,7 @@ SWEP.Attachments = {
             wpos = Vector(5.25, 1.5, -3.25),
             wang = Angle(-175, -175, 0)
         },
-    }, --13
+    }, --14
 }
 
 SWEP.Hook_NameChange = function(wep, name)
@@ -324,7 +328,7 @@ SWEP.Hook_NameChange = function(wep, name)
     local model = "M16"
     local alt = "A4"
 
-    if wep.Attachments[9].Installed == "bo2_fcg_fullauto" then
+    if wep.Attachments[9].Installed == "mwc_fcg_fullauto" then
         alt = "A3"
     end
     if wep.Attachments[3].Installed then
@@ -333,7 +337,7 @@ SWEP.Hook_NameChange = function(wep, name)
         if wep:GetBuff_Override("BO1_UBGL") and wep:GetBuff_Override("Silencer") then
             alt = " SOPMOD"
         end
-        if wep.Attachments[9].Installed == "bo2_fcg_fullauto" then
+        if wep.Attachments[9].Installed == "mwc_fcg_fullauto" then
             alt = "A1"
             if wep:GetBuff_Override("BO1_UBGL") and wep:GetBuff_Override("Silencer") then
                 alt = "A1 SOPMOD"
@@ -351,7 +355,7 @@ SWEP.Hook_NameChange = function(wep, name)
         if wep.Attachments[3].Installed then
             model = "Xeno Matter 4000"
             alt = ""
-            if wep.Attachments[9].Installed == "bo2_fcg_fullauto" then
+            if wep.Attachments[9].Installed == "mwc_fcg_fullauto" then
                 model = "Predator"
             end
         end

@@ -177,7 +177,7 @@ SWEP.Attachments = {
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
-        MergeSlots = {11}
+        MergeSlots = {12}
     }, --1
     {
         PrintName = "Muzzle",
@@ -227,8 +227,12 @@ SWEP.Attachments = {
     }, --7
     {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
-    }, --8
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
     {
         PrintName = "Cosmetic",
         DefaultAttName = "Standard",
@@ -278,7 +282,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
-    local classic = wep.Attachments[9].Installed == "mw3e_cosmetic_ak74u_classic"
+    local classic = wep.Attachments[10].Installed == "mw3e_cosmetic_ak74u_classic"
 
     if classic then
         vm:SetBodygroup(1, 0)
@@ -296,7 +300,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
-    if wep.Attachments[9].Installed == "mw3e_cosmetic_ak74u_classic" then
+    if wep.Attachments[10].Installed == "mw3e_cosmetic_ak74u_classic" then
         return anim .. "_classic"
     end
 end

@@ -1,5 +1,5 @@
 att.PrintName = "GP25 (HE)(COD4)"
-att.Icon = Material("entities/acwatt_ubgl_ak_gp25.png", "mips smooth")
+att.Icon = Material("entities/acwatt_ubgl_cod4e_gp25.png", "mips smooth")
 att.Description = "Selectable Grenade Launcher equipped under the rifle's handguard. Double tap +ZOOM to equip/dequip."
 att.Desc_Pros = {
     "+ Selectable Grenade Launcher.",
@@ -27,7 +27,7 @@ att.UBGL_Ammo = "smg1_grenade"
 att.UBGL_RPM = 300
 att.UBGL_Recoil = 1
 att.UBGL_Capacity = 1
-att.UBGL_Icon = Material("entities/acwatt_ubgl_ak_gp25.png")
+att.UBGL_Icon = Material("entities/acwatt_ubgl_cod4e_gp25.png")
 
 local function Ammo(wep)
     return wep.Owner:GetAmmoCount("smg1_grenade")
@@ -42,7 +42,7 @@ att.UBGL_NPCFire = function(wep, ubgl)
 
     wep:PlayAnimation("fire_glsetup")
 
-    wep:FireRocket("arccw_bo1_gp25_he", 4000)
+    wep:FireRocket("arccw_mw3_gp25_he", 4000)
 
     wep:EmitSound("ArcCW_COD4E.GP25_Fire", 100)
 
@@ -56,7 +56,7 @@ att.UBGL_Fire = function(wep, ubgl)
 
     wep:PlayAnimation("fire_glsetup")
 
-    wep:FireRocket("arccw_bo1_gp25_he", 4000)
+    wep:FireRocket("arccw_mw3_gp25_he", 4000)
 
     wep:EmitSound("ArcCW_COD4E.GP25_Fire", 100)
 

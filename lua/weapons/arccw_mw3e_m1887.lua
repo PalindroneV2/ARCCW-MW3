@@ -205,8 +205,12 @@ SWEP.Attachments = {
     }, --7
     {
         PrintName = "Perk",
-        Slot = "bo1_perk",
-    }, --8
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
     {
         PrintName = "Charm",
         Slot = "charm",
@@ -247,7 +251,7 @@ end
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local papcamo = wep:GetBuff_Override("PackAPunch")
-    local classic = wep.Attachments[8].Installed == "mw3e_cosmetic_1887_classic"
+    local classic = wep.Attachments[9].Installed == "mw3e_cosmetic_1887_classic"
 
     if classic and wep.Attachments[1].Installed then
         vm:SetBodygroup(1, 3)

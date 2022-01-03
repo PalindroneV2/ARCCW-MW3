@@ -228,8 +228,12 @@ SWEP.Attachments = {
     }, --6
     {
         PrintName = "Perk",
-        Slot = "bo1_perk"
-    }, --7
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
     {
         PrintName = "Cosmetic",
         Slot = "cod4_dragunov_cosmetic",
@@ -255,7 +259,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local camo = 0
 
-    if wep.Attachments[8].Installed == "cod4e_cosmetic_dragunov_gold" then
+    if wep.Attachments[9].Installed == "cod4e_cosmetic_dragunov_gold" then
         camo = 4
     end
 

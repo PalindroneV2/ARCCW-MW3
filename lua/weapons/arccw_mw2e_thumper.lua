@@ -159,8 +159,12 @@ SWEP.Attachments = {
     }, --3
     {
         PrintName = "Perk",
-        Slot = "bo1_perk",
-    }, --4
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
     {
         PrintName = "Charm",
         Slot = "charm",

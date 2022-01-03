@@ -185,7 +185,7 @@ SWEP.Attachments = {
             wpos = Vector(8.5, 2, -2.9),
             wang = Angle(-5, -2, 177.5)
         },
-        MergeSlots = {8,9,10},
+        MergeSlots = {9,10,11},
         ExcludeFlags = {"doom_ee"},
     },
     { --4
@@ -193,10 +193,15 @@ SWEP.Attachments = {
         Slot = {"ammo_pap"},
         ExcludeFlags = {"doom_ee"},
     },
-    { --5
+    {
         PrintName = "Perk",
-        Slot = {"bo1_perk", "bo1_perk_doompistol"},
-    },
+        Slot = {"mw3_perk", "bo1_perk_doompistol"}
+    }, --5
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro",
+        ExcludeFlags = {"doom_ee"},
+    }, --6
     { --6
         PrintName = "Charm",
         Slot = "charm",

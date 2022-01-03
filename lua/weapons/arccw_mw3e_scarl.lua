@@ -152,7 +152,7 @@ SWEP.AttachmentElements = {
             {ind = 3, bg = 1},
         },
     },
-    ["bo1_mk"] = {
+    ["mw3e_mk"] = {
         VMBodygroups = {
             {ind = 3, bg = 2},
         },
@@ -193,7 +193,7 @@ SWEP.Attachments = {
     },
     { --3
         PrintName = "Underbarrel",
-        Slot = {"ubgl", "mw3e_m320", "bo1_mk"},
+        Slot = {"ubgl", "mw3e_m320", "mw3e_mk"},
         Bone = "tag_weapon",
         VMScale = Vector(1.2, 1, 1),
         WMScale = Vector(1.2, 1, 1),
@@ -239,9 +239,13 @@ SWEP.Attachments = {
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"}
     },
-    { --9
+    {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
     },
     { --10
         PrintName = "Charm",

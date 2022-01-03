@@ -148,7 +148,7 @@ SWEP.ExtraSightDist = 5
 SWEP.DefaultBodygroups = "0000000"
 
 SWEP.AttachmentElements = {
-    ["bo1_m320"] = {
+    ["mw3e_m320"] = {
         VMBodygroups = {
             {ind = 5, bg = 1},
             {ind = 6, bg = 1},
@@ -284,7 +284,7 @@ SWEP.Attachments = {
     }, --3
     {
         PrintName = "Underbarrel",
-        Slot = {"bo1_uniforegrip", "bo1_m320", "bo1_bipod"},
+        Slot = {"bo1_uniforegrip", "mw3e_m320", "mwc_bipod"},
         Bone = "tag_weapon",
         VMScale = Vector(1, 1, 1),
         WMScale = Vector(1, 1, 1),
@@ -341,8 +341,12 @@ SWEP.Attachments = {
     }, --10
     {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
+        Slot = {"mw3_perk"}
     }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
     {
         PrintName = "Charm",
         Slot = "charm",

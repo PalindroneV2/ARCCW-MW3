@@ -180,7 +180,7 @@ SWEP.Attachments = {
             vpos = Vector(2.5, 0.3, 0.25),
             vang = Angle(0, 0, 0),
         },
-        MergeSlots = {7},
+        MergeSlots = {8},
     }, --2
     {
         PrintName = "Underbarrel",
@@ -192,8 +192,12 @@ SWEP.Attachments = {
     }, --4
     {
         PrintName = "Perk",
-        Slot = "bo1_perk"
-    }, --5
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
     {
         PrintName = "Charm",
         Slot = "charm",

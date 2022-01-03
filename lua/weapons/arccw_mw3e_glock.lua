@@ -198,15 +198,19 @@ SWEP.Attachments = {
             vpos = Vector(3.5, 0.025, 0.25),
             vang = Angle(0, 0, 0),
         },
-        MergeSlots = {9},
+        MergeSlots = {10},
     },
     { --5
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"},
     },
-    { --6
+    {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
     },
     {
         PrintName = "Cosmetic",
@@ -265,10 +269,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     end
 
     local camo = 0
-    if wep.Attachments[7].Installed == "cde_cosmetic_tan" then camo = 2
-    elseif wep.Attachments[7].Installed == "cde_cosmetic_od" then camo = 4
-    elseif wep.Attachments[7].Installed == "cde_cosmetic_red" then camo = 6
-    elseif wep.Attachments[7].Installed == "cde_cosmetic_twotone" then camo = 8
+    if wep.Attachments[8].Installed == "cde_cosmetic_tan" then camo = 2
+    elseif wep.Attachments[8].Installed == "cde_cosmetic_od" then camo = 4
+    elseif wep.Attachments[8].Installed == "cde_cosmetic_red" then camo = 6
+    elseif wep.Attachments[8].Installed == "cde_cosmetic_twotone" then camo = 8
     end
 
     for k = camo, camo do

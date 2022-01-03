@@ -204,7 +204,7 @@ SWEP.Attachments = {
     }, --4
     {
         PrintName = "Tactical",
-        Slot = {"bo1_tacprimary", "tac"},
+        Slot = {"bo1_tacprimary"},
         VMScale = Vector(1, 1, 1),
         Bone = "tag_weapon",
         Offset = {
@@ -222,8 +222,12 @@ SWEP.Attachments = {
     }, --6
     {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
-    }, --7
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
     {
         PrintName = "Charm",
         Slot = "charm",

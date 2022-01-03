@@ -175,7 +175,7 @@ SWEP.Attachments = {
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
-        MergeSlots = {13}
+        MergeSlots = {14}
     }, --1
     {
         PrintName = "Muzzle",
@@ -254,8 +254,12 @@ SWEP.Attachments = {
     }, --10
     {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
+        Slot = {"mw3_perk"}
     }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
     {
         PrintName = "Charm",
         Slot = "charm",
@@ -307,7 +311,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local camo = 0
 
-    if wep.Attachments[12].Installed == "cod4e_cosmetic_ak47_gold" then
+    if wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_gold" then
         camo = 4
     end
     vm:SetSkin(camo)

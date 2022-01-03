@@ -185,7 +185,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         Installed = "tac_mw3_p90_laser",
-        MergeSlots = {8},
+        MergeSlots = {9},
     },
     { --4
         PrintName = "Fire Group",
@@ -195,9 +195,13 @@ SWEP.Attachments = {
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"}
     },
-    { --6
+    {
         PrintName = "Perk",
-        Slot = "bo1_perk"
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
     },
     { --7
         PrintName = "Charm",

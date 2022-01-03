@@ -246,16 +246,22 @@ SWEP.Attachments = {
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"},
     },
-    { --6
+    {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
-    },/*
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
+    /*
     {
         PrintName = "Cosmetic",
         Slot = {"cod4_mp5_cosmetic"},
         DefaultAttName = "Standard Issue",
         DefaultAttIcon = Material("entities/acwatt_cod4_generic.png", "mips smooth"),
-    },*/
+    },
+    */
     { --8
         PrintName = "Charm",
         Slot = "charm",

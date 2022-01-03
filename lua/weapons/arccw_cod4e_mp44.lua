@@ -210,9 +210,14 @@ SWEP.Attachments = {
         Slot = {"ammo_pap"},
         ExcludeFlags = {"wolf_ee"},
     },
-    { --7
+    {
         PrintName = "Perk",
-        Slot = {"bo1_perk", "bo1_perk_wolfmg"},
+        Slot = {"mw3_perk", "bo1_perk_wolfmg"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro",
+        ExcludeFlags = {"wolf_ee"},
     },
     { --8
         PrintName = "Charm",

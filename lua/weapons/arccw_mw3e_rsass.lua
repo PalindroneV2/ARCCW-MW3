@@ -162,7 +162,7 @@ SWEP.AttachmentElements = {
             {ind = 3, bg = 0},
         },
     },
-    ["bo2_fcg_fullauto"] = {
+    ["mwc_fcg_fullauto"] = {
         Mult_Damage = 40 / 60,
         Mult_DamageMin = 30 / 40,
         Mult_HipDispersion = 1.5,
@@ -183,7 +183,7 @@ SWEP.Attachments = {
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
-        MergeSlots = {13},
+        MergeSlots = {14},
     }, --1
     {
         PrintName = "Backup Optics", -- print name
@@ -250,7 +250,7 @@ SWEP.Attachments = {
     }, --6
     {
         PrintName = "Fire Group",
-        Slot = {"bo1_fcg", "bo2_fcg_fullauto"},
+        Slot = {"bo1_fcg", "mwc_fcg_fullauto"},
         DefaultAttName = "Standard FCG"
     }, --7
     {
@@ -265,8 +265,12 @@ SWEP.Attachments = {
     }, --9
     {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
-    }, --10
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
     {
         PrintName = "Charm",
         Slot = "charm",

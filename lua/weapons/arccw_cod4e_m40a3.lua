@@ -177,7 +177,7 @@ SWEP.Attachments = {
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0.5, 0),
         InstalledEles = {"mount"},
-        MergeSlots = {8}
+        MergeSlots = {9}
     },
     { --2
         PrintName = "Muzzle",
@@ -219,8 +219,12 @@ SWEP.Attachments = {
     }, --5
     {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
-    }, --6
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
     {
         PrintName = "Charm",
         Slot = "charm",
@@ -252,7 +256,7 @@ SWEP.Hook_NameChange = function(wep, name)
     local gunname = "M40A3"
 
     if pap then
-        if wep.Attachments[8].Installed == "optic_cod4_m40scope" then
+        if wep.Attachments[9].Installed == "optic_cod4_m40scope" then
             gunname = "QuickScoper"
         end
         gunname = "NoScoper"

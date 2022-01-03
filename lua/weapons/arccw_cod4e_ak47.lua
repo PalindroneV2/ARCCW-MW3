@@ -190,7 +190,7 @@ SWEP.Attachments = {
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
-        MergeSlots = {14}
+        MergeSlots = {15}
     }, --1
     {
         PrintName = "Muzzle",
@@ -275,8 +275,12 @@ SWEP.Attachments = {
     }, --10
     {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
+        Slot = {"mw3_perk"}
     }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    },
     {
         PrintName = "Charm",
         Slot = "charm",
@@ -314,13 +318,13 @@ SWEP.Hook_NameChange = function(wep, name)
 
     local gunname = "AK-47"
 
-    if wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_tactical" then
+    if wep.Attachments[14].Installed == "cod4e_cosmetic_ak47_tactical" then
         gunname = "AKM"
     end
 
     if pap then
         gunname = "Reznov's Revenge"
-        if wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_tactical" then
+        if wep.Attachments[14].Installed == "cod4e_cosmetic_ak47_tactical" then
             gunname = "Reznov's Rezurrection"
         end
     end
@@ -335,9 +339,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local camo = 0
 
-    if wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_gold" then
+    if wep.Attachments[14].Installed == "cod4e_cosmetic_ak47_gold" then
         camo = 4
-    elseif wep.Attachments[13].Installed == "cod4e_cosmetic_ak47_tactical" then
+    elseif wep.Attachments[14].Installed == "cod4e_cosmetic_ak47_tactical" then
         camo = 0
         vm:SetBodygroup(0, 1)
         vm:SetBodygroup(1, 2)

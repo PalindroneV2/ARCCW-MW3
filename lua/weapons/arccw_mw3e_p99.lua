@@ -178,7 +178,7 @@ SWEP.Attachments = {
         },
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0, 0, 0),
-        MergeSlots = {9}
+        MergeSlots = {10}
     },
     { --2
         PrintName = "Muzzle",
@@ -223,9 +223,13 @@ SWEP.Attachments = {
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"}
     },
-    { --7
+    {
         PrintName = "Perk",
-        Slot = "bo1_perk"
+        Slot = {"mw3_perk"}
+    }, --11
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
     },
     { --8
         PrintName = "Charm",

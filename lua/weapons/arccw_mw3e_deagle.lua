@@ -201,7 +201,7 @@ SWEP.Attachments = {
         },
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0, 0, 0),
-        MergeSlots = {8},
+        MergeSlots = {9},
     }, --1
     { --2
         PrintName = "Tactical",
@@ -213,7 +213,7 @@ SWEP.Attachments = {
             vpos = Vector(3.6, 0.315, 0.3),
             vang = Angle(0, 0, 0),
         },
-        MergeSlots = {9},
+        MergeSlots = {10},
     },
     { --3
         PrintName = "Caliber",
@@ -224,10 +224,14 @@ SWEP.Attachments = {
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"}
     },
-    { --5
+    {
         PrintName = "Perk",
-        Slot = "bo1_perk"
-    },
+        Slot = {"mw3_perk"}
+    }, --5
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    }, --6
     { --6
         PrintName = "Charm",
         Slot = "charm",
@@ -293,10 +297,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local papcamo = wep:GetBuff_Override("PackAPunch")
     local camo = 0
-    if wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_silver" then camo = 1
-    elseif wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_classic" then camo = 1
-    elseif wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_classic_gold" then camo = 2
-    elseif wep.Attachments[7].Installed == "mw3e_cosmetic_deagle_twotone" then camo = 1
+    if wep.Attachments[8].Installed == "mw3e_cosmetic_deagle_silver" then camo = 1
+    elseif wep.Attachments[8].Installed == "mw3e_cosmetic_deagle_classic" then camo = 1
+    elseif wep.Attachments[8].Installed == "mw3e_cosmetic_deagle_classic_gold" then camo = 2
+    elseif wep.Attachments[8].Installed == "mw3e_cosmetic_deagle_twotone" then camo = 1
     elseif wep:GetBuff_Override("BOCW_Handcannon") then camo = 1
     end
 

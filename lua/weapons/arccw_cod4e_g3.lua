@@ -223,7 +223,7 @@ SWEP.Attachments = {
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
-        MergeSlots = {14},
+        MergeSlots = {15},
     }, --1
     {
         PrintName = "Muzzle",
@@ -312,8 +312,12 @@ SWEP.Attachments = {
     }, --11
     {
         PrintName = "Perk",
-        Slot = {"bo1_perk"}
+        Slot = {"mw3_perk"}
     }, --12
+    {
+        PrintName = "Proficiency",
+        Slot = "mw3_pro"
+    }, --13
     {
         PrintName = "Charm",
         Slot = "charm",
@@ -325,7 +329,7 @@ SWEP.Attachments = {
             wpos = Vector(5.25, 1.5, -3.25),
             wang = Angle(-175, -175, 0)
         },
-    }, --13
+    }, --14
     {
         Hidden = true,
         Slot = {"bo1_hendsoldt"},
@@ -336,7 +340,7 @@ SWEP.Attachments = {
         },
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.1, 0, 0),
-    },
+    }, --15
 }
 
 SWEP.Hook_NameChange = function(wep, name)
