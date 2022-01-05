@@ -248,6 +248,7 @@ SWEP.Attachments = {
         PrintName = "Cosmetic",
         Slot = {"mw3_deagle_cosmetic", "cde_cosmetic_handcannon"},
         FreeSlot = true,
+        RandomChance = 5,
         DefaultAttIcon = Material("entities/acwatt_mw3_generic.png", "mips smooth"),
     },
     { --8

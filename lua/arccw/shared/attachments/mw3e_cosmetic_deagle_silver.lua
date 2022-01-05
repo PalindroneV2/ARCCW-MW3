@@ -11,7 +11,7 @@ att.Slot = {"mw3_deagle_cosmetic"}
 att.ExcludeFlags = {
 }
 
-att.NoRandom = true
+att.RandomWeight = 0.25
 
 att.AttachSound = "weapons/arccw/mwc_ui/mw3/hover.wav"
 att.DetachSound = "weapons/arccw/mwc_ui/mw3/hover.wav"

@@ -334,7 +334,7 @@ SWEP.Attachments = {
         Slot = "mw3e_rsass_scope",
         Bone = "j_gun", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(-0.5, 0, 0.7), -- 4.6 offset that the attachment will be relative to the bone
+            vpos = Vector(-0.5, 0, 0.925), -- 4.6 offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"mount"},
@@ -391,7 +391,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     vm:SetBodygroup(3, sights)
 
-    if wep.Attachments[1].Installed or wep.Attachments[14].Installed then
+    if wep.Attachments[1].Installed or wep.Attachments[15].Installed then
         vm:SetBodygroup(3, sights + 2)
         if wep:GetBuff_Override("AltIrons") then
             vm:SetBodygroup(3, sights + 1)
