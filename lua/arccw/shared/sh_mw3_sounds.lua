@@ -438,6 +438,56 @@ sound.Add( {
     }
 } )
 
+--MW3E QBZ97--
+
+sound.Add( {
+    name = "ArcCW_MW3E.QBZ97_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_QBZ97/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.QBZ97_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_QBZ97/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.QBZ97_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_QBZ97/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.QBZ97_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_QBZ97/out.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.QBZ97_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_QBZ97/lift.wav",
+    }
+} )
+
 --MW3E MK14--
 
 sound.Add( {
