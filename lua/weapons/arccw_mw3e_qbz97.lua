@@ -16,7 +16,7 @@ SWEP.Trivia_Mechanism = "Gas-Operated"
 SWEP.Trivia_Country = "China"
 SWEP.Trivia_Year = 1997
 
-SWEP.Slot = 3
+SWEP.Slot = 2
 
 SWEP.UseHands = true
 
@@ -24,10 +24,10 @@ SWEP.ViewModel = "models/weapons/arccw/c_mw3e_qbz97.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_mw3e_qbz97.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-4.5, 3.5, -7.8),
-    ang        =    Angle(0, 0, 180),
+    pos        =    Vector(-8.25, 5, -7.8),
+    ang        =    Angle(-2.5, 2, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
-    scale = 1.15,
+    scale = 1.05,
 }
 SWEP.ViewModelFOV = 60
 
@@ -118,7 +118,7 @@ SWEP.IronSightStruct = {
 
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
-SWEP.HoldtypeSights = "rpg"
+SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 

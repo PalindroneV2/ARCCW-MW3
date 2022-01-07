@@ -172,6 +172,20 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 3},
         },
     },
+    ["mw19_barrel"] = {
+        VMBodygroups = {
+            {ind = 0, bg = 1},
+            {ind = 2, bg = 3},
+            {ind = 3, bg = 6},
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-2.825, 0, 0.1),
+            Ang = Angle(-0.1, 0.025, 0),
+            Magnification = 1.1,
+            CrosshairInSights = false,
+            SwitchToSound = "",
+        },
+    },
     ["mk18_barrel"] = {
         VMBodygroups = {
             {ind = 2, bg = 1},
@@ -260,7 +274,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         GivesFlags = {"nocover"},
-    },
+    }, --5
     {
         Hidden = true,
         Slot = {"ubgl"},
@@ -270,7 +284,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         GivesFlags = {"nocover"},
-    }, --5
+    }, --6
     {
         Hidden = true,
         Slot = {"mk12_bipod"},
@@ -281,7 +295,7 @@ SWEP.Attachments = {
         },
         RequireFlags = {"mk12_bipod_ok"},
         HideIfBlocked = true,
-    }, --6
+    }, --7
     {
         PrintName = "Tactical",
         Slot = {"bo1_tacprimary"},
@@ -293,30 +307,30 @@ SWEP.Attachments = {
             wpos = Vector(15, 0.3, -5.25),
             wang = Angle(-10, 0, 90)
         },
-    }, --7
+    }, --8
     {
         PrintName = "Fire Group",
         Slot = {"bo1_fcg", "mwc_fcg_burst"},
         DefaultAttName = "Standard FCG"
-    }, --8
+    }, --9
     {
         PrintName = "Stock",
         Slot = {"mwc_stock"},
         DefaultAttName = "Buffer Tube",
         Installed = "mwc_stock_light",
-    }, --9
+    }, --10
     {
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"},
-    }, --10
+    }, --11
     {
         PrintName = "Perk",
         Slot = {"mw3_perk"}
-    }, --11
+    }, --12
     {
         PrintName = "Proficiency",
         Slot = "mw3_pro"
-    },
+    }, --13
     {
         PrintName = "Charm",
         Slot = "charm",
@@ -328,7 +342,7 @@ SWEP.Attachments = {
             wpos = Vector(5.25, 1.5, -3.25),
             wang = Angle(-175, -175, 0)
         },
-    }, --13
+    }, --14
     {
         Hidden = true,
         Slot = "mw3e_rsass_scope",
@@ -338,7 +352,10 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"mount"},
-    }, --14
+    }, --15
+}
+
+SWEP.AttachmentOverrides = {
 }
 
 SWEP.Hook_NameChange = function(wep, name)
@@ -346,7 +363,7 @@ SWEP.Hook_NameChange = function(wep, name)
 
     local gunname = "Colt M4A1"
 
-    if wep.Attachments[8].Installed == "mwc_fcg_s13" then
+    if wep.Attachments[9].Installed == "mwc_fcg_s13" then
         gunname = "Colt M4 Carbine"
     end
 
@@ -378,21 +395,31 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
+    if wep.Attachments[2].Installed == "mw3e_barrel_m4_mw19" then
+        vm:SetSkin(4)
+    end
     if papcamo then
         vm:SetSkin(2)
+        if wep.Attachments[2].Installed == "mw3e_barrel_m4_mw19" then
+            vm:SetSkin(6)
+        end
     end
 
     local sights = 0
     if wep.Attachments[2].Installed == "mw3e_barrel_m4_mk12" then
-        sights = 3
+        sights = 4
     elseif wep.Attachments[2].Installed == "mw3e_barrel_m4_m16" then
-        sights = 3
+        sights = 4
     end
 
     vm:SetBodygroup(3, sights)
 
+    if wep.Attachments[2].Installed == "mw3e_barrel_m4_mw19" then
+        vm:SetBodygroup(3, 6)
+    end
+
     if wep.Attachments[1].Installed or wep.Attachments[15].Installed then
-        vm:SetBodygroup(3, sights + 2)
+        vm:SetBodygroup(3, sights + 3)
         if wep:GetBuff_Override("AltIrons") then
             vm:SetBodygroup(3, sights + 1)
         end

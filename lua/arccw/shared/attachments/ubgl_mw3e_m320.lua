@@ -1,4 +1,4 @@
-att.PrintName = "M320 (HE)(MW3)"
+att.PrintName = "M320 (HE)(MWC)"
 att.Icon = Material("entities/acwatt_ubgl_mw3e_m320.png", "mips smooth")
 att.Description = "Selectable Grenade Launcher equipped under the rifle's handguard. Double tap +ZOOM to equip/dequip."
 att.Desc_Pros = {

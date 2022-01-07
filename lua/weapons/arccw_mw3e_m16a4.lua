@@ -149,6 +149,19 @@ SWEP.AttachmentElements = {
             SwitchToSound = "",
         },
     },
+    ["mw19_barrel"] = {
+        VMBodygroups = {
+            {ind = 2, bg = 5},
+            {ind = 3, bg = 5},
+        },
+        Override_IronSightStruct = {
+            Pos = Vector(-2.825, 0, 0.1),
+            Ang = Angle(-0.1, 0.025, 0),
+            Magnification = 1.1,
+            CrosshairInSights = false,
+            SwitchToSound = "",
+        },
+    },
     ["cod4e_m203"] = {
         VMBodygroups = {
             {ind = 4, bg = 1},
@@ -358,6 +371,7 @@ SWEP.Hook_NameChange = function(wep, name)
     if length == "mw3e_barrel_m16_mk12" then barrel = 1
     elseif length == "mw3e_barrel_m4_mk18" then barrel = 2
     elseif length == "mw3e_barrel_m16_m4" then barrel = 3
+    elseif length == "mw3e_barrel_m16_mw19" then barrel = 3
     elseif length == "mw3e_barrel_m16_car15" then barrel = 4
     end
 
@@ -406,20 +420,31 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
+    if wep.Attachments[2].Installed == "mw3e_barrel_m16_mw19" then
+        vm:SetSkin(4)
+    end
     if papcamo then
         vm:SetSkin(2)
+        if wep.Attachments[2].Installed == "mw3e_barrel_m16_mw19" then
+            vm:SetSkin(6)
+        end
     end
 
     local barrel = wep.Attachments[2].Installed -- ==  or (wep.Attachments[2].Installed == "mw3e_barrel_m16_m4") or (wep.Attachments[2].Installed == "mw3e_barrel_m16_car15")
 
     local sights = 0
     if barrel == "mw3e_barrel_m16_mk12" then sights = 3
-    elseif barrel == "mw3e_barrel_m4_mk18" then sights = 6
-    elseif barrel == "mw3e_barrel_m16_m4" then sights = 6
-    elseif barrel == "mw3e_barrel_m16_car15" then sights = 6
+    elseif barrel == "mw3e_barrel_m16_rails" then sights = 3
+    elseif barrel == "mw3e_barrel_m4_mk18" then sights = 7
+    elseif barrel == "mw3e_barrel_m16_m4" then sights = 7
+    elseif barrel == "mw3e_barrel_m16_car15" then sights = 7
     end
 
     vm:SetBodygroup(3, sights)
+
+    if wep.Attachments[2].Installed == "mw3e_barrel_m16_mw19" then
+        vm:SetBodygroup(3, 5)
+    end
 
     if wep.Attachments[1].Installed or wep.Attachments[15].Installed then
         vm:SetBodygroup(3, sights + 2)

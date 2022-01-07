@@ -11,5 +11,7 @@ att.IgnorePickX = true
 
 att.Slot = "mwc_altirons"
 att.GivesFlags = {"mwc_altirons", "r870_mcs"}
+att.ExcludeFlags = {"mw19_barrel"}
+att.HideIfBlocked = true
 
 att.AltIrons = true

@@ -12,6 +12,7 @@ att.Desc_Cons = {
 }
 att.Slot = {"mw3e_m16_barrel"}
 att.GivesFlags = {"m4_barrel"}
+att.HideIfBlocked = true
 
 att.Mult_Range = 0.85
 att.Mult_Recoil = 1.1

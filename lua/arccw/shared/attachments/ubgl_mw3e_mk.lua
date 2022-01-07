@@ -1,4 +1,4 @@
-att.PrintName = "Masterkey (MW3)"
+att.PrintName = "Masterkey (MWC)"
 att.Icon = Material("entities/acwatt_ubgl_mw3e_mk.png", "mips smooth")
 att.Description = "Selectable shotgun equipped under the rifle's barrel. Double tap +ZOOM to equip/dequip."
 att.Desc_Pros = {
@@ -80,7 +80,7 @@ att.UBGL_NPCFire = function(wep, ubgl)
 		end
 	})
 
-	wep:EmitSound("ArcCW_COD4E.W1200_Fire", 100)
+	wep:EmitSound("ArcCW_MWC.MK_Fire", 100)
 
 	wep:SetClip2(wep:Clip2() - 1)
 
@@ -123,7 +123,7 @@ att.UBGL_Fire = function(wep, ubgl)
 		end
 	})
 
-	wep:EmitSound("ArcCW_COD4E.W1200_Fire", 100)
+	wep:EmitSound("ArcCW_MWC.MK_Fire", 100)
 
 	wep:SetClip2(wep:Clip2() - 1)
 

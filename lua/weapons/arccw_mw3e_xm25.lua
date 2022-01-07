@@ -154,25 +154,35 @@ SWEP.Attachments = {
     }, --1
     {
         PrintName = "Tactical",
-        Slot = "bo1_steadyaim",
+        Slot = {"foregrip"},
+        Bone = "tag_weapon",
+        Offset = {
+            vpos = Vector(8, 0, 0), -- offset that the attachment will be relative to the bone
+            vang = Angle(0, 0, 0),
+        },
+        InstalledEles = {"heatrail"},
     }, --2
+    {
+        PrintName = "Tactical",
+        Slot = "bo1_steadyaim",
+    }, --3
     {
         PrintName = "Ammo Type",
         Slot = {"ammo_pap_launchers"},
-    }, --3
+    }, --4
     {
         PrintName = "Perk",
         Slot = {"mw3_perk"}
-    }, --11
+    }, --5
     {
         PrintName = "Proficiency",
         Slot = "mw3_pro"
-    },
+    }, --6
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
-    local papcamo = wep.Attachments[3].Installed == "ammo_pap_launcher"
+    local papcamo = wep.Attachments[4].Installed == "ammo_pap_launcher"
 
     if papcamo then
         vm:SetSkin(3)
@@ -222,6 +232,9 @@ SWEP.Animations = {
             "cycle",
         },
         Time = 35 / 35,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.2,
         SoundTable = {
             {s = "ArcCW_MW3E.XM25_Chamber", t = 5 / 35},
         },
@@ -231,6 +244,9 @@ SWEP.Animations = {
             "cycle_ads",
         },
         Time = 35 / 35,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.2,
         SoundTable = {
             {s = "ArcCW_MW3E.XM25_Chamber", t = 5 / 35},
         },
