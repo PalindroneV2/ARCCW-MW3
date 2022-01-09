@@ -383,7 +383,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep.Attachments[1].Installed then
         vm:SetBodygroup(1, 1)
     end
-    if wep.Attachments[14].Installed then
+    if wep.Attachments[15].Installed then
         vm:SetBodygroup(1, 2)
     end
     if wep:GetBuff_Override("BO1_UBGL") then
@@ -417,6 +417,9 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
     end
 
     if attthing == 1 and wep:GetInUBGL() then
+        if wep:GetBuff_Override("MW3_SOH") and (anim == "reload_glsetup") then
+            return "reload_glsetup_soh"
+        end
         return anim .. "_glsetup"
     elseif attthing == 1 then
         return anim .. "_m203"
@@ -605,6 +608,17 @@ SWEP.Animations = {
             {s = "ArcCW_COD4E.M203_Open", t = 0.125},
             {s = "ArcCW_COD4E.M203_Load", t = 1.5},
             {s = "ArcCW_COD4E.M203_Close", t = 2.25},
+        }
+    },
+    ["reload_glsetup_soh"] = {
+        Source = "reload_glsetup",
+        Time = 3 / 2,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
+        TPAnimStartTime = 0.1,
+        SoundTable = {
+            {s = "ArcCW_COD4E.M203_Open", t = 0.125 / 2},
+            {s = "ArcCW_COD4E.M203_Load", t = 1.5 / 2},
+            {s = "ArcCW_COD4E.M203_Close", t = 2.25 / 2},
         }
     },
     ["enter_sprint_glsetup"] = {

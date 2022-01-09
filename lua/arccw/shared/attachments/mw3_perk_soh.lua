@@ -8,6 +8,7 @@ att.NotForNPCS = true
 
 att.AutoStats = true
 att.Mult_ReloadTime = 0.5
+att.MW3_SOH = true
 
 att.AttachSound = "weapons/arccw/mwc_ui/mw3/hover.wav"
 att.DetachSound = "weapons/arccw/mwc_ui/mw3/hover.wav"
