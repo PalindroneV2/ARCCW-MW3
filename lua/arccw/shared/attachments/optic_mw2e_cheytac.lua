@@ -1,6 +1,6 @@
-att.PrintName = "Leupold Mark 4 Scope (8x)"
+att.PrintName = "CheyTac Scope (8x)"
 att.Icon = Material("entities/acwatt_optic_mw3_sniper.png", "mips smooth")
-att.Description = "MW3 Sniper Scope for the AWSM. Long range combat scope for improved precision at longer ranges."
+att.Description = "MW2 Sniper Scope for the CheyTac M200. Long range combat scope for improved precision at longer ranges."
 
 att.SortOrder = 115
 
@@ -11,15 +11,15 @@ att.Desc_Pros = {
 att.Desc_Neutrals = {"bo.desc"}
 
 att.AutoStats = true
-att.Slot = {"mw3e_awm_scope"}
+att.Slot = {"mw2e_cheytac_scope"}
 
-att.Model = "models/weapons/arccw/atts/mw3_awm_scope.mdl"
+att.Model = "models/weapons/arccw/atts/mw2_cheytac_scope.mdl"
 att.ModelOffset = Vector(0, 0, 0)
 att.OffsetAng = Angle(0, 0, 0)
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 8, -4.225),
+        Pos = Vector(0, 9, -4.85),
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
         IgnoreExtra = true,
@@ -30,9 +30,9 @@ att.AdditionalSights = {
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/mw2_acog.png", "mips smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 13
+att.HolosightSize = 14
 att.HolosightBone = "holosight"
-att.HolosightPiece = "models/weapons/arccw/atts/mw3_awm_hsp.mdl"
+att.HolosightPiece = "models/weapons/arccw/atts/mw2_cheytac_hsp.mdl"
 att.Colorable = true
 
 att.HolosightBlackbox = true
