@@ -20,7 +20,7 @@ SWEP.WorldModelOffset = {
     pos        =    Vector(-6.5, 4.75, -7.5),
     ang        =    Angle(-6, -2.5, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
-    scale = 1.1,
+    scale = 0.9,
 }
 SWEP.WorldModel = "models/weapons/arccw/c_mw2e_cheytac.mdl"
 SWEP.ViewModelFOV = 60
@@ -77,7 +77,7 @@ SWEP.MagID = "hs338" -- the magazine pool this gun draws from
 SWEP.ShootVol = 140 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "ArcCW_MW3E.AWM_Fire"
+SWEP.ShootSound = "ArcCW_MW2E.CheyTac_Fire"
 SWEP.ShootSoundSilenced = "ArcCW_MW3E.RSASS_Sil"
 SWEP.DistantShootSound = "ArcCW_MW3E.Mech_Sniper"
 
@@ -194,8 +194,8 @@ SWEP.Attachments = {
         Slot = {"bo1_tacprimary"},
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(16, -0.8, 1.5),
-            vang = Angle(0, 0, 90),
+            vpos = Vector(16, 0.8, 1.5),
+            vang = Angle(0, 0, -90),
             wpos = Vector(10.25, 1, -4.75),
             wang = Angle(-12, 0, -180)
         },
@@ -218,7 +218,7 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "tag_weapon", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(1, -0.8, 1),
+            vpos = Vector(9, -0.9, 1.75),
             vang = Angle(0, 0, 0),
         },
     },
@@ -293,8 +293,8 @@ SWEP.Animations = {
         LHIKIn = nil,
         LHIKOut = nil,
         SoundTable = {
-            {s = "ArcCW_MW3E.AWM_Open", t = 6 / 30}, -- 9 / 30 ; 6 / 30
-            {s = "ArcCW_MW3E.AWM_Close", t = 20 / 30}, -- 30 / 30 ; 20 / 30
+            {s = "ArcCW_MW2E.CheyTac_Open", t = 6 / 30}, -- 9 / 30 ; 6 / 30
+            {s = "ArcCW_MW2E.CheyTac_Close", t = 20 / 30}, -- 30 / 30 ; 20 / 30
         },
     },
     ["cycle_iron"] = {
@@ -305,8 +305,8 @@ SWEP.Animations = {
         LHIKIn = nil,
         LHIKOut = nil,
         SoundTable = {
-            {s = "ArcCW_MW3E.AWM_Open", t = 6 / 30}, -- 9 / 30 ; 6 / 30
-            {s = "ArcCW_MW3E.AWM_Close", t = 20 / 30}, -- 30 / 30 ; 20 / 30
+            {s = "ArcCW_MW2E.CheyTac_Open", t = 6 / 30}, -- 9 / 30 ; 6 / 30
+            {s = "ArcCW_MW2E.CheyTac_Close", t = 20 / 30}, -- 30 / 30 ; 20 / 30
         },
     },
     ["reload"] = {
@@ -316,8 +316,8 @@ SWEP.Animations = {
         Checkpoints = {33, 55},
         FrameRate = 30,
         SoundTable = {
-            {s = "ArcCW_MW3E.AWM_MagOut", t = 20 / 30},
-            {s = "ArcCW_MW3E.AWM_MagIn", t = 60 / 30},
+            {s = "ArcCW_MW2E.CheyTac_MagOut", t = 20 / 30},
+            {s = "ArcCW_MW2E.CheyTac_MagIn", t = 60 / 30},
         },
         LHIK = true,
         LHIKIn = 0.5,
@@ -330,10 +330,10 @@ SWEP.Animations = {
         Checkpoints = {33, 55, 88},
         FrameRate = 30,
         SoundTable = {
-            {s = "ArcCW_MW3E.AWM_Open", t = 8 / 30},
-            {s = "ArcCW_MW3E.AWM_MagOut", t = 40 / 30},
-            {s = "ArcCW_MW3E.AWM_MagIn", t = 80 / 30},
-            {s = "ArcCW_MW3E.AWM_Close", t = 110 / 30},
+            {s = "ArcCW_MW2E.CheyTac_Open", t = 8 / 30},
+            {s = "ArcCW_MW2E.CheyTac_MagOut", t = 50 / 30},
+            {s = "ArcCW_MW2E.CheyTac_MagIn", t = 85 / 30},
+            {s = "ArcCW_MW2E.CheyTac_Close", t = 110 / 30},
         },
         LHIK = true,
         LHIKIn = 0.5,

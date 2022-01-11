@@ -310,7 +310,7 @@ SWEP.Attachments = {
     }, --8
     {
         PrintName = "Fire Group",
-        Slot = {"bo1_fcg", "mwc_fcg_burst"},
+        Slot = {"bo1_fcg", "mwc_fcg_burst_ar15"},
         DefaultAttName = "Standard FCG"
     }, --9
     {
@@ -363,25 +363,25 @@ SWEP.Hook_NameChange = function(wep, name)
 
     local gunname = "Colt M4A1"
 
-    if wep.Attachments[9].Installed == "mwc_fcg_s13" then
+    if wep.Attachments[9].Installed == "mwc_fcg_s13_ar15" then
         gunname = "Colt M4 Carbine"
     end
 
     if wep.Attachments[2].Installed == "mw3e_barrel_m4_mk12" then
         gunname = "Mk. 12 SPR"
-        if wep.Attachments[8].Installed == "mwc_fcg_s13" then
+        if wep.Attachments[8].Installed == "mwc_fcg_s13_ar15" then
             gunname = "M16A4 SPR"
         end
     end
     if wep.Attachments[2].Installed == "mw3e_barrel_m4_m16" then
         gunname = "Colt M16A3"
-        if wep.Attachments[8].Installed == "mwc_fcg_s13" then
+        if wep.Attachments[8].Installed == "mwc_fcg_s13_ar15" then
             gunname = "Colt M16A4"
         end
     end
     if wep.Attachments[2].Installed == "mw3e_barrel_m4_mk18" then
         gunname = "Mk. 18 Mod 0"
-        if wep.Attachments[8].Installed == "mwc_fcg_s13" then
+        if wep.Attachments[8].Installed == "mwc_fcg_s13_ar15" then
             gunname = "Colt M4 Carbine"
         end
     end

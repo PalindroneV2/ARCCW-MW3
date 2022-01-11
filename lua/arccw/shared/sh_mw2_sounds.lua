@@ -124,6 +124,73 @@ sound.Add( {
     }
 } )
 
+-- MW2E CheyTac -- 
+
+sound.Add( {
+    name = "ArcCW_MW2E.CheyTac_Fire",
+    channel = CHAN_STATIC,
+    volume = 1,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_CheyTac/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW2E.CheyTac_Open",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_CheyTac/open.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.CheyTac_Close",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_CheyTac/close.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.CheyTac_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_CheyTac/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.CheyTac_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_CheyTac/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.CheyTac_Unlock",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_CheyTac/unlock.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.CheyTac_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_CheyTac/lift.wav",
+    }
+} )
+
 -- MWC MASTERKEY --
 
 sound.Add( {

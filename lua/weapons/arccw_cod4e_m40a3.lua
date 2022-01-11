@@ -82,7 +82,7 @@ SWEP.MagID = "m40" -- the magazine pool this gun draws from
 SWEP.ShootVol = 115 -- volume of shoot sound
 
 SWEP.ShootSound = "ArcCW_COD4E.M40_Fire"
-SWEP.ShootSoundSilenced = "ArcCW_BO1.FAL_Sil"
+SWEP.ShootSoundSilenced = "ArcCW_MW3E.RSASS_Sil"
 
 SWEP.MuzzleEffect = "muzzleflash_4"
 SWEP.ShellModel = "models/shells/shell_556.mdl"

@@ -12,8 +12,10 @@ att.Desc_Neutrals = {"bo.desc"}
 
 att.HideIfBlocked = true
 att.AutoStats = true
-att.Slot = {"mw3e_rsass_scope"}
+att.Slot = {"kali_rsass_scope"}
 att.GivesFlags = {"mw3_psr_scope"}
+att.RequireFlags = {"a4top"}
+att.ExcludeFlags = {"kali_barrel_famas"}
 
 att.Model = "models/weapons/arccw/atts/mw3_rsass_scope.mdl"
 att.ModelOffset = Vector(0, 0, 0)
