@@ -435,6 +435,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local sights = 0
     if barrel == "mw3e_barrel_m16_mk12" then sights = 3
     elseif barrel == "mw3e_barrel_m16_rails" then sights = 3
+    elseif barrel == "mw3e_barrel_m16_mw19" then sights = 5
     elseif barrel == "mw3e_barrel_m4_mk18" then sights = 7
     elseif barrel == "mw3e_barrel_m16_m4" then sights = 7
     elseif barrel == "mw3e_barrel_m16_car15" then sights = 7
@@ -442,16 +443,16 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     vm:SetBodygroup(3, sights)
 
-    if wep.Attachments[2].Installed == "mw3e_barrel_m16_mw19" then
-        vm:SetBodygroup(3, 5)
-    end
-
     if wep.Attachments[1].Installed or wep.Attachments[15].Installed then
-        vm:SetBodygroup(3, sights + 2)
+        vm:SetBodygroup(3, sights + 3)
         if wep:GetBuff_Override("AltIrons") then
             vm:SetBodygroup(3, sights + 1)
         end
+        if sights == 5 then
+            vm:SetBodygroup(3, sights + 1)
+        end
     end
+
     if wep:GetBuff_Override("BO1_Bipod") then
         vm:SetBodygroup(4,2)
         if wep:InBipod() then
