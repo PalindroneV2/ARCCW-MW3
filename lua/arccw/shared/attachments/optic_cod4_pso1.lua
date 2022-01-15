@@ -18,7 +18,7 @@ att.GivesFlags = {"m40_scope"}
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 9, -4.11),
+        Pos = Vector(0, 9, -4.06),
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
@@ -28,7 +28,7 @@ att.AdditionalSights = {
 }
 
 att.Holosight = true
-att.HolosightReticle = Material("hud/scopes/bo1_dragunov.png")
+att.HolosightReticle = Material("hud/scopes/mw2_acog.png")
 att.HolosightNoFlare = true
 att.HolosightSize = 10
 att.HolosightBone = "holosight"
