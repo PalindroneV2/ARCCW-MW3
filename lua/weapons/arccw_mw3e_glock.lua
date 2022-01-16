@@ -150,7 +150,7 @@ SWEP.AttachmentElements = {
     },
 }
 
-SWEP.ExtraSightDist = 5
+SWEP.ExtraSightDist = 10
 
 SWEP.Attachments = {
     { --1
@@ -164,7 +164,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         CorrectivePos = Vector(0, 0, 0.0125),
-        CorrectiveAng = Angle(2.5, 0, 0),
+        CorrectiveAng = Angle(3, 0, 0),
         GivesFlags = {"pistolrail"},
         RequireFlags = {"mw3_glocktac"}
     },

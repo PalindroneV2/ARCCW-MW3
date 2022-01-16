@@ -191,7 +191,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         CorrectivePos = Vector(0, 0, 0.0125),
-        CorrectiveAng = Angle(0.5, 0, 0),
+        CorrectiveAng = Angle(-0.5, 0, 0),
         GivesFlags = {"rail"},
     },
     {

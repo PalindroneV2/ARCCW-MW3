@@ -160,7 +160,7 @@ SWEP.AttachmentElements = {
     },
 }
 
-SWEP.ExtraSightDist = 3.5
+SWEP.ExtraSightDist = 10
 
 SWEP.RejectAttachments = {
     ["mwc_stock_medium"] = true,
@@ -177,7 +177,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(0, 0, 0),
+        CorrectiveAng = Angle(4.9, 0, 0),
         MergeSlots = {10}
     },
     { --2
@@ -251,7 +251,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(6, 0, 0),
+        CorrectiveAng = Angle(6, -0.5, 0),
     }, --9
 }
 

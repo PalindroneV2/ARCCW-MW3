@@ -238,7 +238,7 @@ SWEP.Attachments = {
         },
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(0.5, 0, 0),
+        CorrectiveAng = Angle(0, 0, 0),
         MergeSlots = {15}
     }, --1
     {
@@ -444,7 +444,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     vm:SetBodygroup(3, sights)
 
     if wep.Attachments[1].Installed or wep.Attachments[15].Installed then
-        vm:SetBodygroup(3, sights + 3)
+        vm:SetBodygroup(3, sights + 2)
+        if sights > 0 then
+            vm:SetBodygroup(3, sights + 3)
+        end
         if wep:GetBuff_Override("AltIrons") then
             vm:SetBodygroup(3, sights + 1)
         end

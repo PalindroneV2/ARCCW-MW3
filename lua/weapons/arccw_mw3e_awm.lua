@@ -161,7 +161,7 @@ SWEP.Attachments = {
         },
         MergeSlots = {2,11},
         CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(0.5, 0.05, 0),
+        CorrectiveAng = Angle(0, 0.05, 0),
     },
     { --2
         Hidden = true,
@@ -172,7 +172,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(0.5, 0, 0),
+        CorrectiveAng = Angle(0, 0, 0),
         Installed = "optic_mw3_awm",
     },
     { --3
@@ -255,7 +255,7 @@ SWEP.Attachments = {
         },
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(0.5, 0.05, 0),
+        CorrectiveAng = Angle(0, 0.05, 0),
     },
 }
 

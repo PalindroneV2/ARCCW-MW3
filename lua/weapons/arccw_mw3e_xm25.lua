@@ -92,7 +92,7 @@ SWEP.CaseEffectAttachment = nil -- which attachment to put the case effect on
 SWEP.ProceduralViewBobAttachment = 1
 SWEP.CamAttachment = 4
 
-SWEP.SpeedMult = 0.95
+SWEP.SpeedMult = 0.8
 SWEP.SightedSpeedMult = 0.75
 SWEP.SightTime = 0.27
 

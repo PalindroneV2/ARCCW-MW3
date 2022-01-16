@@ -28,7 +28,7 @@ att.AdditionalSights = {
 }
 
 att.Holosight = true
-att.HolosightReticle = Material("hud/scopes/mw2_acog.png")
+att.HolosightReticle = Material("hud/scopes/mw3_svd_scope.png")
 att.HolosightNoFlare = true
 att.HolosightSize = 10
 att.HolosightBone = "holosight"

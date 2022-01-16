@@ -162,7 +162,7 @@ SWEP.AttachmentElements = {
     },
 }
 
-SWEP.ExtraSightDist = 2
+SWEP.ExtraSightDist = 10
 
 SWEP.RejectAttachments = {
 }
@@ -170,12 +170,12 @@ SWEP.RejectAttachments = {
 SWEP.Attachments = {
     { --1
         PrintName = "Optic",
-        Slot = {"optic", "optic_lp", "bo1_lp_optic"},
+        Slot = {"optic_lp"},
         Bone = "j_reload",
         VMScale = Vector(1, 1, 1),
         WMScale = Vector(1, 1, 1),
         Offset = {
-            vpos = Vector(3, 0, 2.25),
+            vpos = Vector(2, 0, 2.25),
             vang = Angle(0, 0, 0),
             wpos = Vector(7.9, 2, -3.2),
             wang = Angle(-5, -2, 177.5)
