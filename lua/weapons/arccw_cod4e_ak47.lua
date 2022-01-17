@@ -140,12 +140,6 @@ SWEP.BarrelLength = 25
 SWEP.ExtraSightDist = 5
 
 SWEP.AttachmentElements = {
-    ["mount"] = {
-        VMBodygroups = {
-            {ind = 1, bg = 1},
-        },
-        ExcludeFlags = {"cobrakai"},
-    },
     ["cod4e_gp25"] = {
         VMBodygroups = {
             {ind = 3, bg = 1},
@@ -339,18 +333,24 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local camo = 0
 
+    --IF UNIVERSAL OPTIC IS ATTACHED
+    if wep.Attachments[1].Installed then
+        vm:SetBodygroup(1, 1)
+    end
+    -- COSMETIC
     if wep.Attachments[14].Installed == "cod4e_cosmetic_ak47_gold" then
         camo = 4
     elseif wep.Attachments[14].Installed == "cod4e_cosmetic_ak47_tactical" then
         camo = 0
         vm:SetBodygroup(0, 1)
         vm:SetBodygroup(1, 2)
-        if wep.Attachments[14].Installed then
-            vm:SetBodygroup(1, 0)
-        end
         if wep:GetBuff_Override("MWC_Stock_H") then
             vm:SetBodygroup(2, 2)
         end
+    end
+    -- IF KOBRA IS ATTACHED
+    if wep.Attachments[15].Installed then
+        vm:SetBodygroup(1, 0)
     end
 
     vm:SetSkin(camo)
