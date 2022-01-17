@@ -6,6 +6,8 @@ att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
+att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
+
 att.AutoStats = true
 
 att.Slot = {"mw3_knife"}

@@ -7,6 +7,8 @@ att.Desc_Pros = {
 att.Desc_Cons = {
     "- Visible Light Beam"
 }
+att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
+
 att.AutoStats = true
 att.Slot = {"mw3_pistolrail"}
 att.GivesFlags = {"mw3_glocktac"}

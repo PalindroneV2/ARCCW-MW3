@@ -8,7 +8,7 @@ att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
 }
-att.Desc_Neutrals = {"bo.desc"}
+att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
 
 att.HideIfBlocked = true
 att.AutoStats = true
@@ -25,7 +25,7 @@ att.AdditionalSights = {
     {
         Pos = Vector(0, 8, -4.1),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.25,
+        Magnification = 1,
         IgnoreExtra = true,
         CrosshairInSights = false,
     },

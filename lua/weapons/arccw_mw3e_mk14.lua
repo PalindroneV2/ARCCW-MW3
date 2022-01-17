@@ -148,6 +148,16 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.BarrelLength = 30
 
+SWEP.Bipod_Integral = true
+SWEP.BipodDispersion = 0.1
+SWEP.BipodRecoil = 0.05
+
+SWEP.M_Hook_Mult_SightsDispersion = function(wep, data)
+    if wep:InBipod() then
+        data.mult = 0
+    end
+end
+
 SWEP.ExtraSightDist = 5
 
 SWEP.AttachmentElements = {
@@ -164,11 +174,6 @@ SWEP.AttachmentElements = {
     ["stock_m"] = {
         VMBodygroups = {
             {ind = 2, bg = 2},
-        },
-    },
-    ["bo1_bipod"] = {
-        VMBodygroups = {
-            {ind = 3, bg = 2},
         },
     },
 }
@@ -222,7 +227,7 @@ SWEP.Attachments = {
     }, --4
     {
         Hidden = true,
-        Slot = {"bipod", "mwc_bipod"},
+        Slot = {"bipod"},
         Bone = "tag_weapon",
         Offset = {
             vpos = Vector(12, 0, 1.575), -- offset that the attachment will be relative to the bone
@@ -290,6 +295,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local pap = wep:GetBuff_Override("PackAPunch")
 
     if pap then vm:SetSkin(2) end
+
+    if wep:InBipod() then
+        vm:SetBodygroup(3, 2)
+    end
 end
 
 SWEP.Hook_NameChange = function(wep, name)

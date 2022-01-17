@@ -8,7 +8,7 @@ att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
 }
-att.Desc_Neutrals = {"bo.desc"}
+att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
 
 att.HideIfBlocked = true
 att.AutoStats = true

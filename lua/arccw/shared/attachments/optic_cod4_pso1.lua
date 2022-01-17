@@ -7,6 +7,7 @@ att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
 }
+att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
 
 att.SortOrder = 1000
 
@@ -20,7 +21,7 @@ att.AdditionalSights = {
     {
         Pos = Vector(0, 9, -4.06),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.25,
+        Magnification = 1,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomLevels = 2,
         IgnoreExtra = true

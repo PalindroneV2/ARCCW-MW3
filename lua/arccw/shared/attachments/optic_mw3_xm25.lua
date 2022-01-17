@@ -13,7 +13,7 @@ att.Desc_Cons = {
     "- Visible Laser Sight",
     "- Visible Light Beam"
 }
-att.Desc_Neutrals = {"bo.desc"}
+att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
 
 att.AutoStats = true
 att.Slot = {"mw3e_xm25_scope"}

@@ -8,7 +8,7 @@ att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
 }
-att.Desc_Neutrals = {"bo.desc"}
+att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
 
 att.AutoStats = true
 att.Slot = {"mw2e_cheytac_scope"}
@@ -21,7 +21,7 @@ att.AdditionalSights = {
     {
         Pos = Vector(0, 9, -4.85),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.25,
+        Magnification = 1,
         IgnoreExtra = true,
         CrosshairInSights = false,
     },
@@ -33,7 +33,7 @@ att.HolosightNoFlare = true
 att.HolosightSize = 14
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/mw2_cheytac_hsp.mdl"
-att.Colorable = true
+att.Colorable = false
 
 att.HolosightBlackbox = true
 att.HolosightMagnification = 8

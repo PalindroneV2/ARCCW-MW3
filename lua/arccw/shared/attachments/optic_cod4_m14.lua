@@ -8,7 +8,7 @@ att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
 }
-att.Desc_Neutrals = {"bo.desc"}
+att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
 
 att.AutoStats = true
 att.Free = true
@@ -21,13 +21,14 @@ att.OffsetAng = Angle(0, 0, 0)
 att.GivesFlags = {"m21_sniper", "m21_scope"}
 
 att.DrawFunc = function(wep, element)
+    local elmod = element.Model
     if table.HasValue(wep:GetWeaponFlags(), "all_ghillied_up") then
-        element.Model:SetSkin(1)
+        elmod:SetSkin(1)
     else
-        element.Model:SetSkin(0)
+        elmod:SetSkin(0)
     end
     if table.HasValue(wep:GetWeaponFlags(), "is_cod4_m14") then
-        element.Model:SetBodygroup(0,1)
+        elmod:SetBodygroup(0,1)
     end
 end
 
@@ -35,7 +36,7 @@ att.AdditionalSights = {
     {
         Pos = Vector(0, 6, -2.475),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.25,
+        Magnification = 1,
         IgnoreExtra = true,
         CrosshairInSights = false,
     },

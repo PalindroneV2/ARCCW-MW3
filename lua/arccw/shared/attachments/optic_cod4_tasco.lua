@@ -7,7 +7,7 @@ att.SortOrder = 1
 att.Desc_Pros = {
     "autostat.holosight",
 }
-att.Desc_Neutrals = {"bo.desc"}
+att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
 
 att.AutoStats = true
 att.Slot = {"optic", "bo1_reddots"}

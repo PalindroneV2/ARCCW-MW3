@@ -175,7 +175,19 @@ SWEP.Attachments = {
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0.5, 0, 0),
         Installed = "optic_mw2e_cheytac",
-        MergeSlots = {8}
+        MergeSlots = {2}
+    },
+    {
+        Hidden = true,
+        Slot = {"optic_sniper", "optic"},
+        Bone = "tag_weapon",
+        Offset = {
+            vpos = Vector(5, 0, 3.3),
+            vang = Angle(0, 0, 0),
+        },
+        InstalledEles = {"mount"},
+        CorrectivePos = Vector(0, 0, 0),
+        CorrectiveAng = Angle(0, 0.05, 0),
     },
     { --3
         PrintName = "Muzzle",
@@ -213,6 +225,13 @@ SWEP.Attachments = {
         Slot = "mw3_pro"
     },
     {
+        FreeSlot = true,
+        PrintName = "Comsetic",
+        DefaultAttName = "Standard Issue",
+        DefaultAttIcon = Material("entities/acwatt_mw2_generic.png", "mips smooth"),
+        Slot = "mw2_cheytac_cosmetic"
+    },
+    {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
@@ -221,18 +240,6 @@ SWEP.Attachments = {
             vpos = Vector(9, -0.9, 1.75),
             vang = Angle(0, 0, 0),
         },
-    },
-    {
-        Hidden = true,
-        Slot = {"optic_sniper", "optic"},
-        Bone = "tag_weapon",
-        Offset = {
-            vpos = Vector(5, 0, 3.3),
-            vang = Angle(0, 0, 0),
-        },
-        InstalledEles = {"mount"},
-        CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(0, 0.05, 0),
     },
 }
 
@@ -253,8 +260,16 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
+    if wep.Attachments[8].Installed == "mw2e_cosmetic_cheytac_black" then
+        camo = 1
+    elseif wep.Attachments[8].Installed == "mw2e_cosmetic_cheytac_weed" then
+        camo = 2
+    end
+
+    vm:SetSkin(camo)
+
     if papcamo then
-        vm:SetSkin(2)
+        vm:SetSkin(4)
     end
 end
 

@@ -22,7 +22,7 @@ SWEP.ViewModel = "models/weapons/arccw/c_cod4_g36c.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_cod4_g36c.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-4.25, 3.5, -5.35),
+    pos        =    Vector(-7.5, 3.9, -5.5),
     ang        =    Angle(-9, -1, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
     scale = 1.125,
@@ -176,11 +176,6 @@ SWEP.Attachments = {
         },
     }, --2
     {
-        PrintName = "Handguard",
-        DefaultAttName = "A4 Barrel",
-        Slot = "cod4_g36c_barrel",
-    }, --3
-    {
         PrintName = "Underbarrel",
         Slot = {"ubgl"},
         Bone = "tag_weapon",
@@ -192,7 +187,7 @@ SWEP.Attachments = {
             wpos = Vector(11, 1.25, -3.5),
             wang = Angle(170.5, -180, 0),
         },
-        MergeSlots = {5,6,7}
+        MergeSlots = {4,5,6}
     }, --4
     {
         Hidden = true,

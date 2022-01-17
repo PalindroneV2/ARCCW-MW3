@@ -596,6 +596,56 @@ sound.Add( {
     }
 } )
 
+--MW3E Anaconda--
+
+sound.Add( {
+    name = "ArcCW_MW3E.Anaconda_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_Anaconda/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.Anaconda_Chamber",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_Anaconda/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.Anaconda_MagIn",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_Anaconda/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.Anaconda_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_Anaconda/out.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.Anaconda_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_Anaconda/lift.wav",
+    }
+} )
+
 --MW3E MP9--
 
 sound.Add( {
@@ -969,6 +1019,17 @@ sound.Add({
         "^weapons/arccw/mw3e_deagle/fire_50.wav",
     }
 })
+
+sound.Add({
+    name = "ArcCW_MW3E.Eagle_Ringoff",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_deagle/ringoff.wav",
+    }
+})
+
 sound.Add({
     name = "ArcCW_BOCW.Eagle_Fire",
     channel = CHAN_STATIC,

@@ -8,6 +8,8 @@ att.Desc_Cons = {
     "- Visible Laser Sight",
     "- Visible Light Beam"
 }
+att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
+
 att.AutoStats = true
 att.Slot = {"mw2_x400", "tac_pistol", "bo1_tacpistol", "bo1_tacall", "mwc_tacpistol", "mwc_tacall"}
 att.GivesFlags = {"mw2_x400"}
