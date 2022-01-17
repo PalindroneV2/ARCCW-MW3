@@ -3,21 +3,23 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - MW Classic" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Colt M16A4"
+SWEP.PrintName = "HK G36C"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "United States Military standard issue rifle chambered in 5.56mm NATO. The modularity of the platform lets many variants of the weapon exist in several roles."
-SWEP.Trivia_Manufacturer = "Colt"
+SWEP.Trivia_Desc = [[
+    The G36 is the result of Heckler and Koch's time developing the OICW and the XM8 for the US Military. While missing many of the experimental features the rifle still boasts impressive performance and engineering and it has become the standard rifle for the Bundeswehr.
+]]
+SWEP.Trivia_Manufacturer = "Heckler & Koch"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
-SWEP.Trivia_Country = "USA"
-SWEP.Trivia_Year = 1964
+SWEP.Trivia_Country = "Germany"
+SWEP.Trivia_Year = 1997
 
 SWEP.Slot = 2
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/arccw/c_cod4_m4m16.mdl"
-SWEP.WorldModel = "models/weapons/arccw/c_cod4_m4m16.mdl"
+SWEP.ViewModel = "models/weapons/arccw/c_cod4_g36c.mdl"
+SWEP.WorldModel = "models/weapons/arccw/c_cod4_g36c.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     pos        =    Vector(-4.25, 3.5, -5.35),
@@ -47,18 +49,15 @@ SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 45
 SWEP.ReducedClipSize = 20
 
-SWEP.Recoil = 0.5
+SWEP.Recoil = 0.35
 SWEP.RecoilSide = 0.35
-SWEP.RecoilRise = 0.75
-SWEP.VisualRecoilMult = 0.25
+SWEP.RecoilRise = 0.5
 
-SWEP.Delay = 60 / 900 -- 60 / RPM.
+SWEP.Delay = 60 / 700 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
-        Mode = -3,
-        RunawayBurst = true,
-        PostBurstDelay = 0.2,
+        Mode = 2,
     },
     {
         Mode = 1,
@@ -81,7 +80,7 @@ SWEP.MagID = "m16a1" -- the magazine pool this gun draws from
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "ArcCW_COD4E.M4M16_Fire"
+SWEP.ShootSound = "ArcCW_COD4E.G36C_Fire"
 SWEP.ShootSoundSilenced = "ArcCW_COD4E.M4M16_Sil"
 
 SWEP.MuzzleEffect = "muzzleflash_4"
@@ -89,10 +88,10 @@ SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellPitch = 90
 SWEP.ShellScale = 1.25
 
-SWEP.MuzzleEffectAttachment = 3 -- which attachment to put the muzzle on
+SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
-SWEP.ProceduralViewBobAttachment = 3
-SWEP.CamAttachment = 4
+SWEP.ProceduralViewBobAttachment = 1
+SWEP.CamAttachment = 3
 
 SWEP.SpeedMult = 0.95
 SWEP.SightedSpeedMult = 0.5
@@ -109,8 +108,8 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.76, -2, 0),
-    Ang = Angle(0.7, 0.025, 0),
+    Pos = Vector(-3.2, 0, 0.5),
+    Ang = Angle(-0.8, 0.05, 0),
     Magnification = 1.1,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -128,7 +127,7 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 SWEP.SprintPos = Vector(0, 1, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
-SWEP.CustomizePos = Vector(15, 4, 0)
+SWEP.CustomizePos = Vector(15, 2, 0)
 SWEP.CustomizeAng = Angle(15, 40, 30)
 
 SWEP.HolsterPos = Vector(3, 0, 0)
@@ -139,63 +138,14 @@ SWEP.BarrelLength = 25
 SWEP.ExtraSightDist = 5
 
 SWEP.AttachmentElements = {
-    ["nocover"] = {
+    ["mount"] = {
         VMBodygroups = {
-            {ind = 4, bg = 2},
+            {ind = 1, bg = 1},
         },
     },
     ["cod4e_m203"] = {
         VMBodygroups = {
             {ind = 2, bg = 1},
-        },
-    },
-    ["m4_barrel"] = {
-        VMBodygroups = {
-            {ind = 2, bg = 2},
-        },
-        AttPosMods = {
-            [2] = {
-                vpos = Vector(20.5, 0, 2.3),
-            },
-        },
-        Override_IronSightStruct = {
-            Pos = Vector(-2.76, -2, -0.025),
-            Ang = Angle(0.9, 0.025, 0),
-            Magnification = 1.1,
-            CrosshairInSights = false,
-            SwitchToSound = "", -- sound that plays when switching to this sight
-        },
-    },
-    ["mk18_barrel"] = {
-        VMBodygroups = {
-            {ind = 2, bg = 3},
-        },
-        AttPosMods = {
-            [2] = {
-                vpos = Vector(15.5, 0, 2.3),
-            },
-        },
-        Override_IronSightStruct = {
-            Pos = Vector(-2.76, -2, -0.025),
-            Ang = Angle(0.9, 0.025, 0),
-            Magnification = 1.1,
-            CrosshairInSights = false,
-            SwitchToSound = "", -- sound that plays when switching to this sight
-        },
-    },
-    ["stock_l"] = {
-        VMBodygroups = {
-            {ind = 3, bg = 1},
-        },
-    },
-    ["stock_m"] = {
-        VMBodygroups = {
-            {ind = 3, bg = 2},
-        },
-    },
-    ["stock_h"] = {
-        VMBodygroups = {
-            {ind = 3, bg = 3},
         },
     },
 }
@@ -207,12 +157,12 @@ SWEP.Attachments = {
         Slot = {"optic"}, -- what kind of attachments can fit here, can be string or table
         Bone = "j_gun", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(3, 0, 3.3), -- 4.6 offset that the attachment will be relative to the bone
+            vpos = Vector(0.5, 0.225, 4.1), -- 4.6 offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(0, 0, 0),
+        CorrectiveAng = Angle(-0.1, 0, 0),
     }, --1
     {
         PrintName = "Muzzle",
@@ -228,7 +178,7 @@ SWEP.Attachments = {
     {
         PrintName = "Handguard",
         DefaultAttName = "A4 Barrel",
-        Slot = "cod4_m4m16_barrel",
+        Slot = "cod4_g36c_barrel",
     }, --3
     {
         PrintName = "Underbarrel",
@@ -285,15 +235,9 @@ SWEP.Attachments = {
     }, --8
     {
         PrintName = "Fire Group",
-        Slot = {"mwc_fcg_fullauto", "bo1_fcg"},
+        Slot = {"bo1_fcg"},
         DefaultAttName = "Standard FCG"
     }, --9
-    {
-        PrintName = "Stock",
-        Slot = {"mwc_stock"},
-        DefaultAttName = "Buffer Tube",
-        RandomChance = 100,
-    }, --10
     {
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"},
@@ -323,65 +267,16 @@ SWEP.Attachments = {
 SWEP.Hook_NameChange = function(wep, name)
     local pap = wep:GetBuff_Override("PackAPunch")
 
-    local brand = "Colt "
-    local model = "M16"
-    local alt = "A4"
+    local gunname = "HK G36C"
 
-    if wep.Attachments[9].Installed == "mwc_fcg_fullauto" then
-        alt = "A3"
-    end
-    if wep.Attachments[3].Installed then
-        model = "M4"
-        alt = " Carbine"
-        if wep:GetBuff_Override("BO1_UBGL") and wep:GetBuff_Override("Silencer") then
-            alt = " SOPMOD"
-        end
-        if wep.Attachments[9].Installed == "mwc_fcg_fullauto" then
-            alt = "A1"
-            if wep:GetBuff_Override("BO1_UBGL") and wep:GetBuff_Override("Silencer") then
-                alt = "A1 SOPMOD"
-            end
-        end
-    end
+    if pap then gunname = "HK G115 Compressor" end
 
-    if pap then
-        brand = ""
-        model = "Skull"
-        alt = "splitter"
-        if wep:GetBuff_Override("BO1_UBGL") then
-            alt = "crusher"
-        end
-        if wep.Attachments[3].Installed then
-            model = "Xeno Matter 4000"
-            alt = ""
-            if wep.Attachments[9].Installed == "mwc_fcg_fullauto" then
-                model = "Predator"
-            end
-        end
-    end
-
-    return brand .. model .. alt
+    return gunname
 end
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local papcamo = wep:GetBuff_Override("PackAPunch")
-
-    if wep:GetBuff_Override("BO1_UBGL") then
-        vm:SetBodygroup(4, 1)
-        vm:SetBodygroup(1, 1)
-    end
-
-    if wep.Attachments[3].Installed then
-        vm:SetBodygroup(4, 2)
-        if wep:GetBuff_Override("BO1_UBGL") then
-            vm:SetBodygroup(4, 1)
-        end
-        vm:SetBodygroup(1, 2)
-    end
-    if wep.Attachments[1].Installed then
-        vm:SetBodygroup(1, 3)
-    end
 
     if papcamo then
         vm:SetSkin(2)
@@ -455,8 +350,8 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_COD4E.M4M16_MagOut", t = 0.15},
-            {s = "ArcCW_COD4E.M4M16_MagIn", t = 1.1}
+            {s = "ArcCW_COD4E.G36C_MagOut", t = 0.15},
+            {s = "ArcCW_COD4E.G36C_MagIn", t = 1.1}
         },
     },
     ["reload_empty"] = {
@@ -469,9 +364,10 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_COD4E.M4M16_MagOut", t = 0.15},
-            {s = "ArcCW_COD4E.M4M16_MagIn", t = 1.1},
-            {s = "ArcCW_COD4E.M4M16_Chamber", t = 1.65}
+            {s = "ArcCW_COD4E.G36C_MagOut", t = 0.15},
+            {s = "ArcCW_COD4E.G36C_MagIn", t = 1.1},
+            {s = "ArcCW_COD4E.G36C_Chamber", t = 1.65},
+            {s = "ArcCW_COD4E.G36C_Chamber", t = 1.75}
         },
     },
     ["enter_sprint"] = {
@@ -527,8 +423,8 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_COD4E.M4M16_MagOut", t = 0.15},
-            {s = "ArcCW_COD4E.M4M16_MagIn", t = 1.1}
+            {s = "ArcCW_COD4E.G36C_MagOut", t = 0.15},
+            {s = "ArcCW_COD4E.G36C_MagIn", t = 1.1}
         },
     },
     ["reload_empty_m203"] = {
@@ -541,9 +437,9 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            {s = "ArcCW_COD4E.M4M16_MagOut", t = 0.15},
-            {s = "ArcCW_COD4E.M4M16_MagIn", t = 1.1},
-            {s = "ArcCW_COD4E.M4M16_Chamber", t = 1.65}
+            {s = "ArcCW_COD4E.G36C_MagOut", t = 0.15},
+            {s = "ArcCW_COD4E.G36C_MagIn", t = 1.1},
+            {s = "ArcCW_COD4E.G36C_Chamber", t = 1.65}
         },
     },
     ["enter_sprint_m203"] = {

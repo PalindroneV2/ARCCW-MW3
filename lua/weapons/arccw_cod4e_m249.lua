@@ -181,7 +181,7 @@ SWEP.AttachmentElements = {
             },
         },
     },
-    ["bo1_bipod"] = {
+    ["mwc_bipod"] = {
         VMBodygroups = {
             {ind = 4, bg = 1}
         },
@@ -237,7 +237,7 @@ SWEP.Attachments = {
     }, --4
     {
         Hidden = true,
-        Slot = "bo1_bipod"
+        Slot = "mwc_bipod"
     }, --5
     {
         PrintName = "Tactical",
