@@ -160,6 +160,10 @@ SWEP.AttachmentElements = {
             {ind = 1, bg = 1},
         },
     },
+    ["mwc_3burst"] = {
+        Mult_Damage = 40 / 30,
+        Mult_DamageMin = 30 / 20,
+    },
 }
 
 SWEP.Attachments = {
