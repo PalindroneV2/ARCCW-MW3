@@ -32,6 +32,7 @@ SWEP.DefaultSkin = 0
 
 SWEP.Damage = 20
 SWEP.DamageMin = 10 -- damage done at maximum range
+SWEP.RangeMin = 10
 SWEP.Range = 55 -- in METRES
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
@@ -68,7 +69,9 @@ SWEP.Firemodes = {
         PrintName = "SEMI-AUTO",
         Mode = 1,
         Override_ManualAction = false,
-        Override_AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+        Override_AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2,
+        Mult_Damage = 15 / 20,
+        Mult_DamageMin = 8 / 10,
     },
     {
         Mode = 0,
@@ -215,7 +218,7 @@ SWEP.Attachments = {
     }, --4
     {
         PrintName = "Stock",
-        Slot = {"mwc_stock_l", "mwc_stock_m"},
+        Slot = {"bo1_stock_l", "bo1_stock_m"},
         DefaultAttName = "No Stock",
         GivesFlags = {"notfolded"}
     }, --5

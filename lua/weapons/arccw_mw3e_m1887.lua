@@ -32,6 +32,7 @@ SWEP.DefaultSkin = 0
 
 SWEP.Damage = 20
 SWEP.DamageMin = 10 -- damage done at maximum range
+SWEP.RangeMin = 10
 SWEP.Range = 40 -- in METRES
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT

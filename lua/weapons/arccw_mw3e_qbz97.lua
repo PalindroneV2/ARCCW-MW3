@@ -33,7 +33,8 @@ SWEP.ViewModelFOV = 60
 
 SWEP.Damage = 30
 SWEP.DamageMin = 20 -- damage done at maximum range
-SWEP.Range = 120 -- in METRES
+SWEP.RangeMin = 30
+SWEP.Range = 110 -- in METRES
 SWEP.Penetration = 8
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -163,6 +164,7 @@ SWEP.AttachmentElements = {
     ["mwc_3burst"] = {
         Mult_Damage = 40 / 30,
         Mult_DamageMin = 30 / 20,
+        Mult_Range = 130 / 110
     },
 }
 

@@ -33,6 +33,7 @@ SWEP.DefaultBodygroups = "00000000000"
 
 SWEP.Damage = 30
 SWEP.DamageMin = 20 -- damage done at maximum range
+SWEP.RangeMin = 40
 SWEP.Range = 120 -- in METRES
 SWEP.Penetration = 8
 SWEP.DamageType = DMG_BULLET
@@ -157,7 +158,7 @@ SWEP.Attachments = {
         Slot = {"optic"}, -- what kind of attachments can fit here, can be string or table
         Bone = "j_gun", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.5, 0.225, 4.1), -- 4.6 offset that the attachment will be relative to the bone
+            vpos = Vector(1, 0.225, 4.1), -- 4.6 offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"mount"},
@@ -171,40 +172,27 @@ SWEP.Attachments = {
         VMScale = Vector(1, 1.125, 1.125),
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(24, 0, 2.3), -- offset that the attachment will be relative to the bone
+            vpos = Vector(15, 0, 1.7), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
     }, --2
     {
         PrintName = "Underbarrel",
-        Slot = {"ubgl"},
-        Bone = "tag_weapon",
-        VMScale = Vector(1, 1, 1),
-        WMScale = Vector(1, 1, 1),
-        Offset = {
-            vpos = Vector(6.75, 0, 1), -- offset that the attachment will be relative to the bone
-            vang = Angle(0, 0, 0),
-            wpos = Vector(11, 1.25, -3.5),
-            wang = Angle(170.5, -180, 0),
-        },
-        MergeSlots = {4,5,6}
+        Slot = {"cod4e_m203"},
+        MergeSlots = {4,5}
     }, --4
     {
         Hidden = true,
         Slot = {"foregrip"},
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(9, 0, 1.45), -- offset that the attachment will be relative to the bone
+            vpos = Vector(11, 0, 0.5), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
             wpos = Vector(13.75, 1.15, -4.1),
             wang = Angle(170, -180, 0),
         },
         GivesFlags = {"nocover"},
     }, --5
-    {
-        Hidden = true,
-        Slot = {"cod4e_m203"},
-    }, --6
     {
         Hidden = true,
         Slot = {"bipod"},
@@ -434,7 +422,8 @@ SWEP.Animations = {
         SoundTable = {
             {s = "ArcCW_COD4E.G36C_MagOut", t = 0.15},
             {s = "ArcCW_COD4E.G36C_MagIn", t = 1.1},
-            {s = "ArcCW_COD4E.G36C_Chamber", t = 1.65}
+            {s = "ArcCW_COD4E.G36C_Chamber", t = 1.65},
+            {s = "ArcCW_COD4E.G36C_Chamber", t = 1.75}
         },
     },
     ["enter_sprint_m203"] = {

@@ -31,6 +31,7 @@ SWEP.DefaultSkin = 0
 
 SWEP.Damage = 27
 SWEP.DamageMin = 20 -- damage done at maximum range
+SWEP.DamageMin = 25
 SWEP.Range = 80 -- in METRES
 SWEP.Penetration = 6
 SWEP.DamageType = DMG_BULLET
