@@ -1,5 +1,5 @@
 att.PrintName = "Aimpoint Comp M4 (RDS)"
-att.AbbrevName = "Comp M4 (RDS)"
+att.AbbrevName = "Comp M4 [MW3](RDS)"
 att.Icon = Material("entities/acwatt_optic_mw3_reflex.png", "mips smooth")
 att.Description = "MW3 Red Dot Sight. Standard holographic sight. Provides a small electronic dot reticle which speeds up target acquisition by eliminating the need to line up irons."
 

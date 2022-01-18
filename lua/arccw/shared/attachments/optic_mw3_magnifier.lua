@@ -1,5 +1,5 @@
-att.PrintName = "EOTech 553 + Magnifier (3.5x)"
-att.AbbrevName = "Magnifier (3.5x)"
+att.PrintName = "EOTech 553 + Magnifier (1-3.5x)"
+att.AbbrevName = "Hybrid Sight [MW3]"
 att.Icon = Material("entities/acwatt_optic_mw3_magnifier.png", "mips smooth")
 att.Description = "MW3 Hybrid Scope. Medium range combat scope for improved precision at longer ranges."
 

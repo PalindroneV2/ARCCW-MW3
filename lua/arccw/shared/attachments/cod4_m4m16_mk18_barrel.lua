@@ -1,8 +1,9 @@
 att.PrintName = "Mk. 18 10.5 in. Barrel"
+att.AbbrevName = "Mk. 18  Barrel"
 att.Icon = Material("entities/acwatt_bo2_longbarrel.png", "mips smooth")
 att.Description = "Short 10.5 inch barrel."
 
-att.SortOrder = 94
+att.SortOrder = 1
 
 att.AutoStats = true
 

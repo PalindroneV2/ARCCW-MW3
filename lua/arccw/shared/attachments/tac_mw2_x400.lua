@@ -1,5 +1,5 @@
 att.PrintName = "SureFire X400 Ultra WeaponLight"
-att.AbbrevName = "SureFire X400 (MW2)"
+att.AbbrevName = "X400 (MW2)"
 att.Icon = Material("entities/acwatt_mw3_laser.png", "mips smooth")
 att.Description = "Tacical laser pointer. Tighter aim when firing from hip, less dispersion when moving."
 att.Desc_Pros = {
