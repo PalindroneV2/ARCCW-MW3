@@ -147,7 +147,7 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.AttachmentElements = {
     ["ammo_papunch"] = {
         NamePriority = 10,
-        NameChange = "Aeternus Tyrannus",
+        NameChange = "Eternus Tyrannus",
     },
     ["mw3_knife"] = {
         VMBodygroups = {

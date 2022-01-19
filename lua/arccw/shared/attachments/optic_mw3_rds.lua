@@ -24,7 +24,7 @@ att.Holosight = true
 
 att.AdditionalSights = {
     {
-        Pos = Vector(-0.02, 10, -0.975),
+        Pos = Vector(-0.02, 10, -1),
         Ang = Angle(-0, 0, 0),
         Magnification = 1.25,
         IgnoreExtra = false,
@@ -33,7 +33,7 @@ att.AdditionalSights = {
             Holosight = true,
             HolosightReticle = Material("hud/reticles/mwc_reddot.png", "mips smooth"),
             HolosightNoFlare = true,
-            HolosightSize = 0.25,
+            HolosightSize = 0.5,
             Colorable = true,
         },
     },

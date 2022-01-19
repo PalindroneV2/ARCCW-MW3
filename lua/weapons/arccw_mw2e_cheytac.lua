@@ -260,6 +260,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
+    local camo = 0
+
     if wep.Attachments[8].Installed == "mw2e_cosmetic_cheytac_black" then
         camo = 1
     elseif wep.Attachments[8].Installed == "mw2e_cosmetic_cheytac_weed" then
@@ -270,6 +272,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     if papcamo then
         vm:SetSkin(4)
+        if camo == 2 then
+            vm:SetSkin(5)
+        end
     end
 end
 

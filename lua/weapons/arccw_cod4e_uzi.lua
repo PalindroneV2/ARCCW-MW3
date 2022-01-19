@@ -207,6 +207,11 @@ SWEP.Attachments = {
         Slot = "mwc_stock_l",
         DefaultAttName = "No Stock",
     }, --5
+    { --7
+        PrintName = "Fire Group",
+        Slot = {"bo1_fcg"},
+        DefaultAttName = "Standard FCG",
+    },
     { --5
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"},
@@ -267,7 +272,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     vm:SetSkin(camo)
 
     if papcamo then
-        vm:SetSkin(camo + 2)
+        vm:SetSkin(2)
+        if wep.Attachments[9].Installed == "cod4e_cosmetic_uzi_gold" then
+            vm:SetSkin(4)
+        end
     end
 end
 

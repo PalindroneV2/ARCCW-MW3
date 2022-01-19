@@ -48,6 +48,133 @@ sound.Add( {
     }
 } )
 
+--MW2E F2000--
+
+sound.Add( {
+    name = "ArcCW_MW2E.F2000_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.6,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_F2000/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW2E.F2000_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_F2000/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.F2000_FirstChamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_F2000/first_chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.F2000_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_F2000/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.F2000_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_F2000/out.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW2E.F2000_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_F2000/lift.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.F2000_FirstLift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_F2000/first_lift.wav",
+    }
+} )
+
+--MW2E PP2000--
+
+sound.Add( {
+    name = "ArcCW_MW2E.PP2000_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_PP2000/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW2E.PP2000_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_PP2000/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.PP2000_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_PP2000/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.PP2000_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_PP2000/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW2E.PP2000_FirstLift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_PP2000/first_lift.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW2E.PP2000_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/MW2E_PP2000/lift.wav",
+    }
+} )
+
 -- MW2E M79
 
 sound.Add( {

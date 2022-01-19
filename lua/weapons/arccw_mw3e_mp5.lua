@@ -259,6 +259,11 @@ SWEP.Attachments = {
             vang = Angle(0, 0, -90),
         },
     },
+    { --7
+        PrintName = "Fire Group",
+        Slot = {"bo1_fcg"},
+        DefaultAttName = "Standard FCG",
+    },
     { --5
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"},
