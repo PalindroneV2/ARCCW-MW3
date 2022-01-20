@@ -7,6 +7,7 @@ att.Desc_Cons = {
 }
 att.AutoStats = true
 att.Slot = {"mw3_perk"}
+att.Hidden = true
 
 att.MW3_BlastShield = true
 

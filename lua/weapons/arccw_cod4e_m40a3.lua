@@ -49,9 +49,9 @@ SWEP.ChamberSize = 0 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 5 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 15
 
-SWEP.Recoil = 1
-SWEP.RecoilSide = 0.6
-SWEP.RecoilRise = 0.75
+SWEP.Recoil = 0.8
+SWEP.RecoilSide = 0.5
+SWEP.RecoilRise = 0.6
 SWEP.VisualRecoilMult = 0
 
 SWEP.Delay = 60 / 45-- 60 / RPM.
@@ -96,7 +96,7 @@ SWEP.CamAttachment = 3
 
 SWEP.SpeedMult = 0.9
 SWEP.SightedSpeedMult = 0.5
-SWEP.SightTime = 0.3
+SWEP.SightTime = 0.4
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 }

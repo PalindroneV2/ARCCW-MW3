@@ -165,7 +165,7 @@ SWEP.Attachments = {
         Slot = {"optic"}, -- what kind of attachments can fit here, can be string or table
         Bone = "tag_weapon", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(-3.5, 0, 2.4), -- 4.6 offset that the attachment will be relative to the bone
+            vpos = Vector(-3.5, 0, 2.3), -- 4.6 offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
         CorrectivePos = Vector(0, 0, 0),

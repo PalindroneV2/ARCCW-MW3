@@ -5,7 +5,8 @@ att.Desc_Pros = {
     "+50% Headshot damage."
 }
 att.Slot = {"mw3_perk"}
-att.NoRandom = true
+
+att.RandomWeight = 0.5
 att.NotForNPCS = true
 
 att.AutoStats = true

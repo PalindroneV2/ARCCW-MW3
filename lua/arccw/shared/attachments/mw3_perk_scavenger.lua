@@ -8,7 +8,8 @@ att.Desc_Cons = {
 }
 
 att.Slot = {"mw3_perk"}
-att.NoRandom = true
+
+att.RandomWeight = 0.25
 att.NotForNPCS = true
 
 att.MW3_Scavenger = true

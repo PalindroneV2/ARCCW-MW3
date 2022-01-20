@@ -8,6 +8,8 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = {"mw3_perk"}
 
+att.RandomWeight = 0.5
+
 att.Mult_HipDispersion = 0.65
 att.Mult_MoveDispersion = 0.65
 att.MW3_SteadyAim = true

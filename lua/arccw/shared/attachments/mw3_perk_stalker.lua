@@ -3,7 +3,8 @@ att.Icon = Material("entities/mw3_ui/perk_stalker.png", "mips smooth")
 att.Description = "Full speed of moement when ADS."
 
 att.Slot = {"mw3_perk"}
-att.NoRandom = true
+
+att.RandomWeight = 0.5
 att.NotForNPCS = true
 
 att.Mult_SightedSpeedMult = 10

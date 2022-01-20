@@ -3,7 +3,8 @@ att.Icon = Material("entities/mw3_ui/perk_sleight.png", "mips smooth")
 att.Description = "Reload time halved."
 
 att.Slot = {"mw3_perk"}
-att.NoRandom = true
+
+att.RandomWeight = 0.35
 att.NotForNPCS = true
 
 att.AutoStats = true

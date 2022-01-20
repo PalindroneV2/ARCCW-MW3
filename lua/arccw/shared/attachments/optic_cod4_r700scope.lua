@@ -12,16 +12,16 @@ att.SortOrder = 1000
 att.AutoStats = true
 att.Slot = "cod4_r700_scope"
 
-att.Model = "models/weapons/arccw/atts/cod4_m40_scope.mdl"
+att.Model = "models/weapons/arccw/atts/cod4_r700_scope.mdl"
 att.GivesFlags = {"r700_scope"}
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 14, -3.3),
+        Pos = Vector(0, 15, -3.28),
         Ang = Angle(0, 0, 0),
         Magnification = 1,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
-        ZoomLevels = 2,
+        ZoomLevels = 3,
         IgnoreExtra = true
     },
 }
@@ -29,12 +29,12 @@ att.AdditionalSights = {
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/mw3_scope.png", "mips smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 12.5
+att.HolosightSize = 11.8
 att.HolosightBone = "holosight"
-att.HolosightPiece = "models/weapons/arccw/atts/cod4_m40_hsp.mdl"
+att.HolosightPiece = "models/weapons/arccw/atts/cod4_r700_hsp.mdl"
 att.Colorable = true
 
 att.HolosightBlackbox = true
-att.HolosightMagnification = 6
-att.HolosightMagnificationMin = 2
+att.HolosightMagnification = 8
+att.HolosightMagnificationMin = 4
 att.HolosightMagnificationMax = 12

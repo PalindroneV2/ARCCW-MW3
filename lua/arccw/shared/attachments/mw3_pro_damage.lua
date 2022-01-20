@@ -6,7 +6,8 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.Slot = {"mw3_pro"}
-att.NoRandom = true
+
+att.RandomWeight = 0.375
 att.NotForNPCS = true
 att.AutoStats = true
 

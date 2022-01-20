@@ -6,6 +6,8 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
+
+att.RandomWeight = 0.5
 att.Slot = {"mw3_perk"}
 
 att.Mult_MeleeDamage = 2
