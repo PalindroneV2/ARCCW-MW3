@@ -263,12 +263,12 @@ SWEP.Hook_NameChange = function(wep, name)
     local gunname = "Beretta M9"
     local desc = "9mm italian pistol. Currently the standard issue sidearm for US forces. Maligned due to its poor quality of parts for a military weapon and its lack of power compared to the venerable M1911. In the process of being replaced by a SIG-Sauer model."
 
-    if wep.Attachments[7].Installed == "cod4e_cosmetic_m9_stars" then
+    if wep.Attachments[8].Installed == "cod4e_cosmetic_m9_stars" then
         gunname = "Samurai Edge"
         desc = "A S.T.A.R.S. custom automatic. Fires 9mm Parabellum rounds."
     end
 
-    if wep.Attachments[7].Installed == "cod4e_cosmetic_m9_elite" then
+    if wep.Attachments[8].Installed == "cod4e_cosmetic_m9_elite" then
         gunname = ".40 Elite"
     end
 
@@ -299,10 +299,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local papcamo = wep:GetBuff_Override("PackAPunch")
 
     local camo = 6
-    if wep.Attachments[7].Installed == "cod4e_cosmetic_m9_stars" then
+    if wep.Attachments[8].Installed == "cod4e_cosmetic_m9_stars" then
         camo = camo + 2
         vm:SetBodygroup(1, 1)
-    elseif wep.Attachments[7].Installed == "cod4e_cosmetic_m9_elite" then
+    elseif wep.Attachments[8].Installed == "cod4e_cosmetic_m9_elite" then
         camo = camo + 4
         vm:SetBodygroup(1, 1)
     end
@@ -315,7 +315,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim, data)
-    local elite = wep.Attachments[7].Installed == "cod4e_cosmetic_m9_elite"
+    local elite = wep.Attachments[8].Installed == "cod4e_cosmetic_m9_elite"
 
     if elite then
         return "elite_" .. anim
