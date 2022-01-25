@@ -1,7 +1,7 @@
 AddCSLuaFile()
 
 ENT.Type 				= "anim"
-ENT.Base 				= "arccw_bo1_projectile_base"
+ENT.Base 				= "arccw_mw3_projectile_base"
 ENT.PrintName 			= "40mm HE"
 
 ENT.Model = "models/weapons/arccw/item/mw3_40mm.mdl"
