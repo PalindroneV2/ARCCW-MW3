@@ -3,7 +3,7 @@ VertexlitGeneric
 	$basetexture	"models\weapons\cod4\cod4_m249\saw"
 	$bumpmap	"models\weapons\colors\normalmap"
 
-	$detail "models\weapons\bo1\black_detail"
+	$detail "models\weapons\colors\black_detail"
 	$detailblendmode 0
 	"$detailblendfactor" "1"
 
