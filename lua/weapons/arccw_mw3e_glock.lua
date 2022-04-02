@@ -165,7 +165,7 @@ SWEP.Attachments = {
         },
         CorrectivePos = Vector(0, 0, 0.0125),
         CorrectiveAng = Angle(3, 0, 0),
-        GivesFlags = {"pistolrail"},
+        GivesFlags = {"mw3_pistolrail"},
         RequireFlags = {"mw3_glocktac"}
     },
     { --2
@@ -198,13 +198,13 @@ SWEP.Attachments = {
             vpos = Vector(3.5, 0.025, 0.25),
             vang = Angle(0, 0, 0),
         },
-        MergeSlots = {10},
+        MergeSlots = {11},
     },
     { --5
         PrintName = "Ammo Type",
         Slot = {"ammo_pap"},
     },
-    { --7
+    { --6
         PrintName = "Fire Group",
         Slot = {"bo1_fcg"},
         DefaultAttName = "Standard FCG",
@@ -212,18 +212,18 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Slot = {"mw3_perk"}
-    }, --11
+    }, --7
     {
         PrintName = "Proficiency",
         Slot = "mw3_pro"
-    },
+    }, --8
     {
         PrintName = "Cosmetic",
         Slot = {"cde_cosmetic", "cde_cosmetic_tan", "cde_cosmetic_twotone"},
         DefaultAttName = "Black Finish",
         FreeSlot = true,
-    }, -- 7
-    { --8
+    }, -- 9
+    { --10
         PrintName = "Charm",
         Slot = "charm",
         Bone = "j_bolt",
@@ -244,7 +244,7 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
         GivesFlags = {"glockrail"}
-    }, --9
+    }, --11
 }
 
 SWEP.RejectAttachments = {
