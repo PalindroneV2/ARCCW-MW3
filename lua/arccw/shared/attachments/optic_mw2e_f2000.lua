@@ -19,7 +19,7 @@ att.OffsetAng = Angle(0, 0, 0)
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 9, -4.7),
+        Pos = Vector(0, 4, -4.7),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ScrollFunc = ArcCW.SCROLL_NONE,
@@ -29,7 +29,7 @@ att.AdditionalSights = {
 
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/mw2e_f2000_reticle.png", "mips smooth")
-att.HolosightSize = 7.5
+att.HolosightSize = 9.5
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/mw2e_f2000_hsp.mdl"
 att.HolosightNoFlare = true

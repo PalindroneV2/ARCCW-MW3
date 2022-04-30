@@ -23,7 +23,7 @@ att.Holosight = true
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 10, -1.25),
+        Pos = Vector(0, 6, -1.25),
         Ang = Angle(-0, 0, 0),
         Magnification = 1.25,
         IgnoreExtra = false,

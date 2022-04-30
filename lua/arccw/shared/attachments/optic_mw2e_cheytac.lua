@@ -19,7 +19,7 @@ att.OffsetAng = Angle(0, 0, 0)
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 9, -4.85),
+        Pos = Vector(0, 7, -4.85),
         Ang = Angle(0, 0, 0),
         Magnification = 1,
         IgnoreExtra = true,
@@ -30,7 +30,7 @@ att.AdditionalSights = {
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/mw3_scope.png", "mips smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 14
+att.HolosightSize = 13
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/mw2_cheytac_hsp.mdl"
 att.Colorable = false

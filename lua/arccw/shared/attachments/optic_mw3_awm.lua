@@ -20,7 +20,7 @@ att.OffsetAng = Angle(0, 0, 0)
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 8, -4.225),
+        Pos = Vector(0, 6, -4.225),
         Ang = Angle(0, 0, 0),
         Magnification = 1,
         IgnoreExtra = true,

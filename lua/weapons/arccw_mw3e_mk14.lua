@@ -349,7 +349,7 @@ SWEP.Animations = {
         },
     },
     ["fire_iron"] = {
-        Source = {"fire"},
+        Source = "fire_ads",
         Time = 0.5,
         ShellEjectAt = 0,
         SoundTable = {

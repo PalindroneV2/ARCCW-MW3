@@ -17,7 +17,7 @@ att.GivesFlags = {"m40_scope"}
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 14, -3.3),
+        Pos = Vector(0, 12, -3.3),
         Ang = Angle(0, 0, 0),
         Magnification = 1,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
