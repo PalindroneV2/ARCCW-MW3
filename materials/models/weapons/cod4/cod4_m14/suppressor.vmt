@@ -17,7 +17,7 @@ VertexlitGeneric
 	$envmapmask "models\weapons\cod4\cod4_suppressor\suppressor_s"
 
 	"$envmap" "env_cubemap"					
-	"$envmaptint" "[ .05 .05 .05 ]"					
+	"$envmaptint" "0.01"					
 	"$envmapFresnel" "1"
 	"$nocull" "1"
 }
