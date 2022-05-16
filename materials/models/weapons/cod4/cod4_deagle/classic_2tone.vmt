@@ -1,0 +1,21 @@
+VertexlitGeneric
+{
+	$basetexture	"models\weapons\cod4\cod4_deagle\2tone"
+	"$bumpmap" "models\weapons\cod4\normalmap"
+
+	$phongexponenttexture "models\weapons\cod4\cod4_deagle\2tone_s"
+
+	$normalmapalphaenvmapmask 1
+	
+	"$blendtintbybasealpha" "1"
+	"$phong" "1"
+	"$phongboost" "1"
+	"$phongalbedotint" "2"
+	"$PhongFresnelRanges" "[ 2 5 4 ]"
+	"$envmap" "env_cubemap"
+	"$basemapalphaenvmapmask" "1"
+	"$envmapfresnel" "0.01"
+	$envmaptint "0.01"
+
+	"$nocull" "1"
+}

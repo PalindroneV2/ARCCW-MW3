@@ -1,8 +1,8 @@
  "VertexlitGeneric"
 {
-	"$basetexture" "models/weapons/mw3/mw3_m203/m320_nade_c"
-	$blendtintbybasealpha  "1"
-	"$bumpmap" "models/weapons/mw3/mw3_m203/m320_nade_c"
+	"$basetexture" "models/weapons/bo1/bo1_m203/m320_nade_c"
+	
+	"$bumpmap" "models/weapons/bo1/bo1_m203/m320_nade_c"
 	$phong                      		1
 //	$phongexponent                      "20"
 	$phongboost                         "0.5"
@@ -12,5 +12,5 @@
 
 	"$envmap" "env_cubemap"					
 	"$envmaptint" "[ .01 .01 .01 ]"					
-	"$envmapFresnel" "1"
+	"$envmapfresnel" "0.01"
 }
