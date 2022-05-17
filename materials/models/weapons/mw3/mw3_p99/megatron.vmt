@@ -4,7 +4,7 @@ VertexlitGeneric
 	//$color2 "[0.5 0.5 0.5]"
 	$bumpmap	"models\weapons\mw3\mw3_p99\p99_n"
 
-	$envmapmask "models/weapons/bo1/gold"
+	$envmapmask "models/weapons/colors/gold"
 	
 	$phong "1"
 //	$phongexponent	"15"

@@ -14,7 +14,7 @@ VertexlitGeneric
 	"$envmapfresnel" "0.01"
 	"$envmaptint" "[ .01 .01 .01 ]"
 
-	$detail "models/weapons/bo1/gunmetal"
+	$detail "models/weapons/colors/gunmetal"
 	$detailblendmode 0
 	"$detailblendfactor" "0.5"
 }

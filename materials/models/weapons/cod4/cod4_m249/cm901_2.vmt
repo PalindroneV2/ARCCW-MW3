@@ -11,7 +11,7 @@ VertexlitGeneric
 	$phongalbedotint             "1"
 	$normalmapalphaphongmask    	1
 
-	"$detail" "models\weapons\bo1\solid_white"
+	"$detail" "models\weapons\colors\solid_white"
 	"$detailblendfactor" "0.05"
 
 	"$envmap" "env_cubemap"					
