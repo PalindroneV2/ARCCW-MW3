@@ -1,6 +1,6 @@
 att.PrintName = "EOTech 553 (HOLO)"
 att.Icon = Material("entities/acwatt_optic_mw3_holo.png", "mips smooth")
-att.Description = "MW3 Holografic Sight. Standard holographic sight. Provides an electronic reticle which speeds up target acquisition by eliminating the need to line up irons."
+att.Description = "MW3 Holografic Sight. Standard holographic sight. Provides an electronic reticle which speeds up target acquisition by eliminating the need to line up iron sights."
 
 att.SortOrder = 1
 
@@ -8,7 +8,9 @@ att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
 }
-att.Desc_Neutrals = {"bo.desc"}
+att.Desc_Neutrals = {
+    "This attachment belongs to the Modern Warfare 3 pack."
+}
 
 att.AutoStats = true
 att.Slot = {"optic", "bo1_acog", "mw3_acog"}

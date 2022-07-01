@@ -1,9 +1,9 @@
 att.PrintName = "XM25 Targeting Computer Sight"
 att.AbbrevName = "XM25 Optic"
 att.Icon = Material("entities/acwatt_optic_mw3_acog.png", "mips smooth")
-att.Description = "MW3 ACOG Scope. Medium range combat scope for improved precision at longer ranges. Includes a laser pointer."
+att.Description = "MW3 ACOG Scope for the XM25. Medium range combat scope for improved precision at longer ranges. Includes a laser pointer."
 
-att.SortOrder = 6
+att.SortOrder = 1000
 
 att.Desc_Pros = {
     "autostat.holosight",
@@ -13,7 +13,9 @@ att.Desc_Cons = {
     "- Visible Laser Sight",
     "- Visible Light Beam"
 }
-att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
+att.Desc_Neutrals = {
+    "This attachment belongs to the Modern Warfare 3 pack."
+}
 
 att.AutoStats = true
 att.Slot = {"mw3e_xm25_scope"}
@@ -24,7 +26,7 @@ att.OffsetAng = Angle(0, 0, 0)
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 12, -6.035),
+        Pos = Vector(0, 10, -6.035),
         Ang = Angle(0, 0, 0),
         Magnification = 1,
         IgnoreExtra = true,
@@ -35,7 +37,7 @@ att.AdditionalSights = {
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/cod4_acog.png", "mips smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 12
+att.HolosightSize = 14
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/mw3_xm25_hsp.mdl"
 att.Colorable = true

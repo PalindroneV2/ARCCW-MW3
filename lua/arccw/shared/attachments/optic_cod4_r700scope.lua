@@ -5,7 +5,9 @@ att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
 }
-att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
+att.Desc_Neutrals = {
+    "This attachment belongs to the Modern Warfare 3 pack."
+}
 
 att.SortOrder = 1000
 
@@ -29,7 +31,7 @@ att.AdditionalSights = {
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/mw3_scope.png", "mips smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 11.8
+att.HolosightSize = 12
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/cod4_r700_hsp.mdl"
 att.Colorable = true

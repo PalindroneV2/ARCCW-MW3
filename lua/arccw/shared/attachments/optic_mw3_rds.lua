@@ -1,7 +1,7 @@
 att.PrintName = "Sightmark Sure Shot (RDS)"
 att.AbbrevName = "Sure Shot [MW3](RDS)"
 att.Icon = Material("entities/acwatt_optic_mw3_rds.png", "mips smooth")
-att.Description = "MW3 Red Dot Sight. Standard holographic sight. Provides a small electronic dot reticle which speeds up target acquisition by eliminating the need to line up irons."
+att.Description = "MW3 Red Dot Sight. Standard holographic sight. Provides a small electronic dot reticle which speeds up target acquisition by eliminating the need to line up iron sights."
 
 att.SortOrder = 1
 
@@ -9,7 +9,9 @@ att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
 }
-att.Desc_Neutrals = {"bo.desc"}
+att.Desc_Neutrals = {
+    "This attachment belongs to the Modern Warfare 3 pack."
+}
 
 att.AutoStats = true
 att.Slot = {"optic_lp", "optic", "bo1_reddot", "mw3_reddot"}

@@ -1,7 +1,7 @@
 att.PrintName = "EOTech 553 + Magnifier (1-3.5x)"
 att.AbbrevName = "Hybrid Sight [MW3]"
 att.Icon = Material("entities/acwatt_optic_mw3_magnifier.png", "mips smooth")
-att.Description = "MW3 Hybrid Scope. Medium range combat scope for improved precision at longer ranges."
+att.Description = "MW3 Hybrid Scope. Standard holographic sight with a magnifier for close-to-medium range combat."
 
 att.SortOrder = 6
 
@@ -9,7 +9,9 @@ att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
 }
-att.Desc_Neutrals = {"bo.desc"}
+att.Desc_Neutrals = {
+    "This attachment belongs to the Modern Warfare 3 pack."
+}
 
 att.AutoStats = true
 att.Slot = {"optic", "bo1_acog", "mw3_acog"}

@@ -8,7 +8,9 @@ att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
 }
-att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
+att.Desc_Neutrals = {
+    "This attachment belongs to the Modern Warfare 3 pack."
+}
 
 att.AutoStats = true
 att.Slot = {"mw2e_cheytac_scope"}
@@ -19,23 +21,27 @@ att.OffsetAng = Angle(0, 0, 0)
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 7, -4.85),
+        Pos = Vector(0, 6, -4.85),
         Ang = Angle(0, 0, 0),
         Magnification = 1,
+        ScrollFunc = ArcCW.SCROLL_ZOOM,
+		ZoomSound = "arccw_go/fiveseven/fiveseven_slideback.wav",
         IgnoreExtra = true,
         CrosshairInSights = false,
     },
 }
 
 att.Holosight = true
-att.HolosightReticle = Material("hud/scopes/mw3_scope.png", "mips smooth")
+att.HolosightReticle = Material("hud/scopes/mw3_scope.png")
 att.HolosightNoFlare = true
-att.HolosightSize = 13
+att.HolosightSize = 17
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/mw2_cheytac_hsp.mdl"
 att.Colorable = false
 
 att.HolosightBlackbox = true
-att.HolosightMagnification = 8
+att.HolosightMagnification = 1
+att.HolosightMagnificationMin = 2
+att.HolosightMagnificationMax = 8
 
 att.Mult_SightTime = 1.1

@@ -7,7 +7,9 @@ att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
 }
-att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
+att.Desc_Neutrals = {
+    "This attachment belongs to the Modern Warfare 3 pack."
+}
 
 att.SortOrder = 1000
 
@@ -19,7 +21,7 @@ att.GivesFlags = {"m40_scope"}
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 8, -4.06),
+        Pos = Vector(0, 7, -4.06),
         Ang = Angle(0, 0, 0),
         Magnification = 1,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
@@ -31,7 +33,7 @@ att.AdditionalSights = {
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/mw3_svd_scope.png")
 att.HolosightNoFlare = true
-att.HolosightSize = 10
+att.HolosightSize = 13
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/cod4_dragunov_hsp.mdl"
 att.Colorable = true
