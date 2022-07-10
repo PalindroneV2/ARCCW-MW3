@@ -1,12 +1,12 @@
 att.PrintName = "Blast Shield"
 att.Icon = Material("entities/mw3_ui/perk_blastshield.png", "mips smooth")
-att.Description = "Reduce explosive damage 50%."
+att.Description = "Reduces explosive damage by 50%."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
-att.AutoStats = true
 att.Slot = {"mw3_perk"}
+att.AutoStats = true
 att.Hidden = true
 
 att.MW3_BlastShield = true

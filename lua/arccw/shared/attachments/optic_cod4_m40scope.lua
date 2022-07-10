@@ -15,7 +15,7 @@ att.AutoStats = true
 att.Slot = "cod4_m40_scope"
 
 att.Model = "models/weapons/arccw/atts/cod4_m40_scope.mdl"
-att.GivesFlags = {"m40_scope"}
+att.GivesFlags = "m40_scope"
 
 att.AdditionalSights = {
     {

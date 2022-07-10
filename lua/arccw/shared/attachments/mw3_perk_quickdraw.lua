@@ -1,12 +1,11 @@
 att.PrintName = "Quickdraw"
 att.Icon = Material("entities/mw3_ui/perk_quickdraw.png", "mips smooth")
-att.Description = "ADS time reduced by half. Draw and holster time reduced by half."
+att.Description = "Weapon aim, draw, and holster times reduced by half."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
 att.Slot = {"mw3_perk"}
-
 att.RandomWeight = 0.5
 att.NotForNPCS = true
 

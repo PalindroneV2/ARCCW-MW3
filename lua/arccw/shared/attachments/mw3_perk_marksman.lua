@@ -1,11 +1,12 @@
 att.PrintName = "Marksman"
 att.Icon = Material("entities/mw3_ui/perk_marksman.png", "mips smooth")
-att.Description = "Reduced sway and increased headshot damage and range."
+att.Description = "Reduces sway while increasing range and headshot damage."
 att.Desc_Pros = {
     "+50% Headshot damage."
 }
+att.Desc_Cons = {
+}
 att.Slot = {"mw3_perk"}
-
 att.RandomWeight = 0.5
 att.NotForNPCS = true
 

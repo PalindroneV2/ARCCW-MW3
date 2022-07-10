@@ -1,12 +1,11 @@
 att.PrintName = "Kick"
 att.Icon = Material("entities/mw3_ui/pro_kick.png", "mips smooth")
-att.Description = "Reduced recoil."
+att.Description = "	Reduced recoil."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
 att.Slot = {"mw3_pro"}
-
 att.RandomWeight = 0.5
 att.NotForNPCS = true
 att.AutoStats = true

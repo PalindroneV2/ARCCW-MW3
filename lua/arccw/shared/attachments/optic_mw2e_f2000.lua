@@ -1,9 +1,6 @@
 att.PrintName = "F2000 Scope (RDS)"
 att.Icon = Material("entities/acwatt_optic_mw3_reflex.png", "mips smooth")
 att.Description = "MW3 Red Dot Sight. Standard holographic sight. Provides a small electronic dot reticle which speeds up target acquisition by eliminating the need to line up iron sights."
-
-att.SortOrder = 1000
-
 att.Desc_Pros = {
     "autostat.holosight",
 }
@@ -11,8 +8,10 @@ att.Desc_Neutrals = {
     "This attachment belongs to the Modern Warfare 3 pack."
 }
 
+att.SortOrder = 1000
+
 att.AutoStats = true
-att.Slot = {"mw2e_f2000_scope"}
+att.Slot = "mw2e_f2000_scope"
 
 att.Model = "models/weapons/arccw/atts/mw2e_f2000_scope.mdl"
 att.ModelBodygroups = "10"

@@ -1,12 +1,11 @@
 att.PrintName = "Double Tap"
 att.Icon = Material("entities/mw3_ui/perk_classic_doubletap.png", "mips smooth")
-att.Description = "Increases rate of fire by 33%."
+att.Description = "Increases fire rate by 33%."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
 att.Slot = {"mw3_perk"}
-
 att.RandomWeight = 0.2
 att.NotForNPCS = true
 

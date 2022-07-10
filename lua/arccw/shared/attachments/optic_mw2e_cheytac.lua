@@ -1,9 +1,6 @@
 att.PrintName = "CheyTac Scope (8x)"
 att.Icon = Material("entities/acwatt_optic_mw3_sniper.png", "mips smooth")
 att.Description = "MW2 Sniper Scope for the CheyTac M200. Long range combat scope for improved precision at longer ranges."
-
-att.SortOrder = 115
-
 att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
@@ -12,8 +9,10 @@ att.Desc_Neutrals = {
     "This attachment belongs to the Modern Warfare 3 pack."
 }
 
+att.SortOrder = 1000
+
 att.AutoStats = true
-att.Slot = {"mw2e_cheytac_scope"}
+att.Slot = "mw2e_cheytac_scope"
 
 att.Model = "models/weapons/arccw/atts/mw2_cheytac_scope.mdl"
 att.ModelOffset = Vector(0, 0, 0)
@@ -32,7 +31,7 @@ att.AdditionalSights = {
 }
 
 att.Holosight = true
-att.HolosightReticle = Material("hud/scopes/mw3_scope.png")
+att.HolosightReticle = Material("hud/scopes/mw2_intervention.png")
 att.HolosightNoFlare = true
 att.HolosightSize = 17
 att.HolosightBone = "holosight"

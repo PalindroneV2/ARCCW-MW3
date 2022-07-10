@@ -10,6 +10,7 @@ att.AutoStats = true
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
+  "Semi-auto fire only"
 }
 att.Slot = {"mw3e_m4_barrel"}
 att.GivesFlags = {"mk12_barrel", "mk12_bipod_ok"}

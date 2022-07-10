@@ -1,8 +1,6 @@
 att.PrintName = "PSO-1 (6x)"
 att.Icon = Material("entities/acwatt_optic_mw3_sniper.png", "mips smooth")
 att.Description = "Scope designed for the Dragunov SVD-63."
-
-
 att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
@@ -17,7 +15,7 @@ att.AutoStats = true
 att.Slot = "cod4_dragunov_scope"
 
 att.Model = "models/weapons/arccw/atts/cod4_dragunov_scope.mdl"
-att.GivesFlags = {"m40_scope"}
+att.GivesFlags = "m40_scope"
 
 att.AdditionalSights = {
     {

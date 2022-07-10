@@ -56,9 +56,17 @@ SWEP.ManualAction = true
 SWEP.Delay = 60 / 300 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
+    --{
+        --Mode = 2,
+        --Mult_HipDispersion = 1.5,
+        --Mult_MoveDispersion = 1.5,
+        --Mult_AccuracyMOA = 1.5,
+        --Delay = 60 / 900,
+    --},
     {
         PrintName = "BOLT",
         Mode = 1,
+        Delay = 60 / 300
     },
     {
         Mode = 0

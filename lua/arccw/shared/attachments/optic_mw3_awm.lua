@@ -2,9 +2,6 @@ att.PrintName = "Leupold Mark 4 Scope (8x)"
 att.AbbrevName = "AWM Scope (8x)"
 att.Icon = Material("entities/acwatt_optic_mw3_sniper.png", "mips smooth")
 att.Description = "MW3 Sniper Scope for the AWSM. Long range combat scope for improved precision at longer ranges."
-
-att.SortOrder = 110
-
 att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
@@ -13,8 +10,10 @@ att.Desc_Neutrals = {
     "This attachment belongs to the Modern Warfare 3 pack."
 }
 
+att.SortOrder = 1000
+
 att.AutoStats = true
-att.Slot = {"mw3e_awm_scope"}
+att.Slot = "mw3e_awm_scope"
 
 att.Model = "models/weapons/arccw/atts/mw3_awm_scope.mdl"
 att.ModelOffset = Vector(0, 0, 0)

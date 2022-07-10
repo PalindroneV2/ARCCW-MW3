@@ -244,7 +244,7 @@ SWEP.Attachments = {
         InstalledEles = {"mount"},
         CorrectivePos = Vector(0, 0, 0),
         CorrectiveAng = Angle(0, 0, 0),
-        MergeSlots = {15}
+        --MergeSlots = {15}
     }, --1
     {
         PrintName = "Barrel",
@@ -334,7 +334,7 @@ SWEP.Attachments = {
     }, --10
     {
         PrintName = "Ammo Type",
-        Slot = {"ammo_pap"},
+        Slot = {"ammo_pap", "mw3_ammo"},
     }, --11
     {
         PrintName = "Perk",

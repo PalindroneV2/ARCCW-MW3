@@ -15,7 +15,7 @@ att.AutoStats = true
 att.Slot = "cod4_r700_scope"
 
 att.Model = "models/weapons/arccw/atts/cod4_r700_scope.mdl"
-att.GivesFlags = {"r700_scope"}
+att.GivesFlags = "r700_scope"
 
 att.AdditionalSights = {
     {

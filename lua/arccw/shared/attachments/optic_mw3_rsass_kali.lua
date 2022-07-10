@@ -1,9 +1,6 @@
 att.PrintName = "PSR Scope (8x)"
 att.Icon = Material("entities/acwatt_optic_mw3_sniper.png", "mips smooth")
 att.Description = "Sniper scope for the RSASS. Long range combat scope for improved precision at longer ranges."
-
-att.SortOrder = 1000
-
 att.Desc_Pros = {
     "autostat.holosight",
     "autostat.zoom",
@@ -12,12 +9,14 @@ att.Desc_Neutrals = {
     "This attachment belongs to the Modern Warfare 3 pack."
 }
 
+att.SortOrder = 1000
+
 att.HideIfBlocked = true
 att.AutoStats = true
-att.Slot = {"kali_rsass_scope"}
-att.GivesFlags = {"mw3_psr_scope"}
-att.RequireFlags = {"a4top"}
-att.ExcludeFlags = {"kali_barrel_famas"}
+att.Slot = "kali_rsass_scope"
+att.GivesFlags = "mw3_psr_scope"
+att.RequireFlags = "a4top"
+att.ExcludeFlags = "kali_barrel_famas"
 
 att.Model = "models/weapons/arccw/atts/mw3_rsass_scope.mdl"
 att.ModelOffset = Vector(0, 0, 0)

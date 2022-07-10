@@ -9,9 +9,11 @@ att.Desc_Cons = {
 }
 att.Desc_Neutrals = {"This attachment belongs to the Modern Warfare 3 pack."}
 
+att.SortOrder = 1000
+
 att.AutoStats = true
-att.Slot = {"bocw_deagle_laser"}
-att.GivesFlags = {"top_laser"}
+att.Slot = "bocw_deagle_laser"
+att.GivesFlags = "top_laser"
 
 att.Model = "models/weapons/arccw/atts/bocw_handcannon_laser.mdl"
 

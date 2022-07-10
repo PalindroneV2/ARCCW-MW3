@@ -1,6 +1,6 @@
 att.PrintName = " MLG 420 Blaze It"
 att.Icon = Material("entities/acwatt_mw2_generic.png", "mips smooth")
-att.Description = "Awful finish for the Intervention if FDE is not your taste."
+att.Description = [[God-awful "finish" for the Intervention if FDE is not your taste.]]
 
 att.AutoStats = true
 

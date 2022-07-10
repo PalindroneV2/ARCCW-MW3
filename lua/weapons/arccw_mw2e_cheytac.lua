@@ -197,7 +197,7 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(39.25, 0, 1.75),
+            vpos = Vector(41, -0.02, 1.725),
             vang = Angle(0, 0, 0),
         },
     },
@@ -206,15 +206,15 @@ SWEP.Attachments = {
         Slot = {"bo1_tacprimary"},
         Bone = "tag_weapon",
         Offset = {
-            vpos = Vector(16, 0.8, 1.5),
-            vang = Angle(0, 0, -90),
+            vpos = Vector(17.5, -0.2, 3.301),
+            vang = Angle(0, 0, 180),
             wpos = Vector(10.25, 1, -4.75),
             wang = Angle(-12, 0, -180)
         },
     },
     { --8
         PrintName = "Ammo Type",
-        Slot = {"ammo_pap"}
+        Slot = {"ammo_pap", "mw3_ammo"}
     },
     {
         PrintName = "Perk",

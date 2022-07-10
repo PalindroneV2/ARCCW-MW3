@@ -1,6 +1,6 @@
 att.PrintName = "Integrated Bipod"
 att.Icon = Material("entities/acwatt_bo1_awm_bipod.png", "mips smooth")
-att.Description = "A bipod integrated onto the weapon. Deploying it allows for accurate and stable shooting."
+att.Description = "A weapon-integrated bipod. Deploying it allows for an accurate and stable shooting platform, but provides no benefit when unused."
 
 att.Desc_Pros = {"bo.nosightsdisp"}
 
