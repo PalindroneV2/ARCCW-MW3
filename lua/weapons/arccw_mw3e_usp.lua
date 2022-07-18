@@ -77,7 +77,6 @@ SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "ArcCW_COD4E.1911_Fire"
 SWEP.ShootSoundSilenced = "ArcCW_COD4E.1911_Sil"
-SWEP.DistantShootSound = "ArcCW_WAW.M1911_RingOff"
 
 SWEP.MuzzleEffect = "muzzleflash_pistol"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"

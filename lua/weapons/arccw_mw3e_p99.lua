@@ -78,8 +78,8 @@ SWEP.MagID = "p99" -- the magazine pool this gun draws from
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "ArcCW_BO2.BHP_Fire"
-SWEP.ShootSoundSilenced = "ArcCW_BO2.Pistol_Sil"
+SWEP.ShootSound = "ArcCW_MW3E.P99_Fire"
+SWEP.ShootSoundSilenced = "ArcCW_COD4E.1911_Sil"
 
 SWEP.MuzzleEffect = "muzzleflash_pistol"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
@@ -358,8 +358,8 @@ SWEP.Animations = {
         LHIKIn = 1,
         LHIKOut = 0.25,
         SoundTable = {
-            {s = "ArcCW_BO2.Pistol_MagOut", t = 0.25},
-            {s = "ArcCW_BO2.Pistol_MagIn", t = 1}
+            {s = "ArcCW_MW3E.P99_MagOut", t = 0.25},
+            {s = "ArcCW_MW3E.P99_MagIn", t = 1}
         },
     },
     ["reload_empty"] = {
@@ -370,9 +370,9 @@ SWEP.Animations = {
         LHIKIn = 1,
         LHIKOut = 0.25,
         SoundTable = {
-            {s = "ArcCW_BO2.Pistol_MagOut", t = 0.25},
-            {s = "ArcCW_BO2.Pistol_MagIn", t = 1},
-            {s = "ArcCW_BO2.Pistol_SlideBack", t = 1.5}
+            {s = "ArcCW_MW3E.P99_MagOut", t = 0.25},
+            {s = "ArcCW_MW3E.P99_MagIn", t = 1},
+            {s = "ArcCW_MW3E.P99_Chamber", t = 1.5}
         },
     },
     ["enter_sprint"] = {
