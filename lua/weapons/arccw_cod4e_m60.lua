@@ -97,20 +97,20 @@ SWEP.SightTime = 0.75
 SWEP.ShootSpeedMult = 0.75
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
-     [0] = "j_bullets0",
-     [1] = "j_bullets1",
-     [2] = "j_bullets2",
-     [3] = "j_bullets3",
-     [4] = "j_bullets4",
-     [5] = "j_bullets5",
-     [6] = "j_bullets6",
-     [7] = "j_bullets7",
-     [8] = "j_bullets8",
-     [9] = "j_bullets9",
-     [10] = "j_bullets10",
-     [11] = "j_bullets11",
-     [12] = "j_bullets12",
-     [13] = "j_bullets13",
+    [0] = "j_bullets0",
+    [1] = "j_bullets1",
+    [2] = "j_bullets2",
+    [3] = "j_bullets3",
+    [4] = "j_bullets4",
+    [5] = "j_bullets5",
+    [6] = "j_bullets6",
+    [7] = "j_bullets7",
+    [8] = "j_bullets8",
+    [9] = "j_bullets9",
+    [10] = "j_bullets10",
+    [11] = "j_bullets11",
+    [12] = "j_bullets12",
+    [13] = "j_bullets13",
 }
 
 SWEP.ProceduralRegularFire = false
@@ -325,13 +325,13 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         Time = 281 / 35,
+        LastClip1OutTime = 110 / 35,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Framerate = 37,
         Checkpoints = {28, 38, 69},
         LHIK = true,
         LHIKIn = 0.2,
         LHIKOut = 0.2,
-        LastClip1OutTime = 110 / 35,
         SoundTable = {
             {s = "ArcCW_COD4E.M60_Chamber", t = 17 / 35},
             {s = "ArcCW_COD4E.M60_Open", t = 57 / 35},
@@ -346,13 +346,13 @@ SWEP.Animations = {
     ["reload_optic"] = {
         Source = "reload_optic",
         Time = 281 / 35,
+        LastClip1OutTime = 110 / 35,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Framerate = 37,
         Checkpoints = {28, 38, 69},
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
-        LastClip1OutTime = 110 / 35,
         SoundTable = {
             {s = "ArcCW_COD4E.M60_Chamber", t = 17 / 35},
             {s = "ArcCW_COD4E.M60_Open", t = 57 / 35},
