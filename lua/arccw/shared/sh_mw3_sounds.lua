@@ -1899,3 +1899,53 @@ sound.Add( {
         "^weapons/arccw/mw3e_XM25/fire/mech.wav",
     }
 } )
+
+-- MW3E FAD
+
+
+sound.Add( {
+    name = "ArcCW_MW3E.FAD_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_fad/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.FAD_MagIn",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_fad/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.FAD_MagOut",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_fad/out.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.FAD_Hit",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_FAD/hit.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.FAD_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_fad/lift.wav",
+    }
+} )
