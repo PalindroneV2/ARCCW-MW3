@@ -24,7 +24,7 @@ att.AdditionalSights = {
         Ang = Angle(0, 0, 0),
         Magnification = 1,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
-		ZoomSound = "arccw_go/fiveseven/fiveseven_slideback.wav",
+        ZoomSound = "arccw_go/fiveseven/fiveseven_slideback.wav",
         IgnoreExtra = true,
         CrosshairInSights = false,
     },
