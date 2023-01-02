@@ -1,7 +1,7 @@
 VertexlitGeneric
 {
 	$basetexture	"models/weapons/cod4/cod4_mp5/sd"
-	"$bumpmap" "models/weapons/cod4/cod4_mp5/sd_n"
+	"$bumpmap" "models/weapons/cod4/normalmap"
 
 	$detail "models/weapons/colors/black_detail"
 	$detailblendmode 0
