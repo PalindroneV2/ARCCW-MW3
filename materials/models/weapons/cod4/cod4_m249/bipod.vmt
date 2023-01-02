@@ -1,11 +1,11 @@
 "VertexlitGeneric"
 {
 
-	"$basetexture" "models\weapons\cod4\cod4_m249\bipod_c"
-	"$bumpmap" "models\weapons\cod4\cod4_m249\bipod_n"
+	"$basetexture" "models/weapons/cod4/cod4_m249/bipod_c"
+	"$bumpmap" "models/weapons/cod4/cod4_m249/bipod_n"
 	"$halflambert" "1"				
 	"$nocull" 1
-	"$phongexponenttexture" "models\weapons\cod4\cod4_m249\bipod_exp"
+	"$phongexponenttexture" "models/weapons/cod4/cod4_m249/bipod_exp"
 	
 	"$blendtintbybasealpha" "1"
 	"$phong" "1"

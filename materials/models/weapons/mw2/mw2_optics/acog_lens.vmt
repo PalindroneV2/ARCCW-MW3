@@ -1,8 +1,8 @@
 "VertexLitGeneric"
 {
-	$basetexture	"models\weapons\mw2\mw2_optics\acog_lens"
+	$basetexture	"models/weapons/mw2/mw2_optics/acog_lens"
 	"$translucent" "0"
-	$bumpmap	"models\weapons\mw2\mw2_optics\acog_lens_n"
+	$bumpmap	"models/weapons/mw2/mw2_optics/acog_lens_n"
 	
 	"$blendtintbybasealpha" "1"
 	"$phong" "1"

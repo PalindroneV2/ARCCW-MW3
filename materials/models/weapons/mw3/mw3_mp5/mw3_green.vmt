@@ -4,7 +4,7 @@
 	
 	"$bumpmap" "models/weapons/mw3/mw3_mp5/mp5_mw3_n"
 
-	$detail "models\weapons\colors\od_green"
+	$detail "models/weapons/colors/od_green"
 	$detailblendmode 3
 	"$detailblendfactor" "0.75"
     "$detailscale" "10"

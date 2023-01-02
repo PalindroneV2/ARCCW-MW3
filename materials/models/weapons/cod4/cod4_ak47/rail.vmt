@@ -4,11 +4,11 @@
 	
 	"$bumpmap" "models/weapons/colors/normalmap"
 
-	$detail "models\weapons\colors\black_detail"
+	$detail "models/weapons/colors/black_detail"
 	$detailblendmode 0
 	"$detailblendfactor" "0.75"
 
-	$phongexponenttexture "models\weapons\cod4/cod4_optics/reflex_sight_s"
+	$phongexponenttexture "models/weapons/cod4/cod4_optics/reflex_sight_s"
 	
 	"$blendtintbybasealpha" "1"
 	"$phong" "1"

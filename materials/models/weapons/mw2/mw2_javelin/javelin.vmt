@@ -1,10 +1,10 @@
 VertexlitGeneric
 {
-	$basetexture	"models\weapons\mw2\mw2_javelin\javelin"
+	$basetexture	"models/weapons/mw2/mw2_javelin/javelin"
 	//$color2 "[0.5 0.5 0.5]"
-	$bumpmap	"models\weapons\mw2\mw2_javelin\javelin_n"
+	$bumpmap	"models/weapons/mw2/mw2_javelin/javelin_n"
 	
-	$detail "models\weapons\colors\gunmetal"
+	$detail "models/weapons/colors/gunmetal"
 	$detailblendfactor 0.5
 	$detailblendmode 0
 	

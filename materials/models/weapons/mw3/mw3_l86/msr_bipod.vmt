@@ -1,8 +1,8 @@
 VertexlitGeneric
 {
-	$basetexture	"models\weapons\mw3\mw3_rsass\msr_bipod"
+	$basetexture	"models/weapons/mw3/mw3_rsass/msr_bipod"
 	//$color2 "[0.5 0.5 0.5]"
-	$bumpmap	"models\weapons\mw3\mw3_rsass\msr_bipod_n"
+	$bumpmap	"models/weapons/mw3/mw3_rsass/msr_bipod_n"
 	
 	"$blendtintbybasealpha" "1"
 	"$phong" "1"

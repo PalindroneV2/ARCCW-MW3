@@ -1,9 +1,9 @@
 "VertexLitGeneric"
 {
-	$basetexture	"models\weapons\cod4\cod4_optics\reflex_lens"
+	$basetexture	"models/weapons/cod4/cod4_optics/reflex_lens"
 	"$translucent" "1"
-	$bumpmap	"models\weapons\colors\normalmap"
-	"$PhongExponentTexture"		"models\weapons\cod4\cod4_optics\reflex_lens_s"
+	$bumpmap	"models/weapons/colors/normalmap"
+	"$PhongExponentTexture"		"models/weapons/cod4/cod4_optics/reflex_lens_s"
 	
 	"$blendtintbybasealpha" "1"
 	"$phong" "1"

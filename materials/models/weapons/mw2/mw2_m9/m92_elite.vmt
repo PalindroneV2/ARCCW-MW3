@@ -1,14 +1,14 @@
 VertexlitGeneric
 {
-	$basetexture	"models\weapons\mw2\mw2_m9\m9"
-	$bumpmap	"models\weapons\mw2\mw2_m9\m9_n"
+	$basetexture	"models/weapons/mw2/mw2_m9/m9"
+	$bumpmap	"models/weapons/mw2/mw2_m9/m9_n"
 
-	"$detail" "models\weapons\mw2\mw2_m9\m9_s"
+	"$detail" "models/weapons/mw2/mw2_m9/m9_s"
     $detailblendmode 1
     "$detailscale" "1"
     "$detailblendfactor" "1"
 
-	$phongexponenttexture "models\weapons\mw2\mw2_m9\m9_s"
+	$phongexponenttexture "models/weapons/mw2/mw2_m9/m9_s"
 	
 	"$blendtintbybasealpha" "1"
 	"$phong" "1"

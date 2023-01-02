@@ -1,8 +1,8 @@
 VertexlitGeneric
 {
-	$basetexture	"models\weapons\mw3\mw3_rsass\rsass"
+	$basetexture	"models/weapons/mw3/mw3_rsass/rsass"
 	//$color2 "[0.5 0.5 0.5]"
-	$bumpmap	"models\weapons\mw3\mw3_rsass\rsass_n"
+	$bumpmap	"models/weapons/mw3/mw3_rsass/rsass_n"
 
 	
 	//"$color2" "[ .4 .4 .4 ]"

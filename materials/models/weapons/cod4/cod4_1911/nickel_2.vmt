@@ -1,9 +1,9 @@
 VertexlitGeneric
 {
-	$basetexture	"models\weapons\cod4\cod4_1911\nickel"
-	"$bumpmap" "models\weapons\colors\normalmap"
+	$basetexture	"models/weapons/cod4/cod4_1911/nickel"
+	"$bumpmap" "models/weapons/colors/normalmap"
 
-	$phongexponenttexture "models\weapons\cod4\cod4_1911\nickel_s"
+	$phongexponenttexture "models/weapons/cod4/cod4_1911/nickel_s"
 	
 	"$blendtintbybasealpha" "1"
 	"$phong" "1"

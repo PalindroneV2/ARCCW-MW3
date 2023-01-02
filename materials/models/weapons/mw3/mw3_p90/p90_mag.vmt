@@ -1,11 +1,11 @@
 VertexlitGeneric
 {
-	$basetexture	"models\weapons\mw3\mw3_p90\p90"
+	$basetexture	"models/weapons/mw3/mw3_p90/p90"
 	// $color2 "[1 1 1]"
-	$bumpmap	"models\weapons\mw3\mw3_p90\p90_n"
+	$bumpmap	"models/weapons/mw3/mw3_p90/p90_n"
 
 	"$translucent" "1"
-//	$detail "models\weapons\colors\black_detail"
+//	$detail "models/weapons/colors/black_detail"
 //	$detailblendmode 0
 //	"$detailblendfactor" "1"
 	
