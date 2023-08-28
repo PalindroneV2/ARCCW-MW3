@@ -168,19 +168,19 @@ end
 SWEP.DefaultBodygroups = "000000000"
 
 SWEP.AttachmentElements = {
-    ["mwc_bipod"] = {
+    -- ["mwc_bipod"] = {
+    --     VMBodygroups = {
+    --         {ind = 2, bg = 1},
+    --     },
+    -- },
+    ["stock_h"] = {
         VMBodygroups = {
             {ind = 2, bg = 1},
         },
     },
-    ["rail"] = {
-        VMBodygroups = {
-            {ind = 1, bg = 1}
-        },
-    },
     ["papname1"] = {
         NamePriority = 10,
-        NameChange = "Slow Burn",
+        NameChange = "People's Killing Pulverizer",
     },
 }
 
@@ -228,6 +228,11 @@ SWEP.Attachments = {
             vang = Angle(0, 0, 0),
         },
     }, --4
+    {
+        PrintName = "Stock",
+        Slot = "mwc_stock_h",
+        Installed = "mwc_stock_heavy"
+    }, --5
     { --6
         PrintName = "Tactical",
         Slot = {"bo1_tacprimary"},
@@ -333,34 +338,11 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKOut = 0.2,
         SoundTable = {
-            {s = "ArcCW_MW3E.PKP_Chamber", t = 17 / 35},
-            {s = "ArcCW_MW3E.PKP_Open", t = 57 / 35},
-            {s = "ArcCW_MW3E.PKP_Out", t = 95 / 35},
-            {s = "ArcCW_MW3E.PKP_In", t = 130 / 35},
-            {s = "ArcCW_MW3E.PKP_Raise", t = 160 / 35},
-            {s = "ArcCW_MW3E.PKP_Close", t = 200 / 35},
-            {s = "ArcCW_MW3E.PKP_LidClose", t = 205 / 35},
-            {s = "ArcCW_MW3E.PKP_Hit", t = 210 / 35},
-        },
-    },
-    ["reload_optic"] = {
-        Source = "reload_optic",
-        Time = 281 / 35,
-        LastClip1OutTime = 110 / 35,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Framerate = 37,
-        Checkpoints = {28, 38, 69},
-        LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
-        SoundTable = {
-            {s = "ArcCW_MW3E.PKP_Chamber", t = 17 / 35},
-            {s = "ArcCW_MW3E.PKP_Open", t = 57 / 35},
-            {s = "ArcCW_MW3E.PKP_Out", t = 95 / 35},
-            {s = "ArcCW_MW3E.PKP_In", t = 130 / 35},
-            {s = "ArcCW_MW3E.PKP_Raise", t = 160 / 35},
-            {s = "ArcCW_MW3E.PKP_Close", t = 200 / 35},
-            {s = "ArcCW_MW3E.PKP_Hit", t = 210 / 35},
+            {s = "ArcCW_MW3E.PKP_Open", t = 1},
+            {s = "ArcCW_MW3E.PKP_Out", t = 1.9},
+            {s = "ArcCW_MW3E.PKP_In", t = 4.25},
+            {s = "ArcCW_MW3E.PKP_Close", t = 6},
+            {s = "ArcCW_MW3E.PKP_Chamber", t = 6.75},
         },
     },
     ["enter_sprint"] = {

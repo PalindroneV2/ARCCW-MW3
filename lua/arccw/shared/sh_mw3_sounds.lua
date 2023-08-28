@@ -1949,3 +1949,71 @@ sound.Add( {
         "^weapons/arccw/mw3e_fad/lift.wav",
     }
 } )
+
+-- MW3E PKP Pecheneg
+
+sound.Add( {
+    name = "ArcCW_MW3E.PKP_Fire",
+    channel = CHAN_STATIC,
+    volume = 0.75,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_pkp/fire.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.PKP_Chamber",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_pkp/chamber.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.PKP_Open",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_pkp/open.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.PKP_Close",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_pkp/close.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.PKP_In",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_pkp/in.wav",
+    }
+} )
+sound.Add( {
+    name = "ArcCW_MW3E.PKP_Out",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_pkp/out.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ArcCW_MW3E.PKP_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/arccw/mw3e_pkp/lift.wav",
+    }
+} )

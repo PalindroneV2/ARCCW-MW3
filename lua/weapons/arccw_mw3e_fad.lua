@@ -280,8 +280,8 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKOut = 0.2,
         SoundTable = {
-            {s = "ARC9_MW3E.FAD_MagOut", t = 0.5},
-            {s = "ARC9_MW3E.FAD_MagIn", t = 2.1},
+            {s = "ArcCW_MW3E.FAD_MagOut", t = 0.5},
+            {s = "ArcCW_MW3E.FAD_MagIn", t = 2.1},
         },
     },
     ["reload_empty"] = {
@@ -292,9 +292,9 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKOut = 0.2,
         SoundTable = {
-            {s = "ARC9_MW3E.FAD_MagOut", t = 0.5},
-            {s = "ARC9_MW3E.FAD_MagIn", t = 1.9},
-            {s = "ARC9_MW3E.FAD_Hit", t = 2.5}
+            {s = "ArcCW_MW3E.FAD_MagOut", t = 0.5},
+            {s = "ArcCW_MW3E.FAD_MagIn", t = 1.9},
+            {s = "ArcCW_MW3E.FAD_Hit", t = 2.5}
         },
     },
     ["enter_sprint"] = {
