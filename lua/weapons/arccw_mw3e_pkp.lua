@@ -25,8 +25,8 @@ SWEP.WorldModelOffset = {
 }
 SWEP.ViewModelFOV = 60
 
-SWEP.Damage = 75
-SWEP.DamageMin = 38 -- damage done at maximum range
+SWEP.Damage = 65
+SWEP.DamageMin = 34 -- damage done at maximum range
 SWEP.Range = 300
 SWEP.RangeMin = 30
 
@@ -50,7 +50,7 @@ SWEP.RecoilSide = 1
 SWEP.RecoilRise = 0.75
 SWEP.VisualRecoilMult = 0.5
 
-SWEP.Delay = 60 / 550-- 60 / RPM.
+SWEP.Delay = 60 / 650 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -67,10 +67,10 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_ar2"
 SWEP.NPCWeight = 100
 
-SWEP.AccuracyMOA = 6 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 700 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 200
-SWEP.SightsDispersion = 80
+SWEP.AccuracyMOA = 7 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 750 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 250
+SWEP.SightsDispersion = 0
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.MagID = "m60" -- the magazine pool this gun draws from
@@ -93,7 +93,7 @@ SWEP.CamAttachment = 3
 
 SWEP.SpeedMult = 0.8
 SWEP.SightedSpeedMult = 0.25
-SWEP.SightTime = 0.75
+SWEP.SightTime = 0.65
 SWEP.ShootSpeedMult = 0.75
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
@@ -119,8 +119,8 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.245, 0, 0.625),
-    Ang = Angle(0.25, 0.025, 0),
+    Pos = Vector(-3.42, 0, 0.3),
+    Ang = Angle(0, 0.025, 0),
     Magnification = 1.1,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -154,28 +154,17 @@ SWEP.BarrelLength = 30
 
 SWEP.ExtraSightDist = 5
 
-SWEP.Bipod_Integral = true
-SWEP.BipodDispersion = 0.1
-SWEP.BipodRecoil = 0.05
-
-SWEP.M_Hook_Mult_SightsDispersion = function(wep, data)
-    if wep:InBipod() then
-        data.mult = 0
-    end
-end
-
-
 SWEP.DefaultBodygroups = "000000000"
 
 SWEP.AttachmentElements = {
-    -- ["mwc_bipod"] = {
-    --     VMBodygroups = {
-    --         {ind = 2, bg = 1},
-    --     },
-    -- },
+-- ["mwc_bipod"] = {
+--     VMBodygroups = {
+--         {ind = 2, bg = 1},
+--     },
+-- },
     ["stock_h"] = {
         VMBodygroups = {
-            {ind = 2, bg = 1},
+            {ind = 1, bg = 1},
         },
     },
     ["papname1"] = {
@@ -190,14 +179,13 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Slot = {"optic"}, -- what kind of attachments can fit here, can be string or table
         VMScale = Vector(1, 1, 1),
-        Bone = "j_reload_cover", -- relevant bone any attachments will be mostly referring to
+        Bone = "j_ammo_cover", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(-2.125, 0, 0.45), -- 4.6 offset that the attachment will be relative to the bone
+            vpos = Vector(-4, 0, 0.95), -- 4.6 offset that the attachment will be relative to the bone
             vang = Angle(0, 0, 0),
         },
-        InstalledEles = {"rail"},
         CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(-0.1, 0, 0),
+        CorrectiveAng = Angle(0, 0, 0),
     }, --1
     {
         PrintName = "Muzzle",
@@ -221,7 +209,7 @@ SWEP.Attachments = {
     }, --3
     { --4
         Hidden = true,
-        Slot = {"bipod"},
+        Slot = {"mwc_bipod"},
         Bone = "tag_weapon",
         Offset = {
             vpos = Vector(15, 0, 0.5), -- offset that the attachment will be relative to the bone
