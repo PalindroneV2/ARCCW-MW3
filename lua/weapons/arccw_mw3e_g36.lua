@@ -333,6 +333,10 @@ SWEP.Attachments = {
         Installed = "mwc_stock_light",
     }, --8
     {
+        PrintName = "Magazine",
+        Slot = {"mw3e_g36mag"}
+    }, --8
+    {
         PrintName = "Fire Group",
         Slot = {"bo1_fcg"}
     }, --9
